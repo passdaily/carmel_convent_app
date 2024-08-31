@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_parent_home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_notification"
+            android:icon="@drawable/ic_menu_inbox"
+            android:title="@string/notification" />
+
+        <item
+            android:id="@+id/nav_join_live"
+            android:icon="@drawable/ic_menu_join_live_class"
+            android:title="@string/join_live" />
+        <item
+            android:id="@+id/nav_zoom"
+            android:icon="@drawable/ic_menu_current_live_class"
+            android:title="@string/live_scheduled" />
+        <item
+            android:id="@+id/nav_live_class"
+            android:icon="@drawable/ic_menu_live_class"
+            android:title="@string/live_class" />
+
+        <item
+            android:id="@+id/nav_online_video"
+            android:icon="@drawable/ic_parent_online_video"
+            android:title="@string/online_video" />
+        <item
+            android:id="@+id/nav_study_material"
+            android:icon="@drawable/ic_menu_subject_chapter"
+            android:title="@string/studymaterial" />
+
+
+
+        <item
+            android:id="@+id/nav_assignment_list"
+            android:icon="@drawable/ic_menu_study_material"
+            android:title="@string/nav_assignment" />
+
+        <item
+            android:id="@+id/nav_descriptive_exam"
+            android:icon="@drawable/ic_menu_descriptive_exam"
+            android:title="@string/nav_descriptive" />
+
+        <item
+            android:id="@+id/nav_objective_exam"
+            android:icon="@drawable/ic_menu_descriptive_exam"
+            android:title="@string/nav_objective" />
+
+        <item
+            android:id="@+id/nav_enquiry"
+            android:icon="@drawable/ic_parent_enquiry"
+            android:title="@string/nav_enquiry" />
+
+        <item
+            android:id="@+id/nav_leave"
+            android:icon="@drawable/ic_menu_leave_note"
+            android:title="@string/nav_leave" />
+
+        <item
+            android:id="@+id/nav_fees"
+            android:icon="@drawable/ic_parent_fee_details"
+            android:title="@string/nav_fees" />
+
+        <item
+            android:id="@+id/nav_absent"
+            android:icon="@drawable/ic_menu_attendance"
+            android:title="@string/nav_absent" />
+
+        <item
+            android:id="@+id/nav_library"
+            android:icon="@drawable/ic_parent_library"
+            android:title="@string/nav_library" />
+
+
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/nav_gallery" />
+
+        <item
+            android:id="@+id/nav_calendar"
+            android:icon="@drawable/ic_parent_calendar"
+            android:title="@string/nav_calender" />
+
+        <item
+            android:id="@+id/nav_track"
+            android:icon="@drawable/ic_parent_conveyor"
+            android:title="@string/nav_track" />
+
+
+
+        <item
+            android:id="@+id/nav_progress"
+            android:icon="@drawable/ic_parent_progress_report"
+            android:title="@string/nav_progress" />
+        <item
+            android:id="@+id/nav_progress_cbse"
+            android:icon="@drawable/ic_parent_progress_report"
+            android:title="@string/nav_progress_cbse" />
+
+<!--        <item-->
+<!--            android:id="@+id/nav_progress_lpup"-->
+<!--            android:icon="@drawable/ic_parent_progress_report"-->
+<!--            android:title="@string/nav_progress_lpup" />-->
+
+        <item
+            android:id="@+id/nav_annual_report"
+            android:icon="@drawable/ic_menu_send_progress"
+            android:title="@string/nav_annual_report" />
+
+        <item
+            android:id="@+id/nav_conveyor"
+            android:icon="@drawable/ic_parent_conveyor"
+            android:title="@string/nav_conveyor" />
+
+        <item
+            android:id="@+id/nav_video_exam"
+            android:icon="@drawable/ic_parent_video"
+            android:title="@string/nav_video_exam" />
+
+
+        <item
+            android:id="@+id/nav_offline"
+            android:icon="@drawable/ic_parent_video"
+            android:title="@string/nav_offline" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_menu_logout"
+            android:title="@string/logout" />
+
+        <item
+            android:id="@+id/nav_clear_data"
+            android:icon="@drawable/ic_icon_delete_gray"
+            android:title="@string/clear_data" />
+    </group>
+</menu>

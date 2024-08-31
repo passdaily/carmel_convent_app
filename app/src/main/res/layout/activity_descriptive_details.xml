@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_100"
+    tools:context=".typeofuser.parent.assignment.AssignmentDetailActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:titleTextAppearance="@style/ToolbarTitleTheme"
+            app:popupTheme="@style/Theme.ParentApplication.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintGuide_percent="0.00" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.03" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline32"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.97" />
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintLayout13"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline32"
+                        app:layout_constraintStart_toStartOf="@+id/guideline31"
+                        app:layout_constraintTop_toTopOf="@+id/guideline15">
+
+
+                        <ImageView
+                            android:id="@+id/imageViewExamStatus"
+                            android:layout_width="@dimen/des_status_icon_size"
+                            android:layout_height="@dimen/des_status_icon_size"
+                            android:layout_marginTop="24dp"
+                            android:src="@drawable/ic_descriptive_take_test"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.497"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.0" />
+
+                        <TextView
+                            android:id="@+id/textViewExamStatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:textColor="@color/gray_600"
+                            android:textSize="@dimen/text_size_04"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="@+id/imageViewExamStatus"
+                            app:layout_constraintStart_toStartOf="@+id/imageViewExamStatus"
+                            app:layout_constraintTop_toBottomOf="@+id/imageViewExamStatus" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    <TextView
+                        android:id="@+id/textViewSubjectName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Biology"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_06"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline32"
+                        app:layout_constraintStart_toStartOf="@+id/guideline31"
+                        app:layout_constraintTop_toBottomOf="@+id/constraintLayout13" />
+
+
+                    <TextView
+                        android:id="@+id/textViewExamName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Half Yearly Examination"
+                        android:textColor="@color/gray_1k"
+                        android:textSize="@dimen/text_size_04"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline32"
+                        app:layout_constraintStart_toStartOf="@+id/textViewSubjectName"
+                        app:layout_constraintTop_toBottomOf="@+id/textViewSubjectName" />
+
+
+                    <TextView
+                        android:id="@+id/textViewDesc"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="4dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="TextView"
+                        android:textColor="@color/gray_500"
+                        android:textSize="@dimen/text_size_02"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline32"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="@+id/guideline31"
+                        app:layout_constraintTop_toBottomOf="@+id/textViewExamName" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline38"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.5" />
+
+
+                    <ImageView
+                        android:id="@+id/imageView37"
+                        android:layout_width="@dimen/des_icon_size"
+                        android:layout_height="@dimen/des_icon_size"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="24dp"
+                        app:layout_constraintEnd_toStartOf="@+id/textView45"
+                        app:layout_constraintStart_toStartOf="@+id/textViewDesc"
+                        app:layout_constraintTop_toBottomOf="@+id/textViewDesc"
+                        app:srcCompat="@drawable/ic_descriptive_duration_icon" />
+
+                    <TextView
+                        android:id="@+id/textView45"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/poppins_medium"
+                        android:maxLines="1"
+                        android:text="Duration"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_02"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline38"
+                        app:layout_constraintStart_toEndOf="@+id/imageView37"
+                        app:layout_constraintTop_toTopOf="@+id/imageView37" />
+
+                    <TextView
+                        android:id="@+id/textViewDuration"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/poppins_medium"
+                        android:maxLines="1"
+                        android:text="TextView"
+                        android:textColor="@color/gray_600"
+                        android:textSize="@dimen/text_size_02"
+                        app:layout_constraintEnd_toEndOf="@+id/textView45"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="@+id/textView45"
+                        app:layout_constraintTop_toBottomOf="@+id/textView45" />
+
+                    <ImageView
+                        android:id="@+id/imageView38"
+                        android:layout_width="@dimen/textbox_height"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="4dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageView37"
+                        app:layout_constraintStart_toStartOf="@+id/guideline38"
+                        app:layout_constraintTop_toTopOf="@+id/imageView37"
+                        app:srcCompat="@drawable/ic_descriptive_total_mark_icon" />
+
+                    <TextView
+                        android:id="@+id/textView48"
+                        android:layout_width="0dp"
+                        android:layout_height="19dp"
+                        android:layout_marginStart="8dp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/poppins_medium"
+                        android:maxLines="1"
+                        android:text="Total Mark"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_02"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline32"
+                        app:layout_constraintStart_toEndOf="@+id/imageView38"
+                        app:layout_constraintTop_toTopOf="@+id/imageView38" />
+
+                    <TextView
+                        android:id="@+id/textViewTotalMark"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="TextView"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/poppins_medium"
+                        android:maxLines="1"
+                        android:textColor="@color/gray_600"
+                        android:textSize="@dimen/text_size_02"
+                        app:layout_constraintBottom_toBottomOf="@+id/textViewDuration"
+                        app:layout_constraintEnd_toEndOf="@+id/textView48"
+                        app:layout_constraintStart_toStartOf="@+id/textView48"
+                        app:layout_constraintTop_toTopOf="@+id/textViewDuration" />
+
+                    <ImageView
+                        android:id="@+id/imageView39"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/des_icon_size"
+                        android:layout_marginTop="32dp"
+                        app:layout_constraintEnd_toEndOf="@+id/imageView37"
+                        app:layout_constraintStart_toStartOf="@+id/imageView37"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView37"
+                        app:srcCompat="@drawable/ic_descriptive_total_questions_icon" />
+
+                    <TextView
+                        android:id="@+id/textView51"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/poppins_medium"
+                        android:maxLines="1"
+                        android:text="Total Questions"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_02"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline38"
+                        app:layout_constraintStart_toStartOf="@+id/textView45"
+                        app:layout_constraintTop_toTopOf="@+id/imageView39" />
+
+                    <TextView
+                        android:id="@+id/textViewTotQues"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/poppins_medium"
+                        android:maxLines="1"
+                        android:text="TextView"
+                        android:textColor="@color/gray_600"
+                        android:textSize="@dimen/text_size_02"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline38"
+                        app:layout_constraintStart_toStartOf="@+id/textView51"
+                        app:layout_constraintTop_toBottomOf="@+id/textView51" />
+
+                    <ImageView
+                        android:id="@+id/imageView40"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageView39"
+                        app:layout_constraintEnd_toEndOf="@+id/imageView38"
+                        app:layout_constraintStart_toStartOf="@+id/imageView38"
+                        app:layout_constraintTop_toTopOf="@+id/imageView39"
+                        app:srcCompat="@drawable/ic_descriptive_pause_allowed_icon" />
+
+                    <TextView
+                        android:id="@+id/textView53"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/poppins_medium"
+                        android:maxLines="1"
+                        android:text="Pause Allowed"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_02"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline32"
+                        app:layout_constraintStart_toStartOf="@+id/textView48"
+                        app:layout_constraintTop_toTopOf="@+id/imageView40" />
+
+                    <TextView
+                        android:id="@+id/textViewPause"
+                        android:layout_width="0dp"
+                        android:layout_height="19dp"
+                        android:layout_marginTop="8dp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/poppins_medium"
+                        android:maxLines="1"
+                        android:text="TextView"
+                        android:textColor="@color/gray_600"
+                        android:textSize="@dimen/text_size_02"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline32"
+                        app:layout_constraintStart_toStartOf="@+id/textView53"
+                        app:layout_constraintTop_toBottomOf="@+id/textView53" />
+
+                    <ImageView
+                        android:id="@+id/imageView41"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/des_icon_size"
+                        android:layout_marginTop="32dp"
+                        app:layout_constraintEnd_toEndOf="@+id/imageView39"
+                        app:layout_constraintStart_toStartOf="@+id/imageView39"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView39"
+                        app:srcCompat="@drawable/ic_descriptive_start_date_icon" />
+
+                    <TextView
+                        android:id="@+id/textView55"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/poppins_medium"
+                        android:maxLines="1"
+                        android:text="Start Date"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_02"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline38"
+                        app:layout_constraintStart_toStartOf="@+id/textView51"
+                        app:layout_constraintTop_toTopOf="@+id/imageView41" />
+
+                    <TextView
+                        android:id="@+id/textViewStart"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="24dp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/poppins_medium"
+                        android:maxLines="1"
+                        android:text="TextView"
+                        android:textColor="@color/gray_600"
+                        android:textSize="@dimen/text_size_02"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline38"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="@+id/textView55"
+                        app:layout_constraintTop_toBottomOf="@+id/textView55"
+                        app:layout_constraintVertical_bias="1.0" />
+
+                    <ImageView
+                        android:id="@+id/imageView42"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageView41"
+                        app:layout_constraintEnd_toEndOf="@+id/imageView40"
+                        app:layout_constraintStart_toStartOf="@+id/imageView40"
+                        app:layout_constraintTop_toTopOf="@+id/imageView41"
+                        app:srcCompat="@drawable/ic_descriptive_end_date_icon" />
+
+                    <TextView
+                        android:id="@+id/textView57"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/poppins_medium"
+                        android:maxLines="1"
+                        android:text="End Date"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_02"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline32"
+                        app:layout_constraintStart_toStartOf="@+id/textView53"
+                        app:layout_constraintTop_toTopOf="@+id/imageView42" />
+
+                    <TextView
+                        android:id="@+id/textViewEnd"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/poppins_medium"
+                        android:maxLines="1"
+                        android:text="TextView"
+                        android:textColor="@color/gray_600"
+                        android:textSize="@dimen/text_size_02"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline32"
+                        app:layout_constraintStart_toStartOf="@+id/textView57"
+                        app:layout_constraintTop_toTopOf="@+id/textViewStart" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView13">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintGuide_percent="0.01" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline35"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.03" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline36"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.97" />
+
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline39"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.5" />
+
+                    <TextView
+                        android:id="@+id/textView40"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="2dp"
+                        android:text="Attempted  :"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_01"
+                        android:fontFamily="@font/poppins_regular"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        app:layout_constraintHorizontal_weight="1"
+                        app:layout_constraintEnd_toStartOf="@+id/textViewAttempted"
+                        app:layout_constraintStart_toStartOf="@+id/guideline35"
+                        app:layout_constraintTop_toTopOf="@+id/guideline16" />
+
+                    <TextView
+                        android:id="@+id/textViewAttempted"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginEnd="2dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Not Yet "
+                        android:gravity="center"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textColor="@color/red_300"
+                        android:textSize="@dimen/text_size_01"
+                        app:layout_constraintHorizontal_weight="1.3"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView40"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline39"
+                        app:layout_constraintStart_toEndOf="@+id/textView40"
+                        app:layout_constraintTop_toTopOf="@+id/textView40"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <TextView
+                        android:id="@+id/textView59"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Answered   :"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_01"
+                        android:fontFamily="@font/poppins_regular"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        app:layout_constraintEnd_toEndOf="@+id/textView40"
+                        app:layout_constraintStart_toStartOf="@+id/guideline35"
+                        app:layout_constraintTop_toBottomOf="@+id/textView40" />
+
+                    <TextView
+                        android:id="@+id/textAnsweredQuestion"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="2dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_01"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="center"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView59"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline39"
+                        app:layout_constraintStart_toStartOf="@+id/textViewAttempted"
+                        app:layout_constraintTop_toTopOf="@+id/textView59" />
+
+                    <TextView
+                        android:id="@+id/textView61"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginEnd="2dp"
+                        android:text="Pause Count : "
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_01"
+                        android:fontFamily="@font/poppins_regular"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        app:layout_constraintHorizontal_weight="1"
+                        app:layout_constraintBottom_toBottomOf="@+id/textViewAttempted"
+                        app:layout_constraintEnd_toStartOf="@+id/textViewPauseCount"
+                        app:layout_constraintStart_toStartOf="@+id/guideline39"
+                        app:layout_constraintTop_toTopOf="@+id/textViewAttempted" />
+
+                    <TextView
+                        android:id="@+id/textViewPauseCount"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_01"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="center"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        app:layout_constraintHorizontal_weight="1.3"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView61"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline36"
+                        app:layout_constraintStart_toEndOf="@+id/textView61"
+                        app:layout_constraintTop_toTopOf="@+id/textView61" />
+
+                    <TextView
+                        android:id="@+id/textView63"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:text="Status            :"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_01"
+                        android:fontFamily="@font/poppins_regular"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        app:layout_constraintBottom_toBottomOf="@+id/textAnsweredQuestion"
+                        app:layout_constraintEnd_toEndOf="@+id/textView61"
+                        app:layout_constraintStart_toStartOf="@+id/guideline39"
+                        app:layout_constraintTop_toTopOf="@+id/textAnsweredQuestion" />
+
+                    <TextView
+                        android:id="@+id/textViewStatus"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_01"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="center"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView63"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline36"
+                        app:layout_constraintStart_toStartOf="@+id/textViewPauseCount"
+                        app:layout_constraintTop_toTopOf="@+id/textView63" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:visibility="gone"
+                        android:id="@+id/buttonTakeTest"
+                        style="@style/RoundedCornerButtonGreen400"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/textbox_height"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginBottom="12dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Take Exam"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/fourteen_sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline36"
+                        app:layout_constraintStart_toStartOf="@+id/guideline35"
+                        app:layout_constraintTop_toBottomOf="@+id/textView59" />
+
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:visibility="gone"
+                        android:id="@+id/buttonResumeTest"
+                        style="@style/RoundedCornerButtonOrange400"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/textbox_height"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginBottom="12dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Resume Exam"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/fourteen_sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline36"
+                        app:layout_constraintStart_toStartOf="@+id/guideline35"
+                        app:layout_constraintTop_toBottomOf="@+id/textView59" />
+
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:visibility="gone"
+                        android:id="@+id/buttonViewResult"
+                        style="@style/RoundedCornerButtonGreen400"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/textbox_height"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginBottom="12dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="View Result"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/fourteen_sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline36"
+                        app:layout_constraintStart_toStartOf="@+id/guideline35"
+                        app:layout_constraintTop_toBottomOf="@+id/textView59" />
+
+
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:visibility="gone"
+                        android:id="@+id/buttonNoInternet"
+                        style="@style/RoundedCornerButtonGray300"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/textbox_height"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginBottom="12dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="No Internet"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/fourteen_sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline36"
+                        app:layout_constraintStart_toStartOf="@+id/guideline35"
+                        app:layout_constraintTop_toBottomOf="@+id/textView59" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

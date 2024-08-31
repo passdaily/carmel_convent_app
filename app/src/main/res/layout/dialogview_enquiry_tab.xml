@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline46"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.33" />
+
+
+        <ImageView
+            android:id="@+id/imageViewBg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline46"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_rejected" />
+
+
+        <ImageView
+            android:id="@+id/imageViewClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewState"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageViewBg"
+            app:srcCompat="@drawable/ic_close_gray" />
+
+        <TextView
+            android:id="@+id/textViewStudent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Student Name : Arun"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_04"
+            app:layout_constraintEnd_toEndOf="@+id/imageViewClose"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewBg" />
+
+        <TextView
+            android:id="@+id/textViewRollNo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Roll.No : 30"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_02"
+            app:layout_constraintEnd_toEndOf="@+id/textViewStudent"
+            app:layout_constraintStart_toStartOf="@+id/textViewStudent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewStudent" />
+
+        <TextView
+            android:id="@+id/textViewDesc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="you can modify the following for the textview. Also the parameters for setCompound drawable has option for drawable right,"
+            android:textColor="@color/dark_gray_800"
+            android:textSize="@dimen/text_size_02"
+            app:layout_constraintEnd_toEndOf="@+id/textViewTitle"
+            app:layout_constraintStart_toStartOf="@+id/textViewRollNo"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
+
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="you can modify the following for the textview."
+            android:textColor="@color/dark_gray_800"
+            android:textSize="@dimen/text_size_02"
+            app:layout_constraintEnd_toEndOf="@+id/imageViewClose"
+            app:layout_constraintStart_toStartOf="@+id/textViewRollNo"
+            app:layout_constraintTop_toBottomOf="@+id/textViewRollNo" />
+
+        <TextView
+            android:id="@+id/textViewState"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Replied"
+            android:textSize="@dimen/text_size_02"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewBg"
+            app:layout_constraintEnd_toStartOf="@+id/guideline46"
+            app:layout_constraintStart_toStartOf="@+id/imageViewBg"
+            app:layout_constraintTop_toTopOf="@+id/imageViewBg" />
+
+<!--        <TextView-->
+<!--            android:id="@+id/textViewStart"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:drawablePadding="5dp"-->
+<!--            android:fontFamily="@font/poppins_regular"-->
+<!--            android:text="From : 11,May 2022"-->
+<!--            android:textColor="@color/dark_gray_800"-->
+<!--            android:textSize="@dimen/text_size_02"-->
+<!--            app:drawableStartCompat="@drawable/ic_date_icon"-->
+<!--            app:layout_constraintEnd_toStartOf="@+id/textViewEnd"-->
+<!--            app:layout_constraintStart_toStartOf="@+id/textViewDesc"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/textViewDesc" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textViewEnd"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="4dp"-->
+<!--            android:fontFamily="@font/poppins_regular"-->
+<!--            android:text="To : 11,May 2022"-->
+<!--            android:textColor="@color/dark_gray_800"-->
+<!--            android:textSize="@dimen/text_size_02"-->
+<!--            android:drawablePadding="5dp"-->
+<!--            app:drawableStartCompat="@drawable/ic_date_icon"-->
+<!--            app:layout_constraintBottom_toBottomOf="@+id/textViewStart"-->
+<!--            app:layout_constraintEnd_toEndOf="@+id/textViewDesc"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/textViewStart"-->
+<!--            app:layout_constraintTop_toTopOf="@+id/textViewStart" />-->
+
+
+        <View
+            android:id="@+id/view38"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/gray_200"
+            app:layout_constraintEnd_toEndOf="@+id/textViewDesc"
+            app:layout_constraintStart_toStartOf="@+id/textViewDesc"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDesc" />
+
+
+        <TextView
+            android:id="@+id/textViewEnd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/reply"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_02"
+            app:layout_constraintEnd_toEndOf="@+id/view38"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/view38"
+            app:layout_constraintTop_toBottomOf="@+id/view38" />
+
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/textViewReply"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="you can modify the following for the textview."
+            android:textColor="@color/dark_gray_800"
+            android:textSize="@dimen/text_size_02"
+            app:layout_constraintEnd_toEndOf="@+id/textViewEnd"
+            app:layout_constraintStart_toStartOf="@+id/textViewEnd"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/textViewDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="11, May 2022"
+            android:textColor="@color/dark_gray_800"
+            android:textSize="@dimen/text_size_02"
+            app:drawableStartCompat="@drawable/ic_date_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/textViewReply"
+            app:layout_constraintStart_toStartOf="@+id/textViewReply"
+            app:layout_constraintTop_toBottomOf="@+id/textViewReply" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:visibility="gone"
+            android:id="@+id/textInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"
+            app:layout_constraintEnd_toEndOf="@+id/textViewEnd"
+            app:layout_constraintStart_toStartOf="@+id/textViewEnd"
+            app:layout_constraintTop_toBottomOf="@+id/textViewEnd">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextDesc"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="top|start"
+                android:hint="@string/reply"
+                android:inputType="text|textMultiLine"
+                android:lines="20"
+                android:minLines="5"
+                android:scrollbars="vertical"
+                android:scrollHorizontally="false"
+                android:textColor="@color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!--        <androidx.cardview.widget.CardView-->
+<!--            android:visibility="gone"-->
+<!--            android:id="@+id/approveButton"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="@dimen/des_icon_size"-->
+<!--            android:layout_marginTop="4dp"-->
+<!--            android:layout_marginEnd="4dp"-->
+<!--            android:layout_marginBottom="12dp"-->
+<!--            app:cardBackgroundColor="@color/green_100"-->
+<!--            app:cardCornerRadius="8dp"-->
+<!--            app:cardElevation="0dp"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="@+id/textViewStart"-->
+<!--            app:layout_constraintHorizontal_bias="0.0"-->
+<!--            app:layout_constraintStart_toStartOf="@+id/textViewStart"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/view38"-->
+<!--            app:layout_constraintVertical_bias="0.0">-->
+
+
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:fontFamily="@font/roboto_medium"-->
+<!--                android:text="@string/approve"-->
+<!--                android:textColor="@color/green_400"-->
+<!--                android:textSize="@dimen/text_size_02"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+
+<!--        </androidx.cardview.widget.CardView>-->
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:visibility="gone"
+            android:id="@+id/sendButton"
+            style="@style/RoundedCornerButtonGreen400"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="16dp"
+            android:text="send"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/textInputLayout"
+            app:layout_constraintStart_toStartOf="@+id/textInputLayout"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

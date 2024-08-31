@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".typeofuser.parent.assignment.AssignmentDetailActivity">
+
+<!--    <com.google.android.material.appbar.AppBarLayout-->
+<!--        android:id="@+id/appBarLayout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:elevation="0dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+
+<!--        <androidx.appcompat.widget.Toolbar-->
+<!--            android:id="@+id/toolbar"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="?attr/actionBarSize"-->
+<!--            android:background="@color/white"-->
+<!--            app:titleTextColor="@color/black"-->
+<!--            app:titleTextAppearance="@style/ToolbarTitleTheme"-->
+<!--            app:popupTheme="@style/Theme.ParentApplication.PopupOverlay" />-->
+
+<!--    </com.google.android.material.appbar.AppBarLayout>-->
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.005" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.02" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintGuide_percent="0.98" />
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            style="@style/MyCustomTabLayoutResult"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            app:layout_constraintEnd_toStartOf="@+id/guideline32"
+            app:layout_constraintStart_toStartOf="@+id/guideline31"
+            app:layout_constraintTop_toTopOf="@+id/guideline15"
+            app:tabBackground="@drawable/tab_color_result"
+            app:tabSelectedTextColor="@color/white"
+            app:tabMode="fixed"
+            app:tabMaxWidth="0dp"
+            android:textAlignment="center"
+            app:tabGravity="fill"
+            app:tabIndicatorHeight="0dp"
+            app:tabIndicator="@color/green_600"
+            app:tabPaddingStart="2dp"
+            app:tabTextColor="@color/black"  />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_below="@+id/tabLayout"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline32"
+            app:layout_constraintStart_toStartOf="@+id/guideline31"
+            app:layout_constraintTop_toBottomOf="@+id/tabLayout"
+            app:layout_constraintVertical_bias="0.505" />
+
+
+        <!--        &lt;!&ndash;This will be the parent Floating Action Button&ndash;&gt;-->
+        <!--        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton-->
+        <!--            android:id="@+id/addFab"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_gravity="end"-->
+        <!--            android:layout_marginEnd="16dp"-->
+        <!--            android:layout_marginBottom="16dp"-->
+        <!--            android:backgroundTint="@color/green_600"-->
+        <!--            android:text="Gallery"-->
+        <!--            android:fontFamily="@font/roboto_medium"-->
+        <!--            android:textColor="@color/white"-->
+        <!--            app:icon="@drawable/ic_image_plus"-->
+        <!--            app:iconTint="@color/white"-->
+        <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent" />-->
+        <!--        &lt;!&ndash;Floating action button for add alarm&ndash;&gt;-->
+        <!--        <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+        <!--            android:id="@+id/addVideoFab"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginBottom="24dp"-->
+        <!--            android:backgroundTint="@color/green_600"-->
+        <!--            app:fabSize="normal"-->
+        <!--            app:tint="@color/white"-->
+        <!--            app:layout_constraintBottom_toTopOf="@+id/addFab"-->
+        <!--            app:layout_constraintEnd_toEndOf="@+id/addFab"-->
+        <!--            app:srcCompat="@drawable/ic_video_library"-->
+        <!--            android:contentDescription="@string/app_name" />-->
+        <!--        &lt;!&ndash;Action name text for the add alarm button&ndash;&gt;-->
+        <!--        <TextView-->
+        <!--            android:id="@+id/addVideoTextView"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginEnd="8dp"-->
+        <!--            android:text="Add Video"-->
+        <!--            android:fontFamily="@font/roboto_medium"-->
+        <!--            android:textColor="@color/white"-->
+        <!--            android:textSize="@dimen/text_size_02"-->
+        <!--            app:layout_constraintBottom_toBottomOf="@+id/addVideoFab"-->
+        <!--            app:layout_constraintEnd_toStartOf="@+id/addVideoFab"-->
+        <!--            app:layout_constraintTop_toTopOf="@+id/addVideoFab" />-->
+        <!--        &lt;!&ndash;Floating action button for add person&ndash;&gt;-->
+        <!--        <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+        <!--            android:id="@+id/addImageFab"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginBottom="24dp"-->
+        <!--            android:backgroundTint="@color/green_600"-->
+        <!--            app:fabSize="normal"-->
+        <!--            app:tint="@color/white"-->
+        <!--            app:layout_constraintBottom_toTopOf="@+id/addVideoFab"-->
+        <!--            app:layout_constraintEnd_toEndOf="@+id/addVideoFab"-->
+        <!--            app:layout_constraintStart_toStartOf="@+id/addVideoFab"-->
+        <!--            app:srcCompat="@drawable/ic_image_view"-->
+        <!--            android:contentDescription="@string/app_name" />-->
+        <!--        &lt;!&ndash;Action name text for the add person button&ndash;&gt;-->
+        <!--        <TextView-->
+        <!--            android:id="@+id/addImageTextView"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginEnd="4dp"-->
+        <!--            android:text="Add Image"-->
+        <!--            android:padding="5dp"-->
+        <!--            android:fontFamily="@font/roboto_medium"-->
+        <!--            android:textColor="@color/white"-->
+        <!--            android:textSize="@dimen/text_size_02"-->
+        <!--            app:layout_constraintBottom_toBottomOf="@+id/addImageFab"-->
+        <!--            app:layout_constraintEnd_toStartOf="@+id/addImageFab"-->
+        <!--            app:layout_constraintTop_toTopOf="@+id/addImageFab" />-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+
+        android:id="@+id/shimmerViewContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline321"
+        app:layout_constraintStart_toStartOf="@+id/guideline311"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <include layout="@layout/shimmer_tab_layout" />
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

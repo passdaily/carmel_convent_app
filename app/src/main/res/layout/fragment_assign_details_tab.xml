@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintFirstLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="2dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:id="@+id/textViewTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="4dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Content Testing, which is also"
+                        android:textColor="@color/dark_gray_700"
+                        android:textSize="@dimen/text_size_02"
+                        app:layout_constraintEnd_toStartOf="@+id/textViewClass"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textViewClass"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginEnd="8dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="end"
+                        android:text="Class  : VII-B"
+                        android:textColor="@color/dark_gray_700"
+                        android:textSize="@dimen/text_size_02"
+                        app:layout_constraintBottom_toBottomOf="@+id/textViewTitle"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/textViewTitle"
+                        app:layout_constraintTop_toTopOf="@+id/textViewTitle"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <TextView
+                        android:id="@+id/textSubject"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/poppins_regular"
+                        android:maxLines="4"
+                        android:text="Subject : Biology"
+                        android:textColor="@color/dark_gray_800"
+                        android:textSize="@dimen/text_size_02"
+                        app:layout_constraintEnd_toEndOf="@+id/textViewClass"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="@+id/textViewTitle"
+                        app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
+
+                    <TextView
+                        android:id="@+id/textStartDate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="2dp"
+                        android:drawablePadding="5dp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/poppins_regular"
+                        android:maxLines="1"
+                        android:text="11 may 2022"
+                        android:textColor="@color/dark_gray_800"
+                        android:textSize="@dimen/text_size_02"
+                        app:drawableStartCompat="@drawable/ic_date_icon"
+                        app:layout_constraintEnd_toStartOf="@+id/textEndDate"
+                        app:layout_constraintStart_toStartOf="@+id/textSubject"
+                        app:layout_constraintTop_toBottomOf="@+id/textSubject" />
+
+                    <TextView
+                        android:id="@+id/textEndDate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:drawablePadding="5dp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/poppins_regular"
+                        android:maxLines="1"
+                        android:text="11 may 2022"
+                        android:textColor="@color/dark_gray_800"
+                        android:textSize="@dimen/text_size_02"
+                        app:drawableStartCompat="@drawable/ic_date_icon"
+                        app:layout_constraintBottom_toBottomOf="@+id/textStartDate"
+                        app:layout_constraintEnd_toEndOf="@+id/textSubject"
+                        app:layout_constraintStart_toEndOf="@+id/textStartDate"
+                        app:layout_constraintTop_toTopOf="@+id/textStartDate" />
+
+                    <TextView
+                        android:id="@+id/textOutOffMark"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:drawablePadding="5dp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/poppins_regular"
+                        android:maxLines="1"
+                        android:text="Out Off Mark : 10"
+                        android:textColor="@color/dark_gray_800"
+                        android:textSize="@dimen/text_size_02"
+                        app:drawableStartCompat="@drawable/ic_checked_green_aqua"
+                        app:layout_constraintEnd_toEndOf="@+id/textStartDate"
+                        app:layout_constraintStart_toStartOf="@+id/textStartDate"
+                        app:layout_constraintTop_toBottomOf="@+id/textStartDate" />
+
+                    <TextView
+                        android:id="@+id/textTotalSubmission"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="5dp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/poppins_regular"
+                        android:maxLines="1"
+                        android:text="Total Submission : 6 / 10"
+                        android:textColor="@color/dark_gray_800"
+                        android:textSize="@dimen/text_size_02"
+                        app:drawableStartCompat="@drawable/ic_half_checked"
+                        app:layout_constraintBottom_toBottomOf="@+id/textOutOffMark"
+                        app:layout_constraintEnd_toEndOf="@+id/textEndDate"
+                        app:layout_constraintStart_toStartOf="@+id/textEndDate"
+                        app:layout_constraintTop_toTopOf="@+id/textOutOffMark" />
+
+                    <info.passdaily.camrelconvertapp.services.ShowMoreTextView
+                        android:id="@+id/textDescription"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/test_description"
+                        android:textColor="@color/gray_color100"
+                        android:textSize="@dimen/text_size_02"
+                        app:layout_constraintEnd_toEndOf="@+id/textTotalSubmission"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="@+id/textOutOffMark"
+                        app:layout_constraintTop_toBottomOf="@+id/textOutOffMark" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerViewStaffList"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="12dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/textDescription"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="@+id/textDescription"
+                        app:layout_constraintTop_toBottomOf="@+id/textDescription"
+                        app:layout_constraintVertical_bias="0.0" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="2dp"
+                app:layout_constraintEnd_toEndOf="@+id/cardView22"
+                app:layout_constraintStart_toStartOf="@+id/cardView22"
+                app:layout_constraintTop_toBottomOf="@+id/cardView22" >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:id="@+id/textView95"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Submitted Student"
+                        android:textColor="@color/dark_gray_700"
+                        android:textSize="@dimen/text_size_02"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerViewList"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="16dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/textView95"
+                        app:layout_constraintStart_toStartOf="@+id/textView95"
+                        app:layout_constraintTop_toBottomOf="@+id/textView95" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

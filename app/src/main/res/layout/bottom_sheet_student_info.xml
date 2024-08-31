@@ -1,0 +1,1713 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    app:behavior_hideable="false"
+    app:behavior_fitToContents="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="100dp"
+                android:layout_height="3dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/gray_400"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/textDeleteIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:drawableLeft="@drawable/ic_icon_delete_gray"
+                android:drawablePadding="@dimen/text_size_03"
+                android:drawableTint="@color/fresh_red_200"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center_vertical"
+                android:text="Delete"
+                android:textColor="@color/fresh_red_200"
+                android:textSize="@dimen/text_size_02"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/view2"
+                app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.02" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.01" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.99" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/shapeImageView"
+                android:layout_width="@dimen/nav_count_box_width"
+                android:layout_height="@dimen/nav_count_box_width"
+                android:layout_marginTop="24dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_user_profile"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textDeleteIcon"
+                app:shapeAppearanceOverlay="@style/ShapeAppearance.ImageView" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayoutNext"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/constraintLayoutPreview"
+                app:layout_constraintEnd_toStartOf="@+id/guideline34"
+                app:layout_constraintTop_toTopOf="@+id/constraintLayoutPreview">
+
+
+                <TextView
+                    android:id="@+id/textViewNext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Next"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_02"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView53"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView53"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textViewNext"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textViewNext"
+                    app:layout_constraintTop_toTopOf="@+id/textViewNext"
+                    app:srcCompat="@drawable/ic_exam_right_arrow"
+                    app:tint="@color/black" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayoutPreview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/shapeImageView"
+                app:layout_constraintStart_toStartOf="@+id/guideline33"
+                app:layout_constraintTop_toBottomOf="@+id/view2"
+                app:layout_constraintVertical_bias="0.52">
+
+
+                <TextView
+                    android:id="@+id/textViewPre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Prev"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_02"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView54"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView54"
+                    android:layout_width="7dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textViewPre"
+                    app:layout_constraintEnd_toStartOf="@+id/textViewPre"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/textViewPre"
+                    app:layout_constraintVertical_bias="0.384"
+                    app:srcCompat="@drawable/ic_exam_left_arrow"
+                    app:tint="@color/black" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imageViewPlus"
+                android:layout_width="@dimen/right_margin"
+                android:layout_height="@dimen/right_margin"
+                android:background="@color/green_light100"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_image_plus"
+                app:layout_constraintBottom_toBottomOf="@+id/shapeImageView"
+                app:layout_constraintEnd_toEndOf="@+id/shapeImageView"
+                app:shapeAppearanceOverlay="@style/ShapeAppearance.ImageView" />
+
+            <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+            <!--            android:layout_width="0dp"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:layout_marginTop="16dp"-->
+            <!--            app:layout_constraintEnd_toStartOf="@+id/guideline34"-->
+            <!--            app:layout_constraintStart_toStartOf="parent"-->
+            <!--            app:layout_constraintTop_toBottomOf="@+id/shapeImageView">-->
+
+
+            <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonSubmit"
+                style="@style/RoundedCornerButtonGreen400"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/screen_width"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:text="@string/submit"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_01"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewClass"
+                app:layout_constraintEnd_toEndOf="@+id/constraintLayoutNext"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/shapeImageView"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayoutNext"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonCancel"
+                style="@style/RoundedCornerButtonGray500"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:text="@string/cancel"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_01"
+                app:layout_constraintBottom_toBottomOf="@+id/buttonSubmit"
+                app:layout_constraintEnd_toStartOf="@+id/shapeImageView"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/constraintLayoutPreview"
+                app:layout_constraintTop_toTopOf="@+id/buttonSubmit"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textViewClass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="TextView"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_01"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/buttonSubmit"
+                app:layout_constraintStart_toEndOf="@+id/buttonCancel"
+                app:layout_constraintTop_toBottomOf="@+id/shapeImageView" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedScrollView5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/constraintLayout"
+            android:layout_alignParentEnd="true"
+            android:fillViewport="true"
+            android:overScrollMode="always"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.02" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.98" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Admission Details"
+                    android:textColor="@color/green_400"
+                    android:textSize="@dimen/text_size_02"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline32"
+                    app:layout_constraintStart_toStartOf="@+id/guideline31"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:id="@+id/textInputLayout1"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline32"
+                    app:layout_constraintStart_toStartOf="@+id/guideline31"
+                    app:layout_constraintTop_toBottomOf="@+id/textView114">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editStudentName"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="top|start"
+                        android:hint="@string/student_name_asterisk"
+                        android:inputType="text"
+                        android:scrollbars="vertical"
+                        android:scrollHorizontally="false"
+                        android:textColor="@color/black" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout2"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline32"
+                    app:layout_constraintStart_toStartOf="@+id/guideline31"
+                    app:layout_constraintTop_toBottomOf="@+id/textView19">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editAdmissionNumber"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="top|start"
+                        android:hint="@string/admission_no"
+                        android:scrollbars="vertical"
+                        android:scrollHorizontally="false"
+                        android:textColor="@color/black" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout25"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline32"
+                    app:layout_constraintStart_toStartOf="@+id/guideline31"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout2">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editAdmissionDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/ic_date_icon"
+                        android:focusable="false"
+                        android:fontFamily="@font/poppins_regular"
+                        android:hint="@string/admission_date"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_02" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!--            <com.google.android.material.textfield.TextInputLayout-->
+                <!--                android:id="@+id/textInputLayout3"-->
+                <!--                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+                <!--                android:layout_width="0dp"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:layout_marginTop="8dp"-->
+                <!--                android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"-->
+                <!--                app:layout_constraintEnd_toEndOf="@+id/textInputLayout25"-->
+                <!--                app:layout_constraintStart_toStartOf="@+id/textInputLayout25"-->
+                <!--                app:layout_constraintTop_toBottomOf="@+id/textInputLayout25">-->
+
+
+                <!--                <com.google.android.material.textfield.TextInputEditText-->
+                <!--                    android:id="@+id/editRollNumber"-->
+                <!--                    android:layout_width="fill_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:fontFamily="@font/poppins_regular"-->
+                <!--                    android:gravity="top|start"-->
+                <!--                    android:hint="@string/roll_number"-->
+                <!--                    android:scrollbars="vertical"-->
+                <!--                    android:scrollHorizontally="false"-->
+                <!--                    android:textColor="@color/black" />-->
+
+                <!--            </com.google.android.material.textfield.TextInputLayout>-->
+
+
+
+
+<!--                <com.google.android.material.textfield.TextInputLayout-->
+<!--                    android:id="@+id/textInputLayout5"-->
+<!--                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="8dp"-->
+<!--                    android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"-->
+<!--                    app:layout_constraintEnd_toStartOf="@+id/guideline32"-->
+<!--                    app:layout_constraintHorizontal_bias="1.0"-->
+<!--                    app:layout_constraintStart_toStartOf="@+id/guideline31"-->
+<!--                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout1">-->
+
+
+<!--                    <com.google.android.material.textfield.TextInputEditText-->
+<!--                        android:id="@+id/editClassName"-->
+<!--                        android:layout_width="fill_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:fontFamily="@font/poppins_regular"-->
+<!--                        android:gravity="top|start"-->
+<!--                        android:hint="@string/class_name"-->
+<!--                        android:scrollbars="vertical"-->
+<!--                        android:scrollHorizontally="false"-->
+<!--                        android:textColor="@color/black" />-->
+
+<!--                </com.google.android.material.textfield.TextInputLayout>-->
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout4"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline32"
+                    app:layout_constraintStart_toStartOf="@+id/guideline31"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout1">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editDobText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/ic_date_icon"
+                        android:focusable="false"
+                        android:fontFamily="@font/poppins_regular"
+                        android:hint="@string/dob"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_02" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <RelativeLayout
+                    android:id="@+id/textInputLayout6"
+                    android:layout_width="0dp"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="4dp"
+                    android:background="@drawable/bg_spinner"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline32"
+                    app:layout_constraintStart_toStartOf="@+id/guideline31"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout4">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginBottom="3dp">
+
+                        <androidx.appcompat.widget.AppCompatSpinner
+                            android:id="@+id/spinnerGender"
+                            style="@style/spinner_style2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="-3dp"
+                        android:background="@color/white"
+                        android:fontFamily="@font/poppins_light_italic"
+                        android:paddingStart="3dp"
+                        android:paddingEnd="3dp"
+                        android:text="@string/select_gender_asterisk"
+                        android:textColor="@color/dark_gray_700"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout7"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline32"
+                    app:layout_constraintStart_toStartOf="@+id/guideline31"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout6">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editBloodGroup"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="top|start"
+                        android:hint="@string/blood_group"
+                        android:scrollbars="vertical"
+                        android:scrollHorizontally="false"
+                        android:textColor="@color/black" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+<!--                <RelativeLayout-->
+<!--                    android:id="@+id/textInputLayout7"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="?attr/actionBarSize"-->
+<!--                    android:layout_marginTop="8dp"-->
+<!--                    android:layout_marginEnd="4dp"-->
+<!--                    android:background="@drawable/bg_spinner"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    app:layout_constraintEnd_toStartOf="@+id/guideline32"-->
+<!--                    app:layout_constraintStart_toStartOf="@+id/guideline31"-->
+<!--                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout6">-->
+
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_marginStart="3dp"-->
+<!--                        android:layout_marginBottom="3dp">-->
+
+<!--                        <androidx.appcompat.widget.AppCompatSpinner-->
+<!--                            android:id="@+id/spinnerBlood"-->
+<!--                            style="@style/spinner_style2"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="match_parent" />-->
+<!--                    </LinearLayout>-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/accedemicText"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginStart="12dp"-->
+<!--                        android:layout_marginTop="-3dp"-->
+<!--                        android:background="@color/white"-->
+<!--                        android:fontFamily="@font/poppins_light_italic"-->
+<!--                        android:paddingStart="3dp"-->
+<!--                        android:paddingEnd="3dp"-->
+<!--                        android:text="@string/select_blood_group"-->
+<!--                        android:textColor="@color/dark_gray_700"-->
+<!--                        android:textSize="12sp" />-->
+<!--                </RelativeLayout>-->
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout11"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"
+                    app:layout_constraintEnd_toEndOf="@+id/textInputLayout10"
+                    app:layout_constraintStart_toStartOf="@+id/textInputLayout10"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout7">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editBirthPlace"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="top|start"
+                        android:hint="@string/birth_place"
+                        android:scrollbars="vertical"
+                        android:scrollHorizontally="false"
+                        android:textColor="@color/black" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout30"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline32"
+                    app:layout_constraintStart_toStartOf="@+id/guideline31"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout11">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editBirthPlaceTaluk"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="top|start"
+                        android:hint="@string/birth_place_taluk"
+                        android:scrollbars="vertical"
+                        android:scrollHorizontally="false"
+                        android:textColor="@color/black" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout31"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline32"
+                    app:layout_constraintStart_toStartOf="@+id/guideline31"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout30">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editBirthPlaceDistrict"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="top|start"
+                        android:hint="@string/birth_place_district"
+                        android:scrollbars="vertical"
+                        android:scrollHorizontally="false"
+                        android:textColor="@color/black" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout32"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline32"
+                    app:layout_constraintStart_toStartOf="@+id/guideline31"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout31">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editBirthPlaceState"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="top|start"
+                        android:hint="@string/birth_place_state"
+                        android:scrollbars="vertical"
+                        android:scrollHorizontally="false"
+                        android:textColor="@color/black" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout8"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline32"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guideline31"
+                    app:layout_constraintTop_toBottomOf="@+id/textView115">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editFatherName"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="top|start"
+                        android:hint="@string/father_name_astrick"
+                        android:scrollbars="vertical"
+                        android:scrollHorizontally="false"
+                        android:textColor="@color/black" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout9"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline32"
+                    app:layout_constraintStart_toStartOf="@+id/guideline31"
+                    app:layout_constraintTop_toBottomOf="@+id/textView117">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editMotherName"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="top|start"
+                        android:hint="@string/mother_name"
+                        android:scrollbars="vertical"
+                        android:scrollHorizontally="false"
+                        android:textColor="@color/black" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout37"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline32"
+                    app:layout_constraintStart_toStartOf="@+id/guideline31"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout9">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editMotherNumber"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="top|start"
+                        android:hint="@string/mobile_number"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:scrollbars="vertical"
+                        android:scrollHorizontally="false"
+                        android:textColor="@color/black" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout10"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline32"
+                    app:layout_constraintStart_toStartOf="@+id/guideline31"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout8">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editMobileNumber"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="top|start"
+                        android:hint="@string/mobile_number_asterisk"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:scrollbars="vertical"
+                        android:scrollHorizontally="false"
+                        android:textColor="@color/black" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout12"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline32"
+                    app:layout_constraintStart_toStartOf="@+id/guideline31"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout32">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editNationality"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="top|start"
+                        android:hint="@string/nationallity"
+                        android:scrollbars="vertical"
+                        android:scrollHorizontally="false"
+                        android:textColor="@color/black" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout13"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline32"
+                    app:layout_constraintStart_toStartOf="@+id/guideline31"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout12">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editMotherTongue"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="top|start"
+                        android:hint="@string/mother_tongue"
+                        android:scrollbars="vertical"
+                        android:scrollHorizontally="false"
+                        android:textColor="@color/black" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout14"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline32"
+                    app:layout_constraintStart_toStartOf="@+id/guideline31"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout15">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editCaste"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="top|start"
+                        android:hint="@string/caste"
+                        android:scrollbars="vertical"
+                        android:scrollHorizontally="false"
+                        android:textColor="@color/black" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout33"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline32"
+                    app:layout_constraintStart_toStartOf="@+id/guideline31"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout14">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editCasteType"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="top|start"
+                        android:hint="@string/caste_type"
+                        android:scrollbars="vertical"
+                        android:scrollHorizontally="false"
+                        android:textColor="@color/black" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout15"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline32"
+                    app:layout_constraintStart_toStartOf="@+id/guideline31"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout13">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editReligion"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="top|start"
+                        android:hint="@string/religion"
+                        android:scrollbars="vertical"
+                        android:scrollHorizontally="false"
+                        android:textColor="@color/black" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout16"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline32"
+                    app:layout_constraintStart_toStartOf="@+id/guideline31"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout33">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editLastStudied"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="top|start"
+                        android:hint="@string/last_studied"
+                        android:scrollbars="vertical"
+                        android:scrollHorizontally="false"
+                        android:textColor="@color/black" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout17"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline32"
+                    app:layout_constraintStart_toStartOf="@+id/guideline31"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout16">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editPermanentAddress"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="top|start"
+                        android:hint="@string/permanent_address"
+                        android:scrollbars="vertical"
+                        android:scrollHorizontally="false"
+                        android:textColor="@color/black" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout34"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline32"
+                    app:layout_constraintStart_toStartOf="@+id/guideline31"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout17">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editCurrentAddress"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="top|start"
+                        android:hint="@string/current_address"
+                        android:scrollbars="vertical"
+                        android:scrollHorizontally="false"
+                        android:textColor="@color/black" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout35"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline32"
+                    app:layout_constraintStart_toStartOf="@+id/guideline31"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout34">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editSsclRegNumber"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="top|start"
+                        android:hint="@string/sscl_reg_number"
+                        android:scrollbars="vertical"
+                        android:scrollHorizontally="false"
+                        android:textColor="@color/black" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout36"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline32"
+                    app:layout_constraintStart_toStartOf="@+id/guideline31"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout35">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editAadharNumber"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="top|start"
+                        android:hint="@string/aadhar_number"
+                        android:scrollbars="vertical"
+                        android:scrollHorizontally="false"
+                        android:textColor="@color/black" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout18"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline32"
+                    app:layout_constraintStart_toStartOf="@+id/guideline31"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout10">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editFatherOccupation"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="top|start"
+                        android:hint="@string/father_occupation"
+                        android:scrollbars="vertical"
+                        android:scrollHorizontally="false"
+                        android:textColor="@color/black" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout19"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline32"
+                    app:layout_constraintStart_toStartOf="@+id/guideline31"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout18">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editFatherQualification"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="top|start"
+                        android:hint="@string/father_qualification"
+                        android:scrollbars="vertical"
+                        android:scrollHorizontally="false"
+                        android:textColor="@color/black" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout20"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline32"
+                    app:layout_constraintStart_toStartOf="@+id/guideline31"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout37">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editMotherOccupation"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="top|start"
+                        android:hint="@string/mother_occupation"
+                        android:scrollbars="vertical"
+                        android:scrollHorizontally="false"
+                        android:textColor="@color/black" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <!--        <com.google.android.material.textfield.TextInputLayout-->
+                <!--            android:id="@+id/textInputLayout22"-->
+                <!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+                <!--            android:layout_width="0dp"-->
+                <!--            android:layout_height="wrap_content"-->
+                <!--            android:layout_marginTop="8dp"-->
+                <!--            android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"-->
+                <!--            app:layout_constraintEnd_toStartOf="@+id/guideline32"-->
+                <!--            app:layout_constraintStart_toStartOf="@+id/guideline31"-->
+                <!--            app:layout_constraintTop_toBottomOf="@+id/textInputLayout21">-->
+
+
+                <!--            <com.google.android.material.textfield.TextInputEditText-->
+                <!--                android:id="@+id/editGuardianName"-->
+                <!--                android:layout_width="fill_parent"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:fontFamily="@font/poppins_regular"-->
+                <!--                android:gravity="top|start"-->
+                <!--                android:hint="@string/guardian_name"-->
+                <!--                android:scrollbars="vertical"-->
+                <!--                android:scrollHorizontally="false"-->
+                <!--                android:textColor="@color/black" />-->
+
+                <!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+
+                <!--        <com.google.android.material.textfield.TextInputLayout-->
+                <!--            android:id="@+id/textInputLayout23"-->
+                <!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+                <!--            android:layout_width="0dp"-->
+                <!--            android:layout_height="wrap_content"-->
+                <!--            android:layout_marginTop="8dp"-->
+                <!--            android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"-->
+                <!--            app:layout_constraintEnd_toStartOf="@+id/guideline32"-->
+                <!--            app:layout_constraintStart_toStartOf="@+id/guideline31"-->
+                <!--            app:layout_constraintTop_toBottomOf="@+id/textInputLayout22">-->
+
+
+                <!--            <com.google.android.material.textfield.TextInputEditText-->
+                <!--                android:id="@+id/editGuardianNumber"-->
+                <!--                android:layout_width="fill_parent"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:fontFamily="@font/poppins_regular"-->
+                <!--                android:gravity="top|start"-->
+                <!--                android:inputType="number"-->
+                <!--                android:maxLength="10"-->
+                <!--                android:hint="@string/guardian_no"-->
+                <!--                android:scrollbars="vertical"-->
+                <!--                android:scrollHorizontally="false"-->
+                <!--                android:textColor="@color/black" />-->
+
+                <!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout21"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="24dp"
+                    android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline32"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guideline31"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout20"
+                    app:layout_constraintVertical_bias="0.018">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editMotherQualification"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="top|start"
+                        android:hint="@string/mother_qualification"
+                        android:scrollbars="vertical"
+                        android:scrollHorizontally="false"
+                        android:textColor="@color/black" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout24"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline32"
+                    app:layout_constraintStart_toStartOf="@+id/guideline31"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout19">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editEmailId"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="top|start"
+                        android:hint="@string/email_id"
+                        android:scrollbars="vertical"
+                        android:scrollHorizontally="false"
+                        android:textColor="@color/black" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                <TextView
+                    android:id="@+id/textView114"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Student Details"
+                    android:textColor="@color/green_400"
+                    android:textSize="@dimen/text_size_02"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline32"
+                    app:layout_constraintStart_toStartOf="@+id/guideline31"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout25" />
+
+                <TextView
+                    android:id="@+id/textView115"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Father Details"
+                    android:textColor="@color/green_400"
+                    android:textSize="@dimen/text_size_02"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline32"
+                    app:layout_constraintStart_toStartOf="@+id/guideline31"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout36" />
+
+                <TextView
+                    android:id="@+id/textView117"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Mother Details"
+                    android:textColor="@color/green_400"
+                    android:textSize="@dimen/text_size_02"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline32"
+                    app:layout_constraintStart_toStartOf="@+id/guideline31"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout24" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </RelativeLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textViewTitle"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="12dp"-->
+    <!--        android:layout_marginTop="12dp"-->
+    <!--        android:fontFamily="@font/poppins_regular"-->
+    <!--        android:text="Student Name"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textSize="@dimen/text_size_02"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/textView104"-->
+    <!--        app:layout_constraintHorizontal_weight="1"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/textDeleteIcon" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView104"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:fontFamily="@font/poppins_medium"-->
+    <!--        android:gravity="center"-->
+    <!--        android:text=":"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textSize="@dimen/text_size_02"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/textViewTitle"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/textStudentName"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/textViewTitle"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/textViewTitle" />-->
+
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textStudentName"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginEnd="8dp"-->
+    <!--        android:fontFamily="@font/poppins_regular"-->
+    <!--        android:gravity="center"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textSize="@dimen/text_size_02"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/textViewTitle"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_weight="1.3"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/textView104"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/textViewTitle" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView105"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="12dp"-->
+    <!--        android:fontFamily="@font/poppins_regular"-->
+    <!--        android:text="Admission Number "-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textSize="@dimen/text_size_02"-->
+    <!--        app:layout_constraintEnd_toEndOf="@+id/textViewTitle"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/textViewTitle"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView106"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:fontFamily="@font/poppins_medium"-->
+    <!--        android:gravity="center"-->
+    <!--        android:text=":"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textSize="@dimen/text_size_02"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/textView105"-->
+    <!--        app:layout_constraintEnd_toEndOf="@+id/textView104"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/textView104"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/textView105" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textAdmissionNo"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:fontFamily="@font/poppins_regular"-->
+    <!--        android:gravity="center"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textSize="@dimen/text_size_02"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/textView106"-->
+    <!--        app:layout_constraintEnd_toEndOf="@+id/textStudentName"-->
+    <!--        app:layout_constraintHorizontal_bias="0.506"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/textStudentName"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/textView106"-->
+    <!--        app:layout_constraintVertical_bias="0.0" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView108"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="12dp"-->
+    <!--        android:fontFamily="@font/poppins_regular"-->
+    <!--        android:text="Roll Number "-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textSize="@dimen/text_size_02"-->
+    <!--        app:layout_constraintEnd_toEndOf="@+id/textView105"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/textView105"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/textView105" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView109"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:fontFamily="@font/poppins_medium"-->
+    <!--        android:gravity="center"-->
+    <!--        android:text=":"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textSize="@dimen/text_size_02"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/textView108"-->
+    <!--        app:layout_constraintEnd_toEndOf="@+id/textView106"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/textView106"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/textView108" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textRollNumber"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:fontFamily="@font/poppins_regular"-->
+    <!--        android:gravity="center"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textSize="@dimen/text_size_02"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/textView109"-->
+    <!--        app:layout_constraintEnd_toEndOf="@+id/textAdmissionNo"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/textAdmissionNo"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/textView109" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView111"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="12dp"-->
+    <!--        android:fontFamily="@font/poppins_regular"-->
+    <!--        android:text="Date Of Birth "-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textSize="@dimen/text_size_02"-->
+    <!--        app:layout_constraintEnd_toEndOf="@+id/textView108"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/textView108"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/textView108" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView112"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:fontFamily="@font/poppins_medium"-->
+    <!--        android:gravity="center"-->
+    <!--        android:text=":"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textSize="@dimen/text_size_04"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/textView111"-->
+    <!--        app:layout_constraintEnd_toEndOf="@+id/textView109"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/textView109"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/textView111" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textViewDob"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:fontFamily="@font/poppins_regular"-->
+    <!--        android:gravity="center"-->
+    <!--        -->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textSize="@dimen/text_size_02"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/textView112"-->
+    <!--        app:layout_constraintEnd_toEndOf="@+id/textRollNumber"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/textRollNumber"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/textView112" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView114"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="12dp"-->
+    <!--        android:fontFamily="@font/poppins_regular"-->
+    <!--        android:text="Class"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textSize="@dimen/text_size_02"-->
+    <!--        app:layout_constraintEnd_toEndOf="@+id/textView111"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/textView111"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/textView111" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView115"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:fontFamily="@font/poppins_medium"-->
+    <!--        android:gravity="center"-->
+    <!--        android:text=":"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textSize="@dimen/text_size_02"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/textView114"-->
+    <!--        app:layout_constraintEnd_toEndOf="@+id/textView112"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/textView112"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/textView114" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textClassName"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:fontFamily="@font/poppins_regular"-->
+    <!--        android:gravity="center"-->
+    <!--        -->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textSize="@dimen/text_size_02"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/textView115"-->
+    <!--        app:layout_constraintEnd_toEndOf="@+id/textViewDob"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/textViewDob"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/textView115" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView117"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="12dp"-->
+    <!--        android:fontFamily="@font/poppins_regular"-->
+    <!--        android:text="Gender"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textSize="@dimen/text_size_02"-->
+    <!--        app:layout_constraintEnd_toEndOf="@+id/textView114"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/textView114"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/textView114" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView118"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:fontFamily="@font/poppins_medium"-->
+    <!--        android:gravity="center"-->
+    <!--        android:text=":"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textSize="@dimen/text_size_02"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/textView117"-->
+    <!--        app:layout_constraintEnd_toEndOf="@+id/textView115"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/textView115"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/textView117" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textGender"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:fontFamily="@font/poppins_regular"-->
+    <!--        android:gravity="center"-->
+    <!--        -->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textSize="@dimen/text_size_02"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/textView118"-->
+    <!--        app:layout_constraintEnd_toEndOf="@+id/textClassName"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/textClassName"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/textView118" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView120"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="12dp"-->
+    <!--        android:fontFamily="@font/poppins_regular"-->
+    <!--        android:text="Blood Group"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textSize="@dimen/text_size_02"-->
+    <!--        app:layout_constraintEnd_toEndOf="@+id/textView117"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/textView117"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/textView117" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView121"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:fontFamily="@font/poppins_medium"-->
+    <!--        android:gravity="center"-->
+    <!--        android:text=":"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textSize="@dimen/text_size_02"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/textView120"-->
+    <!--        app:layout_constraintEnd_toEndOf="@+id/textView118"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/textView118"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/textView120" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textBloodGroup"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:fontFamily="@font/poppins_regular"-->
+    <!--        android:gravity="center"-->
+    <!--        -->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textSize="@dimen/text_size_02"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/textView121"-->
+    <!--        app:layout_constraintEnd_toEndOf="@+id/textGender"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/textGender"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/textView121" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView123"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="12dp"-->
+    <!--        android:fontFamily="@font/poppins_regular"-->
+    <!--        android:text="Father Name"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textSize="@dimen/text_size_02"-->
+    <!--        app:layout_constraintEnd_toEndOf="@+id/textView120"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/textView120"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/textView120" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView124"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:fontFamily="@font/poppins_medium"-->
+    <!--        android:gravity="center"-->
+    <!--        android:text=":"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textSize="@dimen/text_size_02"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/textView123"-->
+    <!--        app:layout_constraintEnd_toEndOf="@+id/textView121"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/textView121"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/textView123" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textFatherName"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:fontFamily="@font/poppins_regular"-->
+    <!--        android:gravity="center"-->
+    <!--        -->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textSize="@dimen/text_size_02"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/textView124"-->
+    <!--        app:layout_constraintEnd_toEndOf="@+id/textBloodGroup"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/textBloodGroup"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/textView124" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView126"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="12dp"-->
+    <!--        android:fontFamily="@font/poppins_regular"-->
+    <!--        android:text="Mother Name"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textSize="@dimen/text_size_02"-->
+    <!--        app:layout_constraintEnd_toEndOf="@+id/textView123"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/textView123"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/textView123" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView127"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:fontFamily="@font/poppins_medium"-->
+    <!--        android:gravity="center"-->
+    <!--        android:text=":"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textSize="@dimen/text_size_02"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/textView126"-->
+    <!--        app:layout_constraintEnd_toEndOf="@+id/textView124"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/textView124"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/textView126" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textMotherName"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:fontFamily="@font/poppins_regular"-->
+    <!--        android:gravity="center"-->
+    <!--        -->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textSize="@dimen/text_size_02"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/textView127"-->
+    <!--        app:layout_constraintEnd_toEndOf="@+id/textFatherName"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/textFatherName"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/textView127" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView129"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="12dp"-->
+    <!--        android:fontFamily="@font/poppins_regular"-->
+    <!--        android:text="Mobile Number"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textSize="@dimen/text_size_02"-->
+    <!--        app:layout_constraintEnd_toEndOf="@+id/textView126"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/textView126"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/textView126" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView130"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:fontFamily="@font/poppins_medium"-->
+    <!--        android:gravity="center"-->
+    <!--        android:text=":"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textSize="@dimen/text_size_02"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/textView129"-->
+    <!--        app:layout_constraintEnd_toEndOf="@+id/textView127"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/textView127"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/textView129" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textMobileNumber"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:fontFamily="@font/poppins_regular"-->
+    <!--        android:gravity="center"-->
+    <!--        -->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textSize="@dimen/text_size_02"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/textView130"-->
+    <!--        app:layout_constraintEnd_toEndOf="@+id/textMotherName"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/textMotherName"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/textView130" />-->
+
+
+    <!--    <androidx.appcompat.widget.AppCompatButton-->
+    <!--        android:id="@+id/buttonSubmit"-->
+    <!--        style="@style/RoundedCornerButtonGreen400"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="32dp"-->
+    <!--        android:layout_marginBottom="12dp"-->
+    <!--        android:fontFamily="@font/poppins_medium"-->
+    <!--        android:text="@string/edit_details"-->
+    <!--        android:textAllCaps="false"-->
+    <!--        android:textColor="@color/white"-->
+    <!--        android:textSize="@dimen/text_size_02"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="@+id/textMobileNumber"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/textView129"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/textView129" />-->
+

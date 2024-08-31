@@ -1,0 +1,6 @@
+rootProject.name = "ParentApplication"
+include ':app'
+//include ':commonlib'
+//include ':mobilertc'
+//include ':videoplayer'
+include ':lib'

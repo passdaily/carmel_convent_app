@@ -1,0 +1,915 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".typeofuser.parent.MainActivityParent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:backgroundTint="@android:color/transparent"
+            android:background="@android:color/transparent"
+            app:popupTheme="@style/Theme.ParentApplication.PopupOverlay"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.camera.view.PreviewView
+            android:id="@+id/viewFinder"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/constraintFirstLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_weight="3" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintFirstLayout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/gray_100"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewFinder"
+            app:layout_constraintVertical_weight="5">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.03" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.97" />
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.985" />
+
+
+            <!--       -->
+
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/nestedScrollView6"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:fillViewport="true"
+                app:layout_constraintBottom_toTopOf="@+id/submitButton"
+                app:layout_constraintEnd_toEndOf="@+id/guideline3"
+                app:layout_constraintStart_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintLayout15"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_weight="1">
+
+                        <androidx.constraintlayout.widget.Guideline
+                            android:id="@+id/guideline5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layout_constraintGuide_percent="0.00" />
+
+                        <androidx.constraintlayout.widget.Guideline
+                            android:id="@+id/guideline6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layout_constraintGuide_percent="1" />
+
+
+                        <TextView
+                            android:id="@+id/textStudentName"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:maxLines="1"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_04"
+                            app:layout_constraintEnd_toStartOf="@+id/constraintLayout14"
+                            app:layout_constraintHorizontal_weight="3"
+                            app:layout_constraintStart_toStartOf="@+id/guideline5"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textClassName"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:textColor="@color/gray_400"
+                            android:textSize="@dimen/text_size_02"
+                            app:layout_constraintBottom_toBottomOf="@+id/constraintLayout14"
+                            app:layout_constraintEnd_toEndOf="@+id/textStudentName"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="@+id/textStudentName"
+                            app:layout_constraintTop_toBottomOf="@+id/textStudentName"
+                            app:layout_constraintVertical_bias="0.666" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/constraintLayout14"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            app:layout_constraintEnd_toStartOf="@+id/guideline6"
+                            app:layout_constraintHorizontal_weight="2"
+                            app:layout_constraintStart_toEndOf="@+id/textStudentName"
+                            app:layout_constraintTop_toTopOf="@+id/textStudentName">
+
+
+                            <TextView
+                                android:id="@+id/textTimerHours"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:layout_marginEnd="2dp"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="center"
+                                android:text="00"
+                                android:textColor="@color/green_300"
+                                android:textSize="@dimen/text_size_05"
+                                app:layout_constraintBottom_toTopOf="@+id/textView56"
+                                app:layout_constraintEnd_toStartOf="@+id/textTimerMinutes"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/textTimerMinutes"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="2dp"
+                                android:layout_marginEnd="2dp"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="center"
+                                android:text="00"
+                                android:textColor="@color/green_300"
+                                android:textSize="@dimen/text_size_05"
+                                app:layout_constraintBottom_toBottomOf="@+id/textTimerHours"
+                                app:layout_constraintEnd_toStartOf="@+id/textTimerSeconds"
+                                app:layout_constraintStart_toEndOf="@+id/textTimerHours"
+                                app:layout_constraintTop_toTopOf="@+id/textTimerHours" />
+
+                            <TextView
+                                android:id="@+id/textTimerSeconds"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="2dp"
+                                android:layout_marginEnd="4dp"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="center"
+                                android:text="00 "
+                                android:textColor="@color/green_300"
+                                android:textSize="@dimen/text_size_05"
+                                app:layout_constraintBottom_toBottomOf="@+id/textTimerMinutes"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/textTimerMinutes"
+                                app:layout_constraintTop_toTopOf="@+id/textTimerMinutes"
+                                app:layout_constraintVertical_bias="0.0" />
+
+                            <TextView
+                                android:id="@+id/textView56"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginBottom="4dp"
+                                android:fontFamily="@font/poppins_regular"
+                                android:gravity="center"
+                                android:text="Hrs"
+                                android:textColor="@color/green_300"
+                                android:textSize="@dimen/text_size_02"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="@+id/textTimerHours"
+                                app:layout_constraintStart_toStartOf="@+id/textTimerHours"
+                                app:layout_constraintTop_toBottomOf="@+id/textTimerHours" />
+
+                            <TextView
+                                android:id="@+id/textView58"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_regular"
+                                android:gravity="center"
+                                android:text="Mins"
+                                android:textColor="@color/green_300"
+                                android:textSize="@dimen/text_size_02"
+                                app:layout_constraintBottom_toBottomOf="@+id/textView56"
+                                app:layout_constraintEnd_toEndOf="@+id/textTimerMinutes"
+                                app:layout_constraintStart_toStartOf="@+id/textTimerMinutes"
+                                app:layout_constraintTop_toTopOf="@+id/textView56" />
+
+                            <TextView
+                                android:id="@+id/textView60"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_regular"
+                                android:gravity="center"
+                                android:text="Sec"
+                                android:textColor="@color/green_300"
+                                android:textSize="@dimen/text_size_02"
+                                app:layout_constraintBottom_toBottomOf="@+id/textView58"
+                                app:layout_constraintEnd_toEndOf="@+id/textTimerSeconds"
+                                app:layout_constraintStart_toStartOf="@+id/textTimerSeconds"
+                                app:layout_constraintTop_toTopOf="@+id/textView58" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+                        <!--                android:id="@+id/imageViewPause"-->
+                        <!--                android:layout_width="0dp"-->
+                        <!--                android:layout_height="0dp"-->
+                        <!--                app:layout_constraintBottom_toBottomOf="@+id/constraintLayout14"-->
+                        <!--                app:layout_constraintEnd_toEndOf="@+id/guideline6"-->
+                        <!--                app:layout_constraintHorizontal_weight="0.58"-->
+                        <!--                app:layout_constraintStart_toEndOf="@+id/constraintLayout14"-->
+                        <!--                app:layout_constraintTop_toTopOf="@+id/constraintLayout14">-->
+
+
+                        <!--                <ImageView-->
+                        <!--                    android:id="@+id/imageView44"-->
+                        <!--                    android:layout_width="wrap_content"-->
+                        <!--                    android:layout_height="wrap_content"-->
+                        <!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+                        <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+                        <!--                    app:layout_constraintStart_toStartOf="parent"-->
+                        <!--                    app:layout_constraintTop_toTopOf="parent"-->
+                        <!--                    app:srcCompat="@drawable/ic_exam_pause" />-->
+                        <!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerViewNumberList"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="2dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginBottom="16dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/imageRightArror"
+                            app:layout_constraintHorizontal_weight="4.5"
+                            app:layout_constraintStart_toEndOf="@+id/imageLeftArrow"
+                            app:layout_constraintTop_toBottomOf="@+id/constraintLayout14"
+                            app:layout_constraintVertical_bias="0.0" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/imageLeftArrow"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            app:layout_constraintBottom_toBottomOf="@+id/recyclerViewNumberList"
+                            app:layout_constraintEnd_toStartOf="@+id/recyclerViewNumberList"
+                            app:layout_constraintHorizontal_weight="0.3"
+                            app:layout_constraintStart_toStartOf="@+id/textClassName"
+                            app:layout_constraintTop_toTopOf="@+id/recyclerViewNumberList"
+                            app:layout_constraintVertical_bias="0.0">
+
+                            <ImageView
+                                android:layout_width="@dimen/text_size_03"
+                                android:layout_height="@dimen/text_size_05"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/ic_exam_left_arrow" />
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/imageRightArror"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_marginEnd="12dp"
+                            app:layout_constraintBottom_toBottomOf="@+id/recyclerViewNumberList"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_weight="0.3"
+                            app:layout_constraintStart_toEndOf="@+id/recyclerViewNumberList"
+                            app:layout_constraintTop_toTopOf="@+id/recyclerViewNumberList"
+                            app:srcCompat="@drawable/ic_exam_right_arrow">
+
+
+                            <ImageView
+                                android:id="@+id/imageView47"
+                                android:layout_width="@dimen/text_size_03"
+                                android:layout_height="@dimen/text_size_05"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/ic_exam_right_arrow" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    <TextView
+                        android:id="@+id/textViewQuestionNo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:gravity="center_vertical"
+                        android:text="Question 1"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_05"
+                        app:layout_constraintEnd_toStartOf="@+id/textMarksForQuestion"
+                        app:layout_constraintHorizontal_weight="4"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/constraintLayout15" />
+
+                    <TextView
+                        android:id="@+id/textMarksForQuestion"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="center"
+                        android:textColor="@color/gray_700"
+                        android:textSize="@dimen/text_size_02"
+                        app:layout_constraintBottom_toBottomOf="@+id/textViewQuestionNo"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_weight="1"
+                        app:layout_constraintStart_toEndOf="@+id/textViewQuestionNo"
+                        app:layout_constraintTop_toTopOf="@+id/textViewQuestionNo" />
+
+                    <TextView
+                        android:id="@+id/textViewQuestion"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textColor="@color/gray_1k"
+                        android:textSize="@dimen/text_size_04"
+                        app:layout_constraintEnd_toEndOf="@+id/textMarksForQuestion"
+                        app:layout_constraintStart_toStartOf="@+id/textViewQuestionNo"
+                        app:layout_constraintTop_toBottomOf="@+id/textViewQuestionNo" />
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintLayout16"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintEnd_toEndOf="@+id/textViewQuestion"
+                        app:layout_constraintStart_toStartOf="@+id/textViewQuestion"
+                        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion">
+
+                        <androidx.constraintlayout.widget.Guideline
+                            android:id="@+id/guideline41"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layout_constraintGuide_percent="0.7" />
+
+
+                        <ImageView
+                            android:id="@+id/imageViewQuestion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:srcCompat="@tools:sample/avatars" />
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardViewAudioQuestion"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardCornerRadius="5dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+
+                                <RelativeLayout
+                                    android:id="@+id/playPauseRelative"
+                                    android:layout_width="@dimen/spinner_custom_image"
+                                    android:layout_height="@dimen/spinner_custom_image"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginTop="12dp"
+                                    app:layout_constraintEnd_toStartOf="@+id/mSeekBar"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent">
+
+                                    <ImageView
+                                        android:id="@+id/playPauseImageView"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        app:srcCompat="@drawable/ic_exam_play" />
+
+
+                                </RelativeLayout>
+
+
+                                <SeekBar
+                                    android:id="@+id/mSeekBar"
+                                    style="@android:style/Widget.Material.ProgressBar.Horizontal"
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:layout_marginStart="4dp"
+                                    android:layout_marginEnd="12dp"
+                                    android:indeterminate="false"
+                                    android:progressTint="@color/green_300"
+                                    android:thumbTint="@color/green_300"
+                                    app:layout_constraintBottom_toBottomOf="@+id/playPauseRelative"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toEndOf="@+id/playPauseRelative"
+                                    app:layout_constraintTop_toTopOf="@+id/playPauseRelative"
+                                    app:layout_constraintVertical_bias="0.0"
+                                    tools:ignore="NewApi" />
+
+                                <TextView
+                                    android:id="@+id/songDuration"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="12dp"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:text="00 : 21"
+                                    android:textColor="@color/gray_500"
+                                    android:textSize="@dimen/text_size_02"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="@+id/mSeekBar"
+                                    app:layout_constraintTop_toBottomOf="@+id/mSeekBar" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+
+                        <ImageView
+                            android:id="@+id/imageViewVideoQuestion"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/bottom_viewpager_height"
+                            android:scaleType="centerCrop"
+                            android:visibility="gone"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/guideline41"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/artboard_exam" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintEnd_toEndOf="@+id/constraintLayout16"
+                        app:layout_constraintStart_toStartOf="@+id/constraintLayout16"
+                        app:layout_constraintTop_toBottomOf="@+id/constraintLayout16" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/submitButton"
+                style="@style/RoundedCornerButtonGreen400"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Submit"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_02"
+                app:layout_constraintBottom_toTopOf="@+id/guideline4"
+                app:layout_constraintEnd_toStartOf="@+id/finishButton"
+                app:layout_constraintStart_toStartOf="@+id/guideline2"
+                tools:layout_editor_absoluteY="726dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/finishButton"
+                style="@style/RoundedCornerButtonRed300"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Finish"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_02"
+                app:layout_constraintBottom_toBottomOf="@+id/submitButton"
+                app:layout_constraintEnd_toStartOf="@+id/guideline3"
+                app:layout_constraintStart_toEndOf="@+id/submitButton"
+                app:layout_constraintTop_toTopOf="@+id/submitButton" />
+
+            <TextView
+                android:id="@+id/textClearAnswer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="12dp"
+                android:background="@color/gray_150"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="Clear Answer"
+                android:textColor="@color/gray_700"
+                android:textSize="@dimen/text_size_02"
+                app:layout_constraintBottom_toTopOf="@+id/finishButton"
+                app:layout_constraintEnd_toStartOf="@+id/guideline3" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<androidx.coordinatorlayout.widget.CoordinatorLayout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent">-->
+<!--&lt;!&ndash;    tools:context=".typeofuser.parent.record_video_exam.VideoCaptureActivity"&ndash;&gt;-->
+
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:id="@+id/constraintLayout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+<!--        &lt;!&ndash;    <Button&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:id="@+id/video_capture_button"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:layout_width="wrap_content"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:layout_marginBottom="32dp"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:text="Capture"&ndash;&gt;-->
+<!--        &lt;!&ndash;        app:layout_constraintBottom_toBottomOf="@+id/viewFinder"&ndash;&gt;-->
+<!--        &lt;!&ndash;        app:layout_constraintEnd_toEndOf="parent"&ndash;&gt;-->
+<!--        &lt;!&ndash;        app:layout_constraintStart_toStartOf="parent" />&ndash;&gt;-->
+
+
+<!--        <androidx.camera.view.PreviewView-->
+<!--            android:id="@+id/viewFinder"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="0dp"-->
+<!--            app:layout_constraintBottom_toTopOf="@+id/constraintLayout30"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.0"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_weight="4">-->
+
+
+<!--        </androidx.camera.view.PreviewView>-->
+
+<!--        <Chronometer-->
+<!--            android:layout_marginTop="40dp"-->
+<!--            android:id="@+id/chronometer"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:gravity="center_horizontal"-->
+<!--            android:drawableLeft="@drawable/ic_record_video"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:textSize="@dimen/text_size_02"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:id="@+id/constraintLayout30"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="0dp"-->
+<!--            app:layout_constraintBottom_toTopOf="@+id/submitButton"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/viewFinder"-->
+<!--            app:layout_constraintVertical_weight="5">-->
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/textStudentName"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="8dp"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:fontFamily="@font/roboto_bold"-->
+<!--                android:maxLines="2"-->
+<!--                android:ellipsize="end"-->
+<!--                android:text="Mufasa Sarabi Simba Nal"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="@dimen/text_size_02"-->
+<!--                app:layout_constraintEnd_toStartOf="@+id/constraintLayout14"-->
+<!--                app:layout_constraintHorizontal_weight="2"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textClassName"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="4dp"-->
+<!--                android:fontFamily="@font/roboto_regular"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:maxLines="1"-->
+<!--                android:textColor="@color/gray_400"-->
+<!--                android:textSize="@dimen/text_size_02"-->
+<!--                app:layout_constraintEnd_toEndOf="@+id/textStudentName"-->
+<!--                app:layout_constraintHorizontal_bias="0.0"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/textStudentName"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/textStudentName"-->
+<!--                app:layout_constraintVertical_bias="0.666" />-->
+
+
+<!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                android:id="@+id/constraintLayout14"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                app:layout_constraintBottom_toBottomOf="@+id/textClassName"-->
+<!--                app:layout_constraintEnd_toStartOf="@+id/imageView44"-->
+<!--                app:layout_constraintHorizontal_weight="1.5"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/textStudentName"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/textStudentName"-->
+<!--                app:layout_constraintVertical_bias="0.0">-->
+
+
+<!--                <TextView-->
+<!--                    android:id="@+id/textTimerHours"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="4dp"-->
+<!--                    android:layout_marginEnd="2dp"-->
+<!--                    android:fontFamily="@font/roboto_bold"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="00"-->
+<!--                    android:textColor="@color/green_300"-->
+<!--                    android:textSize="@dimen/text_size_05"-->
+<!--                    app:layout_constraintBottom_toTopOf="@+id/textView56"-->
+<!--                    app:layout_constraintEnd_toStartOf="@+id/textTimerMinutes"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/textTimerMinutes"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="2dp"-->
+<!--                    android:layout_marginEnd="2dp"-->
+<!--                    android:fontFamily="@font/roboto_bold"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="00"-->
+<!--                    android:textColor="@color/green_300"-->
+<!--                    android:textSize="@dimen/text_size_05"-->
+<!--                    app:layout_constraintBottom_toBottomOf="@+id/textTimerHours"-->
+<!--                    app:layout_constraintEnd_toStartOf="@+id/textTimerSeconds"-->
+<!--                    app:layout_constraintStart_toEndOf="@+id/textTimerHours"-->
+<!--                    app:layout_constraintTop_toTopOf="@+id/textTimerHours" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/textTimerSeconds"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="2dp"-->
+<!--                    android:layout_marginEnd="4dp"-->
+<!--                    android:fontFamily="@font/roboto_bold"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="00 "-->
+<!--                    android:textColor="@color/green_300"-->
+<!--                    android:textSize="@dimen/text_size_05"-->
+<!--                    app:layout_constraintBottom_toBottomOf="@+id/textTimerMinutes"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintStart_toEndOf="@+id/textTimerMinutes"-->
+<!--                    app:layout_constraintTop_toTopOf="@+id/textTimerMinutes"-->
+<!--                    app:layout_constraintVertical_bias="0.0" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/textView56"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="4dp"-->
+<!--                    android:layout_marginBottom="4dp"-->
+<!--                    android:fontFamily="@font/roboto_regular"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="Hrs"-->
+<!--                    android:textColor="@color/green_300"-->
+<!--                    android:textSize="@dimen/text_size_02"-->
+<!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                    app:layout_constraintEnd_toEndOf="@+id/textTimerHours"-->
+<!--                    app:layout_constraintStart_toStartOf="@+id/textTimerHours"-->
+<!--                    app:layout_constraintTop_toBottomOf="@+id/textTimerHours" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/textView58"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:fontFamily="@font/roboto_regular"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="Mins"-->
+<!--                    android:textColor="@color/green_300"-->
+<!--                    android:textSize="@dimen/text_size_02"-->
+<!--                    app:layout_constraintBottom_toBottomOf="@+id/textView56"-->
+<!--                    app:layout_constraintEnd_toEndOf="@+id/textTimerMinutes"-->
+<!--                    app:layout_constraintStart_toStartOf="@+id/textTimerMinutes"-->
+<!--                    app:layout_constraintTop_toTopOf="@+id/textView56" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/textView60"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:fontFamily="@font/roboto_regular"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="Sec"-->
+<!--                    android:textColor="@color/green_300"-->
+<!--                    android:textSize="@dimen/text_size_02"-->
+<!--                    app:layout_constraintBottom_toBottomOf="@+id/textView58"-->
+<!--                    app:layout_constraintEnd_toEndOf="@+id/textTimerSeconds"-->
+<!--                    app:layout_constraintStart_toStartOf="@+id/textTimerSeconds"-->
+<!--                    app:layout_constraintTop_toTopOf="@+id/textView58" />-->
+<!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/imageView44"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginEnd="8dp"-->
+<!--                android:padding="@dimen/text_size_05"-->
+<!--                app:layout_constraintBottom_toBottomOf="@+id/constraintLayout14"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/constraintLayout14"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/constraintLayout14"-->
+<!--                app:srcCompat="@drawable/ic_exam_pause" />-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/imageLeftArrow"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="8dp"-->
+<!--                android:layout_marginTop="16dp"-->
+<!--                android:padding="@dimen/text_size_05"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/textClassName"-->
+<!--                app:srcCompat="@drawable/ic_exam_left_arrow" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textViewQuestionNumber"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:fontFamily="@font/roboto_bold"-->
+<!--                android:gravity="center"-->
+<!--                android:text="Question 1 / 10"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="@dimen/text_size_02"-->
+<!--                app:layout_constraintBottom_toBottomOf="@+id/imageLeftArrow"-->
+<!--                app:layout_constraintEnd_toStartOf="@+id/imageRightArrow"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/imageLeftArrow"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/imageLeftArrow" />-->
+
+
+<!--            <ImageView-->
+<!--                android:id="@+id/imageRightArrow"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:padding="20dp"-->
+<!--                app:layout_constraintBottom_toBottomOf="@+id/imageLeftArrow"-->
+<!--                app:layout_constraintEnd_toEndOf="@+id/imageView44"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/imageLeftArrow"-->
+<!--                app:srcCompat="@drawable/ic_exam_right_arrow" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textViewQuestion"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:fontFamily="@font/poppins_medium"-->
+<!--                android:text="a small number or amount of somebody/something that is looked at, tested, examined, etc. to find out what the rest is like."-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="@dimen/text_size_02"-->
+<!--                app:layout_constraintEnd_toEndOf="@+id/imageRightArrow"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/imageLeftArrow"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/imageLeftArrow" />-->
+
+
+<!--            <RadioGroup-->
+<!--                android:id="@+id/radioGroup"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                app:layout_constraintEnd_toEndOf="@+id/textViewQuestion"-->
+<!--                app:layout_constraintHorizontal_bias="0.0"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/textViewQuestion"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/textViewQuestion" />-->
+
+
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+<!--        <androidx.appcompat.widget.AppCompatButton-->
+<!--            android:id="@+id/submitButton"-->
+<!--            style="@style/RoundedCornerButtonGreen400"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="@dimen/zm_width_50dp"-->
+<!--            android:layout_marginStart="8dp"-->
+<!--            android:layout_marginEnd="4dp"-->
+<!--            android:layout_marginBottom="8dp"-->
+
+<!--            android:fontFamily="@font/poppins_medium"-->
+<!--            android:text="Submit"-->
+<!--            android:textAllCaps="true"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="@dimen/text_size_02"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toStartOf="@+id/finishButton"-->
+<!--            app:layout_constraintStart_toStartOf="parent" />-->
+
+<!--        <androidx.appcompat.widget.AppCompatButton-->
+<!--            android:id="@+id/finishButton"-->
+<!--            style="@style/RoundedCornerButtonRed300"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="4dp"-->
+<!--            android:layout_marginEnd="8dp"-->
+<!--            android:fontFamily="@font/poppins_medium"-->
+<!--            android:text="Finish"-->
+<!--            android:textAllCaps="true"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="@dimen/text_size_02"-->
+<!--            app:layout_constraintBottom_toBottomOf="@+id/submitButton"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/submitButton"-->
+<!--            app:layout_constraintTop_toTopOf="@+id/submitButton" />-->
+
+
+<!--        &lt;!&ndash;    <TextView&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:id="@+id/textView158"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:layout_width="wrap_content"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:layout_marginTop="16dp"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:fontFamily="@font/roboto_bold"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:text="00 : 00"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:gravity="center"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:drawablePadding="@dimen/text_size_03"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:drawableLeft="@drawable/ic_record_video"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:textColor="@color/white"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:textSize="@dimen/text_size_02"&ndash;&gt;-->
+<!--        &lt;!&ndash;        app:layout_constraintEnd_toEndOf="parent"&ndash;&gt;-->
+<!--        &lt;!&ndash;        app:layout_constraintStart_toStartOf="parent"&ndash;&gt;-->
+<!--        &lt;!&ndash;        app:layout_constraintTop_toTopOf="parent" />&ndash;&gt;-->
+
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+<!--</androidx.coordinatorlayout.widget.CoordinatorLayout>-->

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="2dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/textBusNo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="TextView"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_04"
+            app:layout_constraintEnd_toStartOf="@+id/imageView31"
+            app:layout_constraintStart_toEndOf="@+id/imageView30"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textBusName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="TextView"
+            android:textColor="@color/gray_400"
+            android:textSize="@dimen/text_size_02"
+            app:layout_constraintEnd_toEndOf="@+id/textBusNo"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textBusNo"
+            app:layout_constraintTop_toBottomOf="@+id/textBusNo" />
+
+        <ImageView
+            android:id="@+id/imageView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textBusRoute"
+            app:layout_constraintEnd_toStartOf="@+id/textBusNo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textBusNo"
+            app:layout_constraintVertical_bias="0.533"
+            app:srcCompat="@drawable/ic_track_staff_vehicle" />
+
+        <ImageView
+            android:id="@+id/imageView31"
+            android:layout_width="@dimen/text_size_04"
+            android:layout_height="@dimen/text_size_04"
+            android:layout_marginEnd="8dp"
+            app:tint="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/textBusRoute"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textBusNo"
+            app:layout_constraintTop_toTopOf="@+id/textBusNo"
+            app:srcCompat="@drawable/ic_exam_right_arrow" />
+
+        <TextView
+            android:id="@+id/textBusRoute"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="TextView"
+            android:textColor="@color/gray_400"
+            android:textSize="@dimen/text_size_02"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/textBusName"
+            app:layout_constraintStart_toStartOf="@+id/textBusName"
+            app:layout_constraintTop_toBottomOf="@+id/textBusName" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

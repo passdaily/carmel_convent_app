@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="3dp"
+    android:layout_margin="3dp"
+    app:cardBackgroundColor="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewStatus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            app:cardBackgroundColor="@color/green_100"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="0dp"
+            app:layout_constraintEnd_toStartOf="@+id/textViewDate"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textViewStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="@string/replied"
+                android:textColor="@color/green_400"
+                android:textSize="@dimen/text_size_02" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/textLeaveTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Leave Title"
+            android:textColor="@color/dark_gray_700"
+            android:textSize="@dimen/text_size_04"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/cardViewStatus"
+            app:layout_constraintTop_toBottomOf="@+id/cardViewStatus" />
+
+
+        <TextView
+            android:id="@+id/textViewDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="end"
+            android:text="TextView"
+            android:textColor="@color/gray_400"
+            android:textSize="@dimen/text_size_02"
+            app:layout_constraintBottom_toBottomOf="@+id/cardViewStatus"
+            app:layout_constraintEnd_toStartOf="@+id/imageView50"
+            app:layout_constraintHorizontal_weight="2"
+            app:layout_constraintStart_toEndOf="@+id/cardViewStatus"
+            app:layout_constraintTop_toTopOf="@+id/cardViewStatus" />
+
+
+        <TextView
+            android:id="@+id/textLeaveDesc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Lorem ipsum dolor sit amet, consectetuer"
+            android:textColor="@color/gray_700"
+            android:textSize="@dimen/text_size_02"
+            app:layout_constraintEnd_toEndOf="@+id/textLeaveTitle"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textLeaveTitle"
+            app:layout_constraintTop_toBottomOf="@+id/textLeaveTitle" />
+
+        <View
+            android:id="@+id/view23"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/text_size_01"
+            app:layout_constraintEnd_toEndOf="@+id/textLeaveDesc"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textLeaveDesc"
+            app:layout_constraintTop_toBottomOf="@+id/textLeaveDesc" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/imageView50"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/cardViewStatus"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textViewDate"
+            app:layout_constraintTop_toTopOf="@+id/cardViewStatus">
+
+
+            <ImageView
+                android:id="@+id/imageViewEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_more_icon" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <View
+            android:visibility="gone"
+            android:id="@+id/viewReply"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@color/gray_150"
+            app:layout_constraintEnd_toEndOf="@+id/textLeaveDesc"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textLeaveDesc"
+            app:layout_constraintTop_toBottomOf="@+id/view23" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/textView50"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Replied "
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_02"
+            app:layout_constraintEnd_toEndOf="@+id/viewReply"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/textLeaveDesc"
+            app:layout_constraintTop_toBottomOf="@+id/viewReply" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/textViewReplied"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Replied "
+            android:textColor="@color/gray_700"
+            android:textSize="@dimen/text_size_02"
+            app:layout_constraintEnd_toEndOf="@+id/textView50"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView50"
+            app:layout_constraintTop_toBottomOf="@+id/textView50" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/textViewTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="12dp"
+            android:gravity="end"
+            android:fontFamily="@font/poppins_regular"
+            android:text="13 May, 2020, 12: 00 PM"
+            android:textColor="@color/color_chemistry"
+            android:textSize="@dimen/text_size_01"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/textViewReplied"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textViewReplied"
+            app:layout_constraintTop_toBottomOf="@+id/textViewReplied"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

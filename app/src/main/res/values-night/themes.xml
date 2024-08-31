@@ -1,0 +1,64 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.ParentApplication" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="colorOnPrimary">@color/green_400</item>
+
+        <!--        secondary-->
+        <item name="colorSecondary">@color/green_400</item>
+        <item name="colorSecondaryVariant">@color/green_400</item>
+        <item name="colorOnSecondary">@color/green_400</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:navigationBarColor">@android:color/black</item>
+        <item name="android:actionMenuTextColor">@color/green_400</item>
+        <item name="android:windowLightStatusBar" tools:ignore="NewApi">true</item>
+        <!-- Customize your theme here. -->
+
+    </style>
+
+    <style name="Theme.ParentApplication.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.ParentApplication.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.ParentApplication.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!--    ///////////////  new theme for splash screen ////-->
+    <style name="Theme.ApplicationTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="colorOnPrimary">@color/gray_500</item>
+
+    </style>
+
+
+    <style name="Theme.ApplicationTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="SplashViewTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Status bar stuff. -->
+        <item name="android:statusBarColor" tools:ignore="NewApi">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar" tools:ignore="NewApi">true</item>
+        <item name="android:windowBackground">@drawable/splash1</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="TextLabel2" parent="TextAppearance.AppCompat">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">@color/black</item>
+        <item name="android:textSize">17sp</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorAccent">@color/black</item>
+        <item name="colorControlNormal">@color/gray_500</item>
+        <item name="colorControlActivated">@color/green_400</item>
+    </style>
+</resources>

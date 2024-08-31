@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00a65a</color>
+<!--    <color name="colorPrimaryDark">#005005</color>-->
+    <color name="colorAccent">#1e88e5</color>
+
+
+    <color name="colorPrimaryDark">#05336A</color>
+    <color name="blue_400">#0056BE</color>
+    <color name="blue_100">#EBEFF3</color>
+    <color name="blue_200">#8ABFFF</color>
+    <color name="blue_50">#DEEBF8</color>
+
+    <color name="dark_blue_600">#6F767E</color>
+
+
+    <color name="list_array_dark_1">#FF9B3F</color>
+    <color name="list_array_dark_2">#FFBF48</color>
+    <color name="list_array_dark_3">#3288BD</color>
+    <color name="list_array_dark_4">#5D4CAB</color>
+    <color name="list_array_dark_5">#66C2A5</color>
+    <color name="list_array_dark_6">#FFBC99</color>
+
+
+    <color name="list_array_dark_7">#FFA58E</color>
+    <color name="list_array_dark_8">#B5A3FE</color>
+    <color name="list_array_dark_9">#ACE4FC</color>
+    <color name="list_array_dark_10">#66C2A5</color>
+    <color name="list_array_dark_11">#FED890</color>
+    <color name="list_array_dark_12">#FF7D88</color>
+
+
+    <color name="color_english_dark">#E1B35B</color>
+    <color name="color_chemistry_dark">#FEBE47</color>
+    <color name="color_bio_dark">#5D4CAB</color>
+    <color name="color_maths_dark">#3187BC</color>
+    <color name="color_hindi_dark">#66C2A5</color>
+    <color name="color_physics_dark">#FF9B3F</color>
+    <color name="color_malayalam_dark">#6DC8F1</color>
+
+    <color name="color_arabic_dark">#FF9B3F</color>
+    <color name="color_accoundancy_dark">#9580E4</color>
+    <color name="color_social_dark">#FEBE48</color>
+    <color name="color_economics_dark">#7BCCA0</color>
+    <color name="color_computer_dark">#3187BD</color>
+
+
+    <color name="color_social_light">#FFFBF3</color>
+    <color name="color_physics_light">#FFFBF3</color>
+    <color name="color_maths_light">#E9F7FF</color>
+    <color name="color_malayalam_light">#E4F6FF</color>
+    <color name="color_hindi_light">#DEFFF5</color>
+    <color name="color_bio_light">#E2DCFF</color>
+
+    <color name="color_english_light">#FFEFD1</color>
+    <color name="color_computer_light">#E4F4FF</color>
+    <color name="color_chemistry_light">#FFF4DF</color>
+    <color name="color_arabic_light">#FFE8D2</color>
+    <color name="color_economics_light">#DCFFEC</color>
+
+    <color name="color_accounts_light">#EEE9FF</color>
+
+
+    <color name="test">#fa00e1</color>
+
+
+
+<!--    <color name="purple_200">#FFBB86FC</color>-->
+<!--    <color name="purple_500">#FF6200EE</color>-->
+<!--    <color name="purple_700">#FF3700B3</color>-->
+<!--    <color name="teal_200">#FF03DAC5</color>-->
+<!--    <color name="teal_700">#FF018786</color>-->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="red_light100">#FFF2F2</color>
+    <color name="green_100">#D5EEE3</color>
+    <color name="green_light100">#F5FCF8</color>
+    <color name="green_light600">#9CF1C4</color>
+    <color name="green_300">#29C17E</color>
+    <color name="green_400">#05336A</color>
+    <color name="pd_green_300">#0ae353</color>
+    <color name="pd_green_200">#56B050</color>
+    <color name="fresh_green_200">#299F16</color>
+    <color name="fresh_red_200">#F85260</color>
+
+    <color name="fresh_green_light_100">#E9F5E7</color>
+    <color name="fresh_red_light_100">#FEECEE</color>
+
+    <color name="blue_gray_100">#E4E9EF</color>
+
+    <color name="light_green800">#6FC31C</color>
+
+    <color name="aqua_green100">#6C9B8C</color>
+
+    <color name="green_600">#04B557</color>
+
+    <color name="green_light500">#EFF7EA</color>
+    <color name="green_500">#5FB435</color>
+
+
+    <color name="orange_light500">#FFF4EA</color>
+    <color name="orange_500">#FE9637</color>
+
+    <color name="trans">#2F000000 </color>
+
+    <color name="gray_50">#FEFEFF</color>
+    <color name="gray_100">#F8F9F9</color>
+    <color name="gray_150">#F2F3F4</color>
+    <color name="gray_200">#D5D8DC</color>
+    <color name="gray_300">#AEB6BF</color>
+    <color name="gray_400">#808B96</color>
+    <color name="gray_500">#566573</color>
+    <color name="gray_600">#828282</color>
+    <color name="gray_700">#7B7D7D</color>
+    <color name="gray_800">#2C3E50</color>
+    <color name="gray_900">#707070</color>
+    <color name="gray_1k">#2E2E2E</color>
+    <color name="light_gray_200">#F3F3F3</color>
+    <color name="light_gray_300">#CDCDCD</color>
+
+    <color name="gray_11k">#c5c5c5</color>
+
+    <color name="gray_color100">#676767</color>
+
+    <color name="red_300">#FF2222</color>
+    <color name="red_200">#eb381c</color>
+
+    <color name="light_blue100">#FFEEB6</color>
+
+    <color name="light_blue_100">#E4F2FB</color>
+    <color name="dark_blue_100">#058EE9</color>
+
+    <color name="back_shadow_blue_100">#60B8F2</color>
+
+    <color name="light_gray_100">#F3F3F3</color>
+
+    <color name="dark_gray_700">#1C1C1C</color>
+    <color name="dark_gray_800">#383938</color>
+
+    <color name="pink_300">#FF5457</color>
+    <color name="blue_500">#0B67EE</color>
+
+    <color name="yellow_200">#F6AC0A</color>
+    <color name="yellow_300">#FEA04B</color>
+
+    <color name="fab1">#56C5FD</color>
+    <color name="fab2">#5654DA</color>
+    <color name="fab3">#FF225A</color>
+    <color name="fab4">#37C553</color>
+
+    <color name="col_rect_01">#9B07B2</color>
+    <color name="col_rect_02">#F85A00</color>
+    <color name="col_rect_03">#F42068</color>
+    <color name="col_rect_04">#FC9500</color>
+
+    <color name="light_color_rect_04">#FFEED5</color>
+
+    <color name="color_pink_500">#F21E66</color>
+    <color name="light_pink_100">#FFF2F7</color>
+
+    <color name="light_purple_100">#FDF3FE</color>
+    <color name="light_red_100">#FFE9E9</color>
+
+    <color name= "color_aqua">#1ACCCB</color>
+    <color name="light_aqua_100">#DFFFFF</color>
+
+    <color name="color_yellow_500">#E9B917</color>
+    <color name="light_yellow_100">#FFFBEB</color>
+
+    <color name="light_purple_200">#F7F2FD</color>
+
+    <color name="light_blue_200">#F2F9FF</color>
+
+    <color name="color_physics">#FE2223</color>
+    <color name="color_chemistry">#FE9637</color>
+
+    <color name="color_maths">#732EBE</color>
+    <color name="color_bio">#68BC0F</color>
+    <color name="color_hindi">#04AF82</color>
+    <color name="color_general">#1C6FFF</color>
+
+    <color name="color_arabic">#0268B7</color>
+
+    <color name="color_computer">#00A0F3</color>
+    <color name="color_malayalam">#F51F67</color>
+
+    <color name="color_accounts">#25AC68</color>
+    <color name="color_english">#49C4FB</color>
+    <color name="color_econonics">#F7A319</color>
+    <color name="color_social">#F85A00</color>
+
+    <color name="color_bussiness">#324BEF</color>
+
+
+
+    <color name="color_book">#8BB8B8</color>
+
+    <color name="color100_physics">#FFDCDC</color>
+    <color name="color100_chemistry">#FFEEDE</color>
+
+    <color name="color100_maths">#E8D2FF</color>
+    <color name="color100_bio">#E8FFD1</color>
+    <color name="color100_hindi">#D9FFF5</color>
+    <color name="color100_general">#C4D9FF</color>
+
+    <color name="color100_computer">#C4EBFF</color>
+    <color name="color100_malayalam">#FFBCD3</color>
+
+    <color name="color100_accounts">#DBFFED</color>
+    <color name="color100_english">#CBEFFF</color>
+
+    <color name="color100_arabic">#D8EEFF</color>
+
+
+    <color name="color100_econonics">#FFE9C5</color>
+    <color name="color100_social">#FFDFCC</color>
+
+    <color name="color100_bussiness">#D5DBFF</color>
+
+
+    <color name="light_green">#A9E6AC</color>
+    <color name="light_orange">#F1D6C2</color>
+    <color name="light_blue">#CEE5F5</color>
+
+    <color name="result_blue">#6C9CBC</color>
+    <color name="result_green">#099512</color>
+    <color name="result_orange">#FF6F00</color>
+
+
+    <color name="pd_report_color1">#2bb7d0</color>
+    <color name="pd_report_color2">#f5cb39</color>
+    <color name="pd_report_color3">#586df7</color>
+    <color name="pd_report_color4">#28b873</color>
+    <color name="pd_report_color5">#6111cc</color>
+    <color name="pd_report_color6">#f85c5f</color>
+    <color name="pd_report_color7">#ff824c</color>
+
+
+
+    <color name="report_progress_color_1">#2AA5A2</color>
+    <color name="report_progress_color_2">#68BC0F</color>
+    <color name="report_progress_color_3">#255E71</color>
+
+
+    <color name="progress_gray">#FFD8D8D8</color>
+    <color name="progress_gray_dark">#FF383838</color>
+    <color name="default_blue_light">#ff33b5e5</color>
+
+</resources>

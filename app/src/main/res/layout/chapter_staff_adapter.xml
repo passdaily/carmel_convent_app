@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="0.5dp"
+    android:layout_margin="2dp"
+    app:cardBackgroundColor="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/shapeImageView"
+            android:layout_width="@dimen/dashboard_video_height_width"
+            android:layout_height="@dimen/dashboard_video_height_width"
+            android:layout_marginStart="8dp"
+            android:adjustViewBounds="true"
+            android:padding="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_study_biology"
+            app:layout_constraintBottom_toBottomOf="@+id/textSubject"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@+id/textChapterName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textChapterName"
+            app:layout_constraintVertical_bias="0.571"
+            app:shapeAppearanceOverlay="@style/circleImageView"
+            app:strokeColor="@color/color100_bio"
+            app:strokeWidth="3dp" />
+
+        <TextView
+            android:id="@+id/textChapterName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="2dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Biology"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_04"
+            app:layout_constraintEnd_toStartOf="@+id/imageViewMore"
+            app:layout_constraintHorizontal_weight="9"
+            app:layout_constraintStart_toEndOf="@+id/shapeImageView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textSubject"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Mark : 40.0"
+            android:textColor="@color/gray_400"
+            android:textSize="@dimen/text_size_04"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/textChapterName"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/textChapterName"
+            app:layout_constraintTop_toBottomOf="@+id/textChapterName"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+
+            android:id="@+id/imageViewMore"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/icon_size"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_more_icon"
+            app:layout_constraintBottom_toBottomOf="@+id/textChapterName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/textChapterName"
+            app:layout_constraintTop_toTopOf="@+id/textChapterName"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

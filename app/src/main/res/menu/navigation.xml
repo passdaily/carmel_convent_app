@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_nav_home"
+        android:title="@string/dashboard"
+        android:textSize="7dp"/>
+
+    <item
+        android:id="@+id/navigation_inbox"
+        android:icon="@drawable/ic_nav_inbox"
+        android:title="@string/inbox"
+        android:textSize="7dp"/>
+
+    <item
+        android:id="@+id/navigation_enquiry"
+        android:icon="@drawable/ic_nav_enquiry"
+        android:title="@string/enquiry_tab"
+        android:textSize="7dp"/>
+    <item
+        android:id="@+id/navigation_leave"
+        android:icon="@drawable/ic_nav_leave"
+        android:title="@string/leave"
+        android:textSize="7dp"/>
+    <item
+        android:id="@+id/navigation_map"
+        android:icon="@drawable/ic_nav_track"
+        android:title="@string/track"
+        android:textSize="7dp"/>
+
+</menu>

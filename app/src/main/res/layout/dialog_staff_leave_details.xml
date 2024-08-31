@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:titleTextAppearance="@style/ToolbarTitleTheme"
+            app:popupTheme="@style/Theme.ParentApplication.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLeave"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.02" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.02" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.98" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView34"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="@dimen/text_size_03"
+                app:cardElevation="1dp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline32"
+                app:layout_constraintStart_toStartOf="@+id/guideline31"
+                app:layout_constraintTop_toTopOf="@+id/guideline15">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/shapeImageView"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="16dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/round_account_button_with_user_inside"
+                        app:layout_constraintDimensionRatio="1:1"
+                        app:layout_constraintEnd_toStartOf="@+id/textViewStaffName"
+                        app:layout_constraintHorizontal_weight="1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:shapeAppearance="@style/ShapeAppearance.ImageView" />
+
+                    <TextView
+                        android:id="@+id/textViewStaffName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="TextView"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_04"
+                        app:layout_constraintBottom_toTopOf="@+id/textViewMobile"
+                        app:layout_constraintEnd_toStartOf="@+id/imageViewCall"
+                        app:layout_constraintHorizontal_weight="3"
+                        app:layout_constraintStart_toEndOf="@+id/shapeImageView" />
+
+                    <TextView
+                        android:id="@+id/textViewMobile"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="TextView"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_04"
+                        app:layout_constraintBottom_toBottomOf="@+id/shapeImageView"
+                        app:layout_constraintEnd_toEndOf="@+id/textViewStaffName"
+                        app:layout_constraintStart_toStartOf="@+id/textViewStaffName" />
+
+
+                    <TextView
+                        android:id="@+id/textViewApproveDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:background="@drawable/bg_text_round_gray"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="center"
+                        android:paddingStart="12dp"
+                        android:paddingTop="5dp"
+                        android:paddingEnd="12dp"
+                        android:paddingBottom="5dp"
+                        android:text="Applied On : 12 May, 2023"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_01"
+                        app:layout_constraintBottom_toBottomOf="@+id/textViewApproveStatus"
+                        app:layout_constraintStart_toEndOf="@+id/textViewApproveStatus"
+                        app:layout_constraintTop_toTopOf="@+id/textViewApproveStatus" />
+
+                    <TextView
+                        android:id="@+id/textViewApproveStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/bg_text_round_green"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="center"
+                        android:paddingStart="16dp"
+                        android:paddingTop="5dp"
+                        android:paddingEnd="16dp"
+                        android:paddingBottom="5dp"
+                        android:text="Waiting for reply"
+                        android:textColor="@color/fresh_green_200"
+                        android:textSize="@dimen/text_size_01"
+                        app:layout_constraintEnd_toEndOf="@+id/textViewFromDate"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="@+id/shapeImageView"
+                        app:layout_constraintTop_toBottomOf="@+id/textViewMobile" />
+
+                    <ImageView
+                        android:id="@+id/imageViewCall"
+                        android:layout_width="@dimen/result_duration_icon"
+                        android:layout_height="@dimen/result_duration_icon"
+                        android:layout_marginEnd="12dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/textViewMobile"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/textViewStaffName"
+                        app:srcCompat="@drawable/ic_call_icon_yellow" />
+
+                    <TextView
+                        android:id="@+id/textViewFromDate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="4dp"
+                        android:drawableStart="@drawable/ic_date_icon"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="center_vertical"
+                        android:text=" From : 29 Sep, 2023"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_02"
+                        app:layout_constraintEnd_toStartOf="@+id/textViewEndDate"
+                        app:layout_constraintStart_toStartOf="@+id/shapeImageView"
+                        app:layout_constraintTop_toBottomOf="@+id/textViewApproveDate" />
+
+                    <TextView
+                        android:id="@+id/textViewEndDate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:gravity="center_vertical"
+                        android:drawableStart="@drawable/ic_date_icon"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text=" To : 29 Sep, 2023"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_02"
+                        app:layout_constraintBottom_toBottomOf="@+id/textViewFromDate"
+                        app:layout_constraintEnd_toEndOf="@+id/imageViewCall"
+                        app:layout_constraintStart_toEndOf="@+id/textViewFromDate"
+                        app:layout_constraintTop_toTopOf="@+id/textViewFromDate" />
+
+                    <TextView
+                        android:id="@+id/textViewTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="TextView"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_02"
+                        app:layout_constraintEnd_toEndOf="@+id/textViewEndDate"
+                        app:layout_constraintStart_toStartOf="@+id/textViewFromDate"
+                        app:layout_constraintTop_toBottomOf="@+id/textViewFromDate" />
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintLayout34"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/bg_square_gray"
+                        app:layout_constraintEnd_toEndOf="@+id/textViewTitle"
+                        app:layout_constraintHorizontal_bias="0.489"
+                        app:layout_constraintStart_toStartOf="@+id/textViewTitle"
+                        app:layout_constraintTop_toBottomOf="@+id/textViewTitle">
+
+                        <TextView
+                            android:id="@+id/textViewDescription"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_medium"
+                            android:padding="8dp"
+                            android:text="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters"
+                            android:textColor="@color/gray_700"
+                            android:textSize="@dimen/text_size_02"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+
+                        android:id="@+id/recyclerViewFiles"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="16dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/constraintLayout34"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="@+id/constraintLayout34"
+                        app:layout_constraintTop_toBottomOf="@+id/constraintLayout34" />
+
+
+                    <TextView
+                        android:id="@+id/textViewNoFilesStudent"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/fourth_box_size"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:background="@drawable/bg_blank"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="center"
+                        android:text="No Files"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_02"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/constraintLayout34"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="@+id/constraintLayout34"
+                        app:layout_constraintTop_toBottomOf="@+id/constraintLayout34"/>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"
+                app:layout_constraintBottom_toTopOf="@+id/constraintLayout35"
+                app:layout_constraintEnd_toStartOf="@+id/guideline32"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline31"
+                app:layout_constraintTop_toBottomOf="@+id/cardView34"
+                app:layout_constraintVertical_bias="0.956">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextComments"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="top|start"
+                    android:hint="@string/reply"
+                    android:inputType="text|textMultiLine"
+                    android:lines="20"
+                    android:minLines="3"
+                    android:scrollbars="vertical"
+                    android:scrollHorizontally="false"
+                    android:textColor="@color/black" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout35"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline32"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline31">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/buttonRejected"
+                    style="@style/RoundedCornerButtonRedFresh"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/textbox_height"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginBottom="16dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="@string/reject"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_05"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/buttonApproved"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/buttonApproved"
+                    style="@style/RoundedCornerButtonGreenFresh"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/textbox_height"
+                    android:layout_marginStart="4dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="@string/approve"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_05"
+                    app:layout_constraintBottom_toBottomOf="@+id/buttonRejected"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/buttonRejected"
+                    app:layout_constraintTop_toTopOf="@+id/buttonRejected" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

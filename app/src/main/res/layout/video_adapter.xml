@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="0.5dp"
+    android:layout_margin="3dp"
+    app:cardCornerRadius="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_margin="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+
+<!--        <com.google.android.exoplayer2.ui.StyledPlayerView-->
+<!--            android:id="@+id/imageViewFile"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="0dp"-->
+<!--            app:show_subtitle_button="true"-->
+<!--            argType:fastforward_increment="15000"-->
+<!--            argType:resize_mode="fixed_width"-->
+<!--            argType:rewind_increment="15000"-->
+<!--            argType:show_buffering="when_playing"-->
+<!--            argType:show_fastforward_button="true"-->
+<!--            argType:show_next_button="false"-->
+<!--            argType:show_previous_button="false"-->
+<!--            argType:show_rewind_button="true"-->
+<!--            argType:show_subtitle_button="true"-->
+<!--            argType:use_artwork="true"-->
+<!--            argType:use_controller="true"-->
+<!--            argType:use_sensor_rotation="true"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintDimensionRatio="1.5:1"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.0"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_bias="0.006" />-->
+
+        <ImageView
+            android:id="@+id/imageViewFile"
+            android:layout_width="0dp"
+            android:scaleType="centerCrop"
+            android:layout_height="@dimen/toolbar_height"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/artboard_exam" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

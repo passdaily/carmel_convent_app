@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:titleTextAppearance="@style/ToolbarTitleTheme"
+            app:popupTheme="@style/Theme.ParentApplication.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_marginTop="?attr/actionBarSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="0dp">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.01" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.025" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.975" />
+
+
+            <RelativeLayout
+                android:id="@+id/linearLayout8"
+                android:layout_width="0dp"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/bg_spinner"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toStartOf="@+id/relativeLayout3"
+                app:layout_constraintStart_toStartOf="@+id/guideline31"
+                app:layout_constraintTop_toTopOf="@+id/guideline15">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginBottom="3dp">
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/spinnerAcademic"
+                        style="@style/spinner_style2"
+                        android:theme="@style/ThemeOverlay.AppCompat.Light"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="-3dp"
+                    android:background="@color/white"
+                    android:fontFamily="@font/poppins_light_italic"
+                    android:paddingStart="3dp"
+                    android:paddingEnd="3dp"
+                    android:text="@string/select_year"
+                    android:textColor="@color/dark_gray_700"
+                    android:textSize="12sp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout3"
+                android:layout_width="0dp"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_marginStart="4dp"
+                android:background="@drawable/bg_spinner"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="@+id/linearLayout8"
+                app:layout_constraintEnd_toStartOf="@+id/guideline32"
+                app:layout_constraintStart_toEndOf="@+id/linearLayout8"
+                app:layout_constraintTop_toTopOf="@+id/linearLayout8"
+                app:layout_constraintVertical_bias="0.0">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginBottom="3dp">
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/spinnerClass"
+                        style="@style/spinner_style2"
+                        android:theme="@style/ThemeOverlay.AppCompat.Light"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="-3dp"
+                    android:background="@color/white"
+                    android:fontFamily="@font/poppins_light_italic"
+                    android:paddingStart="3dp"
+                    android:paddingEnd="3dp"
+                    android:text="@string/select_class"
+                    android:textColor="@color/dark_gray_700"
+                    android:textSize="12sp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout4"
+                android:layout_width="0dp"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_spinner"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="@+id/linearLayout8"
+                app:layout_constraintStart_toStartOf="@+id/linearLayout8"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout8">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginBottom="3dp">
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/spinnerSubject"
+                        style="@style/spinner_style2"
+                        android:theme="@style/ThemeOverlay.AppCompat.Light"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="-3dp"
+                    android:background="@color/white"
+                    android:fontFamily="@font/poppins_light_italic"
+                    android:paddingStart="3dp"
+                    android:paddingEnd="3dp"
+                    android:text="@string/select_subject"
+                    android:textColor="@color/dark_gray_700"
+                    android:textSize="12sp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout8"
+                android:layout_width="0dp"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@drawable/bg_spinner"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="@+id/relativeLayout3"
+                app:layout_constraintStart_toStartOf="@+id/relativeLayout3"
+                app:layout_constraintTop_toTopOf="@+id/relativeLayout4">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginBottom="3dp">
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/spinnerExam"
+                        style="@style/spinner_style2"
+                        android:theme="@style/ThemeOverlay.AppCompat.Light"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="-3dp"
+                    android:background="@color/white"
+                    android:fontFamily="@font/poppins_light_italic"
+                    android:paddingStart="3dp"
+                    android:paddingEnd="3dp"
+                    android:text="@string/select_exam"
+                    android:textColor="@color/dark_gray_700"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout9"
+                android:layout_width="0dp"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_spinner"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toStartOf="@+id/guideline32"
+                app:layout_constraintStart_toStartOf="@+id/guideline31"
+                app:layout_constraintTop_toBottomOf="@+id/relativeLayout4">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginBottom="3dp">
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/spinnerQuestionType"
+                        style="@style/spinner_style2"
+                        android:theme="@style/ThemeOverlay.AppCompat.Light"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="-3dp"
+                    android:background="@color/white"
+                    android:fontFamily="@font/poppins_light_italic"
+                    android:paddingStart="3dp"
+                    android:paddingEnd="3dp"
+                    android:text="@string/question_type"
+                    android:textColor="@color/dark_gray_700"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"
+                app:layout_constraintEnd_toStartOf="@+id/guideline32"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline31"
+                app:layout_constraintTop_toBottomOf="@+id/relativeLayout9">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextTitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="top|start"
+                    android:hint="@string/enter_question"
+                    android:inputType="text|textMultiLine"
+                    android:lines="20"
+                    android:minLines="2"
+                    android:scrollbars="vertical"
+                    android:scrollHorizontally="false"
+                    android:textColor="@color/black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--            <com.google.android.material.textfield.TextInputLayout-->
+            <!--                android:id="@+id/textInputLayout1"-->
+            <!--                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+            <!--                android:layout_width="0dp"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="8dp"-->
+            <!--                android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"-->
+            <!--                app:layout_constraintEnd_toStartOf="@+id/guideline32"-->
+            <!--                app:layout_constraintHorizontal_bias="1.0"-->
+            <!--                app:layout_constraintStart_toStartOf="@+id/guideline31"-->
+            <!--                app:layout_constraintTop_toBottomOf="@+id/constraintLayoutUpload">-->
+
+            <!--                <com.google.android.material.textfield.TextInputEditText-->
+            <!--                    android:id="@+id/editTextOption1"-->
+            <!--                    android:layout_width="fill_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:fontFamily="@font/roboto_regular"-->
+            <!--                    android:gravity="top|start"-->
+            <!--                    android:hint="@string/option1"-->
+            <!--                    android:inputType="text"-->
+            <!--                    android:minLines="1"-->
+            <!--                    android:scrollbars="vertical"-->
+            <!--                    android:scrollHorizontally="false"-->
+            <!--                    android:textColor="@color/black" />-->
+
+            <!--            </com.google.android.material.textfield.TextInputLayout>-->
+
+            <!--            <com.google.android.material.textfield.TextInputLayout-->
+            <!--                android:id="@+id/textInputLayout2"-->
+            <!--                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+            <!--                android:layout_width="0dp"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="8dp"-->
+            <!--                android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"-->
+            <!--                app:layout_constraintEnd_toStartOf="@+id/guideline32"-->
+            <!--                app:layout_constraintHorizontal_bias="0.0"-->
+            <!--                app:layout_constraintStart_toStartOf="@+id/guideline31"-->
+            <!--                app:layout_constraintTop_toBottomOf="@+id/textInputLayout1">-->
+
+            <!--                <com.google.android.material.textfield.TextInputEditText-->
+            <!--                    android:id="@+id/editTextOption2"-->
+            <!--                    android:layout_width="fill_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:fontFamily="@font/roboto_regular"-->
+            <!--                    android:gravity="top|start"-->
+            <!--                    android:hint="@string/option2"-->
+            <!--                    android:inputType="text"-->
+            <!--                    android:minLines="1"-->
+            <!--                    android:scrollbars="vertical"-->
+            <!--                    android:scrollHorizontally="false"-->
+            <!--                    android:textColor="@color/black" />-->
+
+            <!--            </com.google.android.material.textfield.TextInputLayout>-->
+            <!--            -->
+            <!--            <com.google.android.material.textfield.TextInputLayout-->
+            <!--                android:id="@+id/textInputLayout3"-->
+            <!--                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+            <!--                android:layout_width="0dp"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="8dp"-->
+            <!--                android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"-->
+            <!--                app:layout_constraintEnd_toStartOf="@+id/guideline32"-->
+            <!--                app:layout_constraintHorizontal_bias="0.0"-->
+            <!--                app:layout_constraintStart_toStartOf="@+id/guideline31"-->
+            <!--                app:layout_constraintTop_toBottomOf="@+id/textInputLayout2">-->
+
+            <!--                <com.google.android.material.textfield.TextInputEditText-->
+            <!--                    android:id="@+id/editTextOption3"-->
+            <!--                    android:layout_width="fill_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:fontFamily="@font/roboto_regular"-->
+            <!--                    android:gravity="top|start"-->
+            <!--                    android:hint="@string/option3"-->
+            <!--                    android:inputType="text"-->
+            <!--                    android:minLines="1"-->
+            <!--                    android:scrollbars="vertical"-->
+            <!--                    android:scrollHorizontally="false"-->
+            <!--                    android:textColor="@color/black" />-->
+
+            <!--            </com.google.android.material.textfield.TextInputLayout>-->
+            <!--            -->
+            <!--            <com.google.android.material.textfield.TextInputLayout-->
+            <!--                android:id="@+id/textInputLayout4"-->
+            <!--                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+            <!--                android:layout_width="0dp"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="8dp"-->
+            <!--                android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"-->
+            <!--                app:layout_constraintEnd_toStartOf="@+id/guideline32"-->
+            <!--                app:layout_constraintHorizontal_bias="0.0"-->
+            <!--                app:layout_constraintStart_toStartOf="@+id/guideline31"-->
+            <!--                app:layout_constraintTop_toBottomOf="@+id/textInputLayout3">-->
+
+            <!--                <com.google.android.material.textfield.TextInputEditText-->
+            <!--                    android:id="@+id/editTextOption4"-->
+            <!--                    android:layout_width="fill_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:fontFamily="@font/roboto_regular"-->
+            <!--                    android:gravity="top|start"-->
+            <!--                    android:hint="@string/option4"-->
+            <!--                    android:inputType="text"-->
+            <!--                    android:minLines="1"-->
+            <!--                    android:scrollbars="vertical"-->
+            <!--                    android:scrollHorizontally="false"-->
+            <!--                    android:textColor="@color/black" />-->
+
+            <!--            </com.google.android.material.textfield.TextInputLayout>-->
+            <!--            -->
+            <!--            <TextView-->
+            <!--                android:id="@+id/textView107"-->
+            <!--                android:layout_width="0dp"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="16dp"-->
+            <!--                android:text="Select Right Option"-->
+            <!--                android:textColor="@color/black"-->
+            <!--                android:textSize="@dimen/text_size_02"-->
+            <!--                android:fontFamily="@font/roboto_medium"-->
+            <!--                app:layout_constraintEnd_toStartOf="@+id/guideline32"-->
+            <!--                app:layout_constraintStart_toStartOf="@+id/guideline31"-->
+            <!--                app:layout_constraintTop_toBottomOf="@+id/textInputLayout4" />-->
+
+            <!--            <RadioGroup-->
+            <!--                android:id="@+id/radioGroup"-->
+            <!--                android:layout_width="0dp"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="8dp"-->
+            <!--                app:layout_constraintEnd_toStartOf="@+id/guideline32"-->
+            <!--                app:layout_constraintStart_toStartOf="@+id/textView107"-->
+            <!--                app:layout_constraintTop_toBottomOf="@+id/textView107">-->
+
+
+            <!--                <RadioButton-->
+            <!--                    android:id="@+id/radioButton1"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_marginTop="8dp"-->
+            <!--                    android:text="Option 1"-->
+            <!--                    android:theme="@style/MyRadioButton" />-->
+
+            <!--                <RadioButton-->
+            <!--                    android:id="@+id/radioButton2"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_marginTop="8dp"-->
+            <!--                    android:text="Option 2"-->
+            <!--                    android:theme="@style/MyRadioButton" />-->
+
+            <!--                <RadioButton-->
+            <!--                    android:id="@+id/radioButton3"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_marginTop="8dp"-->
+            <!--                    android:text="Option 3"-->
+            <!--                    android:theme="@style/MyRadioButton" />-->
+
+            <!--                <RadioButton-->
+            <!--                    android:id="@+id/radioButton4"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_marginTop="8dp"-->
+            <!--                    android:text="Option 4"-->
+            <!--                    android:theme="@style/MyRadioButton" />-->
+            <!--            </RadioGroup>-->
+
+            <!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+            <!--                android:visibility="gone"-->
+            <!--                android:id="@+id/constraintLayoutUpload"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="8dp"-->
+            <!--                app:layout_constraintStart_toStartOf="@+id/guideline31"-->
+            <!--                app:layout_constraintTop_toBottomOf="@+id/textInputLayout">-->
+
+            <!--                <ImageView-->
+            <!--                    android:visibility="gone"-->
+            <!--                    android:id="@+id/uploadTypeImage"-->
+            <!--                    android:layout_width="@dimen/online_video_icon_height"-->
+            <!--                    android:layout_height="@dimen/online_video_icon_height"-->
+            <!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+            <!--                    app:layout_constraintHorizontal_bias="0.0"-->
+            <!--                    app:layout_constraintStart_toStartOf="parent"-->
+            <!--                    app:layout_constraintTop_toTopOf="parent"-->
+            <!--                    app:layout_constraintVertical_bias="0.408"-->
+            <!--                    app:srcCompat="@drawable/ic_upload_icon" />-->
+
+
+
+            <!--                <ImageView-->
+            <!--                    android:visibility="gone"-->
+            <!--                    android:id="@+id/uploadImage"-->
+            <!--                    android:layout_width="@dimen/online_video_icon_width"-->
+            <!--                    android:layout_height="@dimen/online_video_icon_width"-->
+            <!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+            <!--                    app:layout_constraintHorizontal_bias="0.0"-->
+            <!--                    app:layout_constraintStart_toStartOf="parent"-->
+            <!--                    app:layout_constraintTop_toTopOf="parent"-->
+            <!--                    app:layout_constraintVertical_bias="0.0"-->
+            <!--                    tools:srcCompat="@tools:sample/avatars" />-->
+
+            <!--                <ImageView-->
+            <!--                    android:visibility="gone"-->
+            <!--                    android:id="@+id/imageViewClose"-->
+            <!--                    android:layout_width="@dimen/icon_size"-->
+            <!--                    android:layout_height="@dimen/icon_size"-->
+            <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+            <!--                    app:layout_constraintTop_toTopOf="parent"-->
+            <!--                    app:srcCompat="@drawable/ic_black_close" />-->
+
+
+            <!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayoutUpload"
+                android:layout_width="@dimen/screen_width_msp_hs"
+                android:layout_height="@dimen/screen_width_msp_hs"
+                android:layout_marginTop="8dp"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="@+id/guideline31"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/imageViewClose"
+                    android:layout_width="@dimen/spinner_custom_image"
+                    android:layout_height="@dimen/spinner_custom_image"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="@dimen/text_size_04"
+                    app:cardElevation="5dp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <ImageView
+                        android:id="@+id/imageMore"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:padding="8dp"
+                        app:srcCompat="@drawable/ic_close_x_icon" />
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_margin="3dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="2dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintDimensionRatio="1:1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <ImageView
+                            android:visibility="gone"
+                            android:id="@+id/uploadTypeImage"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.408"
+                            app:srcCompat="@drawable/ic_upload_icon" />
+
+
+
+                        <ImageView
+                            android:visibility="gone"
+                            android:id="@+id/uploadImage"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.0"
+                            tools:srcCompat="@tools:sample/avatars" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/fabAddOption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Add Option"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_02"
+                app:icon="@drawable/ic_icon_add"
+                app:iconTint="@color/white"
+                app:layout_constraintEnd_toStartOf="@+id/guideline32"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayoutUpload" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonSubmit"
+                style="@style/RoundedCornerButtonGreen400"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/create"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_04"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline32"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline31"
+                app:layout_constraintTop_toBottomOf="@+id/recyclerViewOption"
+                app:layout_constraintVertical_bias="0.92" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewOption"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline32"
+                app:layout_constraintStart_toStartOf="@+id/guideline31"
+                app:layout_constraintTop_toBottomOf="@+id/fabAddOption" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

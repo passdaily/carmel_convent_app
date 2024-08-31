@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="1dp"
+    android:layout_marginTop="3dp"
+    android:layout_marginEnd="1dp"
+    android:layout_marginStart="1dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textRollNo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="TextView"
+            android:textColor="@color/gray_600"
+            android:textSize="@dimen/text_size_02"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="2"
+            app:layout_constraintStart_toStartOf="@+id/textStudentName"
+            app:layout_constraintTop_toBottomOf="@+id/textStudentName" />
+
+
+        <TextView
+            android:id="@+id/textClassName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/bg_text_round_green"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="end"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="5dp"
+            android:text="Mobile : "
+            android:textColor="@color/fresh_green_200"
+            android:textSize="@dimen/text_size_02"
+            app:layout_constraintBottom_toBottomOf="@+id/textStudentName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/textStudentName"
+            app:layout_constraintTop_toTopOf="@+id/textStudentName" />
+
+        <!--        <androidx.cardview.widget.CardView-->
+<!--            android:id="@+id/textClassName"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:cardBackgroundColor="@color/green_light100"-->
+<!--            app:cardCornerRadius="10dp"-->
+<!--            app:cardElevation="0dp"-->
+<!--            app:layout_constraintBottom_toBottomOf="@+id/textRollNo"-->
+<!--            app:layout_constraintEnd_toEndOf="@+id/textStudentName"-->
+<!--            app:layout_constraintHorizontal_weight="1"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/textRollNo"-->
+<!--            app:layout_constraintTop_toTopOf="@+id/textRollNo">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textClassName"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:fontFamily="@font/poppins_regular"-->
+<!--                android:paddingStart="@dimen/text_size_01"-->
+<!--                android:paddingTop="6dp"-->
+<!--                android:paddingEnd="@dimen/text_size_01"-->
+<!--                android:paddingBottom="6dp"-->
+<!--                android:text="Class X-B"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="@dimen/text_size_01" />-->
+
+
+<!--        </androidx.cardview.widget.CardView>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textClassName"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="2dp"-->
+<!--            android:fontFamily="@font/poppins_medium"-->
+<!--            android:gravity="end"-->
+<!--            android:text="TextView"-->
+<!--            android:textColor="@color/gray_600"-->
+<!--            android:textSize="@dimen/text_size_02"-->
+<!--            app:layout_constraintBottom_toBottomOf="@+id/textRollNo"-->
+<!--            app:layout_constraintEnd_toEndOf="@+id/textStudentName"-->
+<!--            app:layout_constraintHorizontal_weight="1"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/textRollNo"-->
+<!--            app:layout_constraintTop_toTopOf="@+id/textRollNo" />-->
+
+        <RelativeLayout
+            android:id="@+id/textInputLayout10"
+            android:layout_width="0dp"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/bg_spinner_circle_radius"
+            app:layout_constraintBottom_toTopOf="@+id/textUpdated"
+            app:layout_constraintEnd_toStartOf="@+id/textInputLayout11"
+            app:layout_constraintStart_toStartOf="@+id/textRollNo"
+            app:layout_constraintTop_toBottomOf="@+id/textRollNo">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="3dp"
+                android:layout_marginBottom="3dp">
+
+                <TextView
+                    android:id="@+id/editTextWork"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="center_vertical|bottom"
+                    android:paddingStart="15dp"
+                    android:paddingBottom="15dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_02"
+                    android:theme="@style/ThemeOverlay.AppCompat.Light" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="-3dp"
+                android:background="@color/white"
+                android:fontFamily="@font/poppins_regular"
+                android:paddingStart="3dp"
+                android:paddingEnd="3dp"
+                android:text="@string/work"
+                android:textColor="@color/dark_gray_700"
+                android:textSize="@dimen/text_size_01" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/textInputLayout11"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/bg_spinner_circle_radius"
+            app:layout_constraintBottom_toBottomOf="@+id/textInputLayout10"
+            app:layout_constraintEnd_toStartOf="@+id/textInputLayout12"
+            app:layout_constraintStart_toEndOf="@+id/textInputLayout10"
+            app:layout_constraintTop_toTopOf="@+id/textInputLayout10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="3dp"
+                android:layout_marginBottom="3dp">
+
+                <TextView
+                    android:id="@+id/editTextArt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="center_vertical|bottom"
+                    android:paddingStart="15dp"
+                    android:paddingBottom="15dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_02"
+                    android:theme="@style/ThemeOverlay.AppCompat.Light" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="-3dp"
+                android:background="@color/white"
+                android:fontFamily="@font/poppins_regular"
+                android:paddingStart="3dp"
+                android:paddingEnd="3dp"
+                android:text="@string/art"
+                android:textColor="@color/dark_gray_700"
+                android:textSize="@dimen/text_size_01" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/textInputLayout12"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/bg_spinner_circle_radius"
+            app:layout_constraintBottom_toBottomOf="@+id/textInputLayout11"
+            app:layout_constraintEnd_toStartOf="@+id/textInputLayout14"
+            app:layout_constraintStart_toEndOf="@+id/textInputLayout11"
+            app:layout_constraintTop_toTopOf="@+id/textInputLayout11">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="3dp"
+                android:layout_marginBottom="3dp">
+
+                <TextView
+                    android:id="@+id/editTextHealth"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="center_vertical|bottom"
+                    android:paddingStart="15dp"
+                    android:paddingBottom="15dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_02"
+                    android:theme="@style/ThemeOverlay.AppCompat.Light" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="-3dp"
+                android:background="@color/white"
+                android:fontFamily="@font/poppins_regular"
+                android:paddingStart="3dp"
+                android:paddingEnd="3dp"
+                android:text="@string/health"
+                android:textColor="@color/dark_gray_700"
+                android:textSize="@dimen/text_size_01" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/textInputLayout14"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="2dp"
+            android:background="@drawable/bg_spinner_circle_radius"
+            app:layout_constraintBottom_toBottomOf="@+id/textInputLayout12"
+            app:layout_constraintEnd_toEndOf="@+id/textClassName"
+            app:layout_constraintStart_toEndOf="@+id/textInputLayout12"
+            app:layout_constraintTop_toTopOf="@+id/textInputLayout12">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="3dp"
+                android:layout_marginBottom="3dp">
+
+                <TextView
+                    android:id="@+id/editTextDiscipline"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="center_vertical|bottom"
+                    android:paddingStart="15dp"
+                    android:paddingBottom="15dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_02"
+                    android:theme="@style/ThemeOverlay.AppCompat.Light" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="-3dp"
+                android:background="@color/white"
+                android:fontFamily="@font/poppins_regular"
+                android:paddingStart="3dp"
+                android:paddingEnd="3dp"
+                android:text="@string/discipline"
+                android:textColor="@color/dark_gray_700"
+                android:textSize="@dimen/text_size_01" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/textStudentName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="TextView"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_04"
+            app:layout_constraintEnd_toStartOf="@+id/textClassName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/textUpdated"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="end"
+            android:text="@string/updated"
+            android:textColor="@color/green_600"
+            android:textSize="@dimen/text_size_01"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/textInputLayout14"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout14" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

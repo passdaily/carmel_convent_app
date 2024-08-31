@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+    <group android:id="@+id/one" android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_dashboard"
+            android:title="@string/dashboard" />
+
+        <item
+            android:id="@+id/nav_inbox"
+            android:icon="@drawable/ic_menu_inbox"
+            android:title="@string/inbox" />
+
+        <item
+            android:id="@+id/nav_admin_attendance_marking"
+            android:icon="@drawable/ic_menu_inbox"
+            android:title="@string/admin_attendance_making" />
+
+
+    <item android:title="@string/live_class">
+        <menu>
+            <group android:id="@+id/online_zoom"
+                android:checkableBehavior="none">
+                <item
+                    android:id="@+id/nav_zoom_take_live"
+                    android:icon="@drawable/ic_menu_take_live"
+                    android:title="@string/taking_live_class" />
+                <!--                //Go live-->
+                <item
+                    android:id="@+id/nav_zoom_class_report"
+                    android:icon="@drawable/ic_menu_live_class_report"
+                    android:title="@string/live_class_report" />
+
+                <item
+                    android:id="@+id/nav_zoom_scheduled"
+                    android:icon="@drawable/ic_menu_schedule_live"
+                    android:title="@string/schedule_live_class" />
+
+                <item
+                    android:id="@+id/nav_zoom_join_live"
+                    android:icon="@drawable/ic_menu_join_live_class"
+                    android:title="@string/join_live_class" />
+                <item
+                    android:id="@+id/nav_zoom_current_scheduled"
+                    android:icon="@drawable/ic_menu_current_live_class"
+                    android:title="@string/current_live_class" />
+
+                <item
+                    android:id="@+id/nav_zoom_private_meeting"
+                    android:icon="@drawable/ic_menu_private_meeting"
+                    android:title="@string/private_meeting" />
+
+            </group>
+
+        </menu>
+    </item>
+    </group>
+
+    <item android:title="@string/online_video_class">
+        <menu>
+            <group android:id="@+id/online_youtube"   android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/nav_manage_subject_chapter"
+                    android:icon="@drawable/ic_menu_subject_chapter"
+                    android:title="@string/manage_subject_chapter" />
+                <item
+                    android:id="@+id/nav_manage_youtube_class"
+                    android:icon="@drawable/ic_menu_video"
+                    android:title="@string/manage_video_details" />
+
+            </group>
+
+        </menu>
+    </item>
+    <item android:title="@string/online_assignment">
+        <menu>
+            <group android:id="@+id/online_assignment"  android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_manage_assigment"
+                    android:icon="@drawable/ic_menu_home_work"
+                    android:title="@string/manage_hw_assignment" />
+
+            </group>
+
+        </menu>
+    </item>
+    <item android:title="@string/study_material">
+        <menu>
+            <group android:id="@+id/four"  android:checkableBehavior="all">
+                <item
+                    android:id="@+id/nav_manage_studymaterial"
+                    android:icon="@drawable/ic_menu_study_material"
+                    android:title="@string/manage_study_material" />
+
+            </group>
+
+        </menu>
+    </item>
+
+    <item android:title="@string/exams">
+        <menu>
+            <group android:id="@+id/online_exam"  android:checkableBehavior="all">
+                <item
+                    android:id="@+id/nav_manage_exam"
+                    android:icon="@drawable/ic_menu_object_exam"
+                    android:title="@string/manage_objective_exam"/>
+
+                <item
+                    android:id="@+id/nav_manage_desc_exam"
+                    android:icon="@drawable/ic_menu_descriptive_exam"
+                    android:title="@string/manage_descriptive_exam"/>
+
+<!--                <item-->
+<!--                    android:id="@+id/nav_manage_question"-->
+<!--                    android:icon="@drawable/ic_menu_object_exam"-->
+<!--                    android:title="@string/objective_question"/>-->
+
+            </group>
+
+        </menu>
+    </item>
+
+<!--    <item android:title="@string/descriptive_exam">-->
+<!--        <menu>-->
+<!--            <group android:id="@+id/des_exam"  android:checkableBehavior="all">-->
+
+<!--                <item-->
+<!--                    android:id="@+id/nav_manage_desc_exam"-->
+<!--                    android:icon="@drawable/ic_menu_descriptive_exam"-->
+<!--                    android:title="@string/manage_descriptive_exam"/>-->
+
+<!--                <item-->
+<!--                    android:id="@+id/nav_manage_desc_question"-->
+<!--                    android:icon="@drawable/ic_menu_descriptive_exam"-->
+<!--                    android:title="@string/manage_descriptive_question"/>-->
+<!--            </group>-->
+
+<!--        </menu>-->
+<!--    </item>-->
+
+
+    <item android:title="@string/communication">
+        <menu>
+            <group android:id="@+id/communi"  android:checkableBehavior="all">
+<!--                <item-->
+<!--                    android:id="@+id/nav_msg_send"-->
+<!--                    android:icon="@drawable/ic_menu_inbox"-->
+<!--                    android:title="@string/quickmessage" />-->
+<!--                <item-->
+<!--                    android:id="@+id/nav_msg_sendreg"-->
+<!--                    android:icon="@drawable/ic_menu_translate"-->
+<!--                    android:title="@string/quickregionalmsg" />-->
+
+                <item
+                    android:id="@+id/nav_msg_sendvoice"
+                    android:icon="@drawable/ic_menu_voice"
+                    android:title="@string/quickvoicesms" />
+
+                <item
+                    android:id="@+id/nav_newmail"
+                    android:icon="@drawable/ic_menu_notification"
+                    android:title="@string/quicknotification" />
+
+            </group>
+
+        </menu>
+    </item>
+
+    <group android:id="@+id/two"  android:checkableBehavior="all">
+
+<!--        <item-->
+<!--            android:id="@+id/nav_dclass"-->
+<!--            android:icon="@drawable/ic_menu_gallery"-->
+<!--            android:title="@string/attendanecemaking">-->
+
+<!--        </item>-->
+        <item
+            android:id="@+id/nav_mark_absent"
+            android:icon="@drawable/ic_menu_attendance"
+            android:title="@string/attendanecemaking">
+
+        </item>
+        <item
+            android:id="@+id/nav_mark_multi_absent"
+            android:icon="@drawable/ic_menu_attendance"
+            android:title="@string/new_attendance_marking">
+
+        </item>
+        <item
+            android:id="@+id/nav_leave"
+            android:icon="@drawable/ic_menu_leave_note"
+            android:title="@string/leavenote"/>
+
+        <item
+            android:id="@+id/nav_enquiry"
+            android:icon="@drawable/ic_menu_enquiry"
+            android:title="@string/enquiry"/>
+
+        <item
+            android:id="@+id/nav_staff_leave"
+            android:icon="@drawable/ic_menu_leave_note"
+            android:title="@string/leavestaffnote"/>
+
+    </group>
+    <item android:title="@string/student_information">
+        <menu>
+            <group android:id="@+id/three"  android:checkableBehavior="all">
+
+                <item
+                    android:id="@+id/nav_student_info"
+                    android:title="@string/student_parent_info"
+                    android:icon="@drawable/ic_menu_add_student">
+                </item>
+
+                <item
+                    android:id="@+id/nav_student_guardian"
+                    android:title="@string/student_guardian_info"
+                    android:icon="@drawable/ic_menu_student_guardian">
+                </item>
+                <item
+                    android:id="@+id/nav_mconveyor_list"
+                    android:title="@string/manage_conveyor_list"
+                    android:icon="@drawable/ic_menu_conveyor">
+                </item>
+                <item
+                    android:id="@+id/nav_mpromotestudent"
+                    android:title="@string/promote_student"
+                    android:icon="@drawable/ic_menu_student_promote">
+                </item>
+                <item
+                    android:id="@+id/nav_student_cls_reallocation"
+                    android:title="@string/student_class_reallocation"
+                    android:icon="@drawable/ic_menu_student_reallocation">
+                </item>
+                <item
+                    android:id="@+id/nav_mpromoteselect_student"
+                    android:title="@string/promote_selected_student"
+                    android:icon="@drawable/ic_menu_promote_selected">
+                </item>
+
+            </group>
+
+
+        </menu>
+    </item>
+
+
+
+    <group android:id="@+id/five"  android:checkableBehavior="all">
+        <item
+            android:id="@+id/nav_update_res"
+            android:icon="@drawable/ic_menu_update_result"
+            android:title="@string/updateresult"/>
+
+
+        <item
+            android:id="@+id/nav_pub_res"
+            android:icon="@drawable/ic_menu_publish_result"
+            android:title="@string/publishresult"/>
+
+    </group>
+
+<!--    <item android:title="@string/exam_center_lp_up">-->
+<!--        <menu>-->
+<!--            <group android:id="@+id/five_lpup" android:checkableBehavior="all">-->
+
+<!--                <item-->
+<!--                    android:id="@+id/nav_mark_reg_lpup"-->
+<!--                    android:icon="@drawable/ic_menu_publish_result"-->
+<!--                    android:title="@string/markregister11"/>-->
+
+<!--                <item-->
+<!--                    android:id="@+id/nav_progress_card_lpup"-->
+<!--                    android:icon="@drawable/ic_menu_progress_card"-->
+<!--                    android:title="@string/progress_report11"/>-->
+
+<!--                <item-->
+<!--                    android:id="@+id/nav_send_progress_rp_lpup"-->
+<!--                    android:icon="@drawable/ic_menu_send_progress"-->
+<!--                    android:title="@string/sendprogress11"/>-->
+
+
+<!--            </group>-->
+<!--        </menu>-->
+<!--    </item>-->
+
+
+<!--    <item android:title="@string/exam_center_state">-->
+<!--        <menu>-->
+<!--            <group android:id="@+id/five_state" android:checkableBehavior="all">-->
+
+
+<!--                <item-->
+<!--                    android:id="@+id/nav_mark_reg_kg_iv"-->
+<!--                    android:icon="@drawable/ic_menu_publish_result"-->
+<!--                    android:title="@string/markregister1"/>-->
+<!--                <item-->
+<!--                    android:id="@+id/nav_mark_reg_v_viii"-->
+<!--                    android:icon="@drawable/ic_menu_publish_result"-->
+<!--                    android:title="@string/markregister2"/>-->
+<!--                <item-->
+<!--                    android:id="@+id/nav_mark_reg_ix_xii"-->
+<!--                    android:icon="@drawable/ic_menu_publish_result"-->
+<!--                    android:title="@string/markregister3"/>-->
+
+<!--                <item-->
+<!--                    android:id="@+id/nav_progress_card_kg_viii"-->
+<!--                    android:icon="@drawable/ic_menu_progress_card"-->
+<!--                    android:title="@string/progress_card1"/>-->
+<!--                <item-->
+<!--                    android:id="@+id/nav_progress_card_ix_xii"-->
+<!--                    android:icon="@drawable/ic_menu_progress_card"-->
+<!--                    android:title="@string/progresscard2"/>-->
+
+
+<!--                <item-->
+<!--                    android:id="@+id/nav_progress_card_kg_viii_new"-->
+<!--                    android:icon="@drawable/ic_menu_progress_card"-->
+<!--                    android:title="@string/progresscard1_new"/>-->
+<!--                <item-->
+<!--                    android:id="@+id/nav_progress_card_ix_xii_new"-->
+<!--                    android:icon="@drawable/ic_menu_progress_card"-->
+<!--                    android:title="@string/progresscard2_new"/>-->
+
+
+<!--                <item-->
+<!--                    android:id="@+id/nav_exam_topper"-->
+<!--                    android:icon="@drawable/ic_menu_exam_topper"-->
+<!--                    android:title="@string/exam_topper1"/>-->
+
+<!--                <item-->
+<!--                    android:id="@+id/nav_exam_grade"-->
+<!--                    android:icon="@drawable/ic_menu_exam_grade"-->
+<!--                    android:title="@string/exam_grade1"/>-->
+
+
+<!--                <item-->
+<!--                    android:id="@+id/nav_send_progress_rp"-->
+<!--                    android:icon="@drawable/ic_menu_send_progress"-->
+<!--                    android:title="@string/sendprogress"/>-->
+
+<!--            </group>-->
+<!--        </menu>-->
+<!--    </item>-->
+
+    <item android:title="@string/exam_center_cbse">
+        <menu>
+            <group android:id="@+id/five_cbse" android:checkableBehavior="all">
+                <item
+                    android:id="@+id/nav_mark_reg_cbse"
+                    android:icon="@drawable/ic_menu_publish_result"
+                    android:title="@string/markregistercbse"/>
+
+
+                <item
+                    android:id="@+id/nav_progress_card_cbse"
+                    android:icon="@drawable/ic_menu_progress_card"
+                    android:title="@string/progresscard3"/>
+
+                <item
+                    android:id="@+id/nav_progress_card_cbse_new"
+                    android:icon="@drawable/ic_menu_progress_card"
+                    android:title="@string/progresscard3_new"/>
+
+                <item
+                    android:id="@+id/nav_examtopper_cbse"
+                    android:icon="@drawable/ic_menu_exam_topper"
+                    android:title="@string/exam_topper2"/>
+                <item
+                    android:id="@+id/nav_exam_grade_cbse"
+                    android:icon="@drawable/ic_menu_exam_grade"
+                    android:title="@string/exam_grade2"/>
+                <item
+                    android:id="@+id/nav_send_progress_rp_cbse"
+                    android:icon="@drawable/ic_menu_send_progress"
+                    android:title="@string/sendprogress_cbse"/>
+
+            </group>
+        </menu>
+    </item>
+
+
+<!--    <item android:title="@string/exam_center_ce">-->
+<!--        <menu>-->
+<!--            <group android:id="@+id/five_ce" android:checkableBehavior="all">-->
+<!--                <item-->
+<!--                    android:id="@+id/nav_mark_reg_ce"-->
+<!--                    android:icon="@drawable/ic_menu_publish_result"-->
+<!--                    android:title="@string/markregisterce"/>-->
+
+<!--                <item-->
+<!--                    android:id="@+id/nav_progress_card_ce"-->
+<!--                    android:icon="@drawable/ic_menu_progress_card"-->
+<!--                    android:title="@string/progresscard4"/>-->
+
+<!--                <item-->
+<!--                    android:id="@+id/nav_progress_card_ce_new"-->
+<!--                    android:icon="@drawable/ic_menu_progress_card"-->
+<!--                    android:title="@string/progresscard4_new"/>-->
+
+<!--                <item-->
+<!--                    android:id="@+id/nav_examtopper_ce"-->
+<!--                    android:icon="@drawable/ic_menu_exam_topper"-->
+<!--                    android:title="@string/exam_topper3"/>-->
+<!--                <item-->
+<!--                    android:id="@+id/nav_exam_grade_ce"-->
+<!--                    android:icon="@drawable/ic_menu_exam_grade"-->
+<!--                    android:title="@string/exam_grade3"/>-->
+
+<!--                <item-->
+<!--                    android:id="@+id/nav_send_progress_rp_ce"-->
+<!--                    android:icon="@drawable/ic_menu_send_progress"-->
+<!--                    android:title="@string/sendprogress_ce"/>-->
+<!--            </group>-->
+<!--        </menu>-->
+<!--    </item>-->
+
+<!--    <item android:title="Exam Center CE TE">-->
+<!--        <menu>-->
+<!--            <group android:id="@+id/five_cete" android:checkableBehavior="all">-->
+<!--                <item-->
+<!--                    android:id="@+id/nav_mark_reg_msps_lpup"-->
+<!--                    android:icon="@drawable/ic_menu_publish_result"-->
+<!--                    android:title="@string/markregistercete"/>-->
+<!--                <item-->
+<!--                    android:id="@+id/nav_mark_reg_msps_hs"-->
+<!--                    android:icon="@drawable/ic_menu_publish_result"-->
+<!--                    android:title="@string/markregistercete2"/>-->
+<!--                <item-->
+<!--                    android:id="@+id/nav_progrescard_msp_lpup"-->
+<!--                    android:icon="@drawable/ic_menu_progress_card"-->
+<!--                    android:title="@string/progresscard5"/>-->
+<!--                <item-->
+<!--                    android:id="@+id/nav_progrescard_msp_hs"-->
+<!--                    android:icon="@drawable/ic_menu_progress_card"-->
+<!--                    android:title="@string/progresscard6"/>-->
+
+<!--                <item-->
+<!--                    android:id="@+id/nav_progrescard_msp_lpup_new"-->
+<!--                    android:icon="@drawable/ic_menu_progress_card"-->
+<!--                    android:title="@string/progresscard5_new"/>-->
+<!--                <item-->
+<!--                    android:id="@+id/nav_progrescard_msp_hs_new"-->
+<!--                    android:icon="@drawable/ic_menu_progress_card"-->
+<!--                    android:title="@string/progresscard6_new"/>-->
+
+<!--                <item-->
+<!--                    android:id="@+id/nav_examtopper_msp"-->
+<!--                    android:icon="@drawable/ic_menu_exam_topper"-->
+<!--                    android:title="@string/exam_topper4"/>-->
+
+<!--                <item-->
+<!--                    android:id="@+id/nav_exam_grade_msp_hs"-->
+<!--                    android:icon="@drawable/ic_menu_exam_grade"-->
+<!--                    android:title="@string/exam_grade4"/>-->
+<!--                <item-->
+<!--                    android:id="@+id/nav_send_progress_rp_cete"-->
+<!--                    android:icon="@drawable/ic_menu_send_progress"-->
+<!--                    android:title="@string/sendprogress_cete"/>-->
+<!--                <item-->
+<!--                    android:id="@+id/nav_send_progress_rp_cete2"-->
+<!--                    android:icon="@drawable/ic_menu_send_progress"-->
+<!--                    android:title="@string/sendprogress_cete2"/>-->
+
+<!--            </group>-->
+<!--        </menu>-->
+<!--    </item>-->
+
+<!--    <item android:title="@string/exam_center_madrasa">-->
+<!--        <menu>-->
+<!--            <group android:id="@+id/madrasa" android:checkableBehavior="all">-->
+<!--                <item-->
+<!--                    android:id="@+id/nav_mark_reg_madrasa"-->
+<!--                    android:icon="@drawable/ic_menu_publish_result"-->
+<!--                    android:title="@string/mark_register_madrasa"/>-->
+<!--                <item-->
+<!--                    android:id="@+id/nav_progrescard_madrasa"-->
+<!--                    android:icon="@drawable/ic_menu_progress_card"-->
+<!--                    android:title="@string/progress_card_madrasa"/>-->
+
+<!--                <item-->
+<!--                    android:id="@+id/nav_progrescard_madrasa_new"-->
+<!--                    android:icon="@drawable/ic_menu_progress_card"-->
+<!--                    android:title="@string/progress_card_madrasa_new"/>-->
+<!--                <item-->
+<!--                    android:id="@+id/nav_examtopper_madrasa"-->
+<!--                    android:icon="@drawable/ic_menu_exam_topper"-->
+<!--                    android:title="@string/exam_topper_madrasa"/>-->
+<!--                <item-->
+<!--                    android:id="@+id/nav_exam_grade_madrasa"-->
+<!--                    android:icon="@drawable/ic_menu_exam_grade"-->
+<!--                    android:title="@string/exam_grade_madrasa"/>-->
+<!--                <item-->
+<!--                    android:id="@+id/nav_send_progress_rp_madrasa"-->
+<!--                    android:icon="@drawable/ic_menu_send_progress"-->
+<!--                    android:title="@string/send_progress_report_madrasa"/>-->
+<!--            </group>-->
+<!--        </menu>-->
+<!--    </item>-->
+
+
+    <item android:title="@string/manage_events">
+        <menu>
+            <group android:id="@+id/manage_event"  android:checkableBehavior="all">
+<!--                <item-->
+<!--                    android:id="@+id/nav_create_event"-->
+<!--                    android:icon="@drawable/ic_menu_add_event"-->
+<!--                    android:title="@string/create_event"/>-->
+                <item
+                    android:id="@+id/nav_event_list"
+                    android:icon="@drawable/ic_menu_event"
+                    android:title="@string/event_list"/>
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="@string/general_setting">
+        <menu>
+            <group android:id="@+id/general"  android:checkableBehavior="all">
+                <item
+                    android:id="@+id/nav_group_list"
+                    android:icon="@drawable/ic_menu_group"
+                    android:title="@string/group_list"/>
+
+                <item
+                    android:id="@+id/nav_addstudent_group"
+                    android:icon="@drawable/ic_menu_group"
+                    android:title="@string/add_studentto_group"/>
+
+                <item
+                    android:id="@+id/nav_del_studentgroup"
+                    android:icon="@drawable/ic_menu_student_guardian"
+                    android:title="@string/del_studentgroup"/>
+
+
+                <item
+                    android:id="@+id/nav_public_group_list"
+                    android:icon="@drawable/ic_menu_single_person"
+                    android:title="@string/public_group_list"/>
+            </group>
+        </menu>
+
+    </item>
+
+
+
+    <group android:id="@+id/seven"  android:checkableBehavior="all">
+
+        <item
+            android:id="@+id/nav_gallery_list"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/gallery" />
+        <item
+            android:id="@+id/nav_album_addi"
+            android:icon="@drawable/ic_menu_upload"
+            android:title="@string/uploadimage" />
+
+
+        <item
+            android:id="@+id/nav_album_addv"
+            android:icon="@drawable/ic_menu_upload"
+            android:title="@string/uploadvideo" />
+
+        <item
+            android:id="@+id/nav_album_ilist"
+            android:icon="@drawable/ic_menu_manage_album"
+            android:title="@string/managealbumname" />
+    </group>
+
+    <group android:id="@+id/staff"  android:checkableBehavior="all">
+
+        <item
+            android:id="@+id/nav_manage_staff"
+            android:icon="@drawable/ic_menu_group"
+            android:title="@string/manage_staff"/>
+        <item
+            android:id="@+id/nav_manage_pta"
+            android:icon="@drawable/ic_menu_group"
+            android:title="@string/manage_pta"/>
+        <item
+            android:id="@+id/nav_manage_aboutus"
+            android:icon="@drawable/ic_menu_manage_faq"
+            android:title="@string/manage_about_us_faq"/>
+    </group>
+
+    <group android:id="@+id/eight"  android:checkableBehavior="all">
+
+        <item
+            android:id="@+id/nav_stud_remarks"
+            android:icon="@drawable/ic_menu_enquiry"
+            android:title="@string/studentremark"/>
+
+        <item
+            android:id="@+id/nav_remark_register"
+            android:icon="@drawable/ic_menu_publish_result"
+            android:title="@string/remark_register"/>
+        <item
+            android:id="@+id/nav_Stud_classwise"
+            android:icon="@drawable/ic_menu_single_person"
+            android:title="@string/studentclaswise"/>
+        <item
+            android:id="@+id/nav_attend_summary"
+            android:icon="@drawable/ic_menu_attendance_summery"
+            android:title="@string/attendancesummery"/>
+
+        <item
+            android:id="@+id/nav_absente_list"
+            android:icon="@drawable/ic_menu_event"
+            android:title="@string/absentlist"/>
+
+        <item
+            android:id="@+id/nav_academic_year_list"
+            android:icon="@drawable/ic_menu_academic_management"
+            android:title="@string/academicmanagement"/>
+
+        <item
+            android:id="@+id/nav_newschoolcal"
+            android:icon="@drawable/ic_menu_calender"
+            android:title="@string/schoolcalender" />
+        <item
+            android:id="@+id/nav_test_map"
+            android:icon="@drawable/ic_menu_conveyor"
+            android:title="@string/trackvehicle" />
+
+<!--        <item-->
+<!--            android:id="@+id/nav_staff"-->
+<!--            android:icon="@drawable/ic_menu_group"-->
+<!--            android:title="@string/staffsubtitution"/>-->
+
+
+    </group>
+<!--    <group android:id="@+id/share"  android:checkableBehavior="all">-->
+
+<!--        <item-->
+<!--            android:id="@+id/nav_share_one"-->
+<!--            android:icon="@drawable/ic_share"-->
+<!--            android:title="ScreenShot Share"/>-->
+<!--        <item-->
+<!--            android:id="@+id/nav_share_two"-->
+<!--            android:icon="@drawable/ic_share"-->
+<!--            android:title="Text Image Share"/>-->
+
+<!--        <item-->
+<!--            android:id="@+id/nav_staff_attendance"-->
+<!--            android:icon="@drawable/ic_share"-->
+<!--            android:title="Staff Attendance"/>-->
+
+<!--        <item-->
+<!--            android:id="@+id/nav_chart_list"-->
+<!--            android:icon="@drawable/ic_share"-->
+<!--            android:title="Chart Page"/>-->
+
+<!--        <item-->
+<!--            android:id="@+id/nav_image_crop"-->
+<!--            android:icon="@drawable/ic_share"-->
+<!--            android:title="Image Crop"/>-->
+
+<!--        <item-->
+<!--            android:id="@+id/nav_sim_detect"-->
+<!--            android:icon="@drawable/ic_share"-->
+<!--            android:title="Sim Card"/>-->
+
+<!--    </group>-->
+
+
+    <group android:id="@+id/ten"  android:checkableBehavior="all">
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_menu_logout"
+            android:title="@string/logout"/>
+        <item
+            android:id="@+id/nav_clear_data"
+            android:icon="@drawable/ic_icon_delete_gray"
+            android:title="@string/clear_data" />
+    </group>
+
+    
+
+</menu>

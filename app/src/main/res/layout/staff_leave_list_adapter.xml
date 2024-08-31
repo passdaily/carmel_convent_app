@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="1dp"
+    android:layout_marginTop="3dp"
+    android:layout_marginEnd="1dp"
+    android:layout_marginStart="1dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintStatus"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/shapeImageView"
+            android:layout_width="@dimen/dashboard_video_height_width"
+            android:layout_height="@dimen/dashboard_video_height_width"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/round_account_button_with_user_inside"
+            app:layout_constraintEnd_toStartOf="@+id/textViewStaff"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearance="@style/ShapeAppearance.ImageView" />
+
+
+        <!--        <androidx.cardview.widget.CardView-->
+        <!--            android:id="@+id/cardViewParent"-->
+        <!--            android:layout_width="0dp"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginEnd="8dp"-->
+        <!--            app:cardBackgroundColor="@color/green_light100"-->
+        <!--            app:cardCornerRadius="20dp"-->
+        <!--            app:cardElevation="0dp"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintTop_toTopOf="@+id/textViewStaff">-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/textViewCode"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_gravity="center"-->
+        <!--                android:fontFamily="@font/poppins_regular"-->
+        <!--                android:paddingStart="@dimen/text_size_03"-->
+        <!--                android:paddingTop="6dp"-->
+        <!--                android:paddingEnd="@dimen/text_size_03"-->
+        <!--                android:paddingBottom="6dp"-->
+        <!--                android:text="Code : 5674"-->
+        <!--                android:textColor="@color/black"-->
+        <!--                android:textSize="@dimen/text_size_01" />-->
+
+
+        <!--        </androidx.cardview.widget.CardView>-->
+
+        <TextView
+            android:id="@+id/textViewStaff"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="4dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/poppins_medium"
+            android:maxLines="2"
+            android:text="TextView TextView"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_04"
+            app:layout_constraintEnd_toStartOf="@+id/textViewCode"
+            app:layout_constraintStart_toEndOf="@+id/shapeImageView"
+            app:layout_constraintTop_toTopOf="@+id/shapeImageView" />
+
+
+        <TextView
+            android:id="@+id/textViewCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/bg_text_round_green"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="5dp"
+            android:text="Published"
+            android:textColor="@color/fresh_green_200"
+            android:textSize="@dimen/text_size_01"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewStaff"
+            app:layout_constraintEnd_toStartOf="@+id/imageViewMore"
+            app:layout_constraintStart_toEndOf="@+id/textViewStaff"
+            app:layout_constraintTop_toTopOf="@+id/textViewStaff"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+        <ImageView
+            android:id="@+id/imageViewMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewCode"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textViewCode"
+            app:layout_constraintTop_toTopOf="@+id/shapeImageView"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/ic_more_icon" />
+
+        <TextView
+            android:id="@+id/textMobileNumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/poppins_regular"
+            android:maxLines="1"
+            android:text="TextView"
+            android:textColor="@color/gray_600"
+            android:textSize="@dimen/text_size_02"
+            app:layout_constraintEnd_toEndOf="@+id/imageViewMore"
+            app:layout_constraintStart_toStartOf="@+id/textViewStaff"
+            app:layout_constraintTop_toBottomOf="@+id/textViewStaff" />
+
+        <TextView
+            android:id="@+id/textViewEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/poppins_regular"
+            android:maxLines="2"
+            android:text="TextView"
+            android:textColor="@color/gray_600"
+            android:textSize="@dimen/text_size_02"
+            app:layout_constraintEnd_toEndOf="@+id/textMobileNumber"
+            app:layout_constraintStart_toStartOf="@+id/textMobileNumber"
+            app:layout_constraintTop_toBottomOf="@+id/textMobileNumber" />
+
+        <TextView
+            android:id="@+id/textUpdated"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="end"
+            android:text="@string/updated"
+            android:textColor="@color/green_600"
+            android:textSize="@dimen/text_size_01"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/textViewEmail"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewEmail" />
+
+        <TextView
+            android:id="@+id/textViewStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:paddingStart="12dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="12dp"
+            android:paddingBottom="5dp"
+            android:text="TextView"
+            android:textColor="@color/green_600"
+            android:textSize="@dimen/text_size_01"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewApproveDate"
+            app:layout_constraintEnd_toStartOf="@+id/textViewApproveDate"
+            app:layout_constraintTop_toTopOf="@+id/textViewApproveDate"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textViewApproveDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/bg_text_round_orange"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:paddingStart="12dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="12dp"
+            android:paddingBottom="5dp"
+            android:text="Applied On : 12 May, 2023"
+            android:textColor="@color/orange_500"
+            android:textSize="@dimen/text_size_01"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/textViewEmail"
+            app:layout_constraintTop_toBottomOf="@+id/textViewEmail"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

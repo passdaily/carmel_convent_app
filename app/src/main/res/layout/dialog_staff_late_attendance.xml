@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/imageViewClose"
+        android:layout_width="@dimen/spinner_custom_image"
+        android:layout_height="@dimen/spinner_custom_image"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_black_close" />
+
+
+<!--    <fragment-->
+<!--        android:id="@+id/map"-->
+<!--        android:name="com.google.android.gms.maps.SupportMapFragment"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_marginStart="4dp"-->
+<!--        android:layout_marginTop="12dp"-->
+<!--        android:layout_marginEnd="4dp"-->
+<!--        app:layout_constraintDimensionRatio="1.5:1"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/imageViewClose"/>-->
+
+
+<!--    &lt;!&ndash;    <androidx.constraintlayout.widget.ConstraintLayout&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:id="@+id/map"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:name="com.google.android.gms.maps.SupportMapFragment"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:layout_width="0dp"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:layout_height="0dp"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:layout_marginStart="4dp"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:layout_marginTop="12dp"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:layout_marginEnd="4dp"&ndash;&gt;-->
+<!--    &lt;!&ndash;        app:layout_constraintDimensionRatio="1.5:1"&ndash;&gt;-->
+<!--    &lt;!&ndash;        app:layout_constraintEnd_toEndOf="parent"&ndash;&gt;-->
+<!--    &lt;!&ndash;        app:layout_constraintStart_toStartOf="parent"&ndash;&gt;-->
+<!--    &lt;!&ndash;        app:layout_constraintTop_toBottomOf="@+id/imageViewClose" />&ndash;&gt;-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textViewDistance"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:layout_marginEnd="4dp"-->
+<!--        android:fontFamily="@font/poppins_bold"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="@dimen/text_size_02"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/map"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/textView161"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/map" />-->
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/textViewRange"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:layout_marginEnd="4dp"-->
+<!--        android:fontFamily="@font/poppins_bold"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="@dimen/text_size_04"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/textViewDistance"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/textViewDistance"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/textViewDistance" />-->
+
+
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:id="@+id/textInputLayout4"-->
+<!--        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/textView161">-->
+
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:id="@+id/editOutOffRange"-->
+<!--            android:layout_width="fill_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:fontFamily="@font/poppins_regular"-->
+<!--            android:gravity="top|start"-->
+<!--            android:hint="Out of Range Reason"-->
+<!--            android:inputType="text"-->
+<!--            android:minLines="1"-->
+<!--            android:scrollbars="vertical"-->
+<!--            android:scrollHorizontally="false"-->
+<!--            android:textColor="@color/black" />-->
+
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/textInputLayout5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView161">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextLateReason"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="top|start"
+                android:hint="Late in Reason"
+                android:inputType="text|textMultiLine"
+                android:lines="10"
+                android:minLines="5"
+                android:scrollbars="vertical"
+                android:scrollHorizontally="false"
+                android:textColor="@color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:visibility="gone"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextEarlyReason"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="top|start"
+                android:hint="Reason for early leaving"
+                android:inputType="text|textMultiLine"
+                android:lines="10"
+                android:minLines="5"
+                android:scrollbars="vertical"
+                android:scrollHorizontally="false"
+                android:textColor="@color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView161"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Punch Attendance"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_02"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewClose"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewClose"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageViewClose" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/punchInButton"
+        style="@style/RoundedCornerButtonGreen400"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/poppins_medium"
+        android:paddingStart="@dimen/text_size_06"
+        android:paddingEnd="@dimen/text_size_06"
+        android:text="@string/submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout5"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout5"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout5" />
+</androidx.constraintlayout.widget.ConstraintLayout>

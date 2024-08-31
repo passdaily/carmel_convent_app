@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:visibility="gone"
+        android:id="@+id/constraintMarkOther"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    <TextView
+        android:id="@+id/textViewSubject"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Subject Name"
+        android:textColor="@color/gray_900"
+        android:textSize="@dimen/text_size_02"
+        android:ellipsize="end"
+        android:maxLines="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewMark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewMark"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text="Mark"
+        android:textColor="@color/gray_900"
+        android:textSize="@dimen/text_size_02"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewSubject"
+        app:layout_constraintEnd_toStartOf="@+id/textViewGrade"
+        app:layout_constraintStart_toEndOf="@+id/textViewSubject"
+        app:layout_constraintTop_toTopOf="@+id/textViewSubject" />
+
+    <TextView
+        android:id="@+id/textViewGrade"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text="Grade"
+        android:textColor="@color/gray_900"
+        android:textSize="@dimen/text_size_02"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewMark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewMark"
+        app:layout_constraintTop_toTopOf="@+id/textViewMark" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:visibility="gone"
+        android:id="@+id/constraintMarkCE"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/textViewSubjectCE"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Subject Name"
+            android:textColor="@color/gray_900"
+            android:textSize="@dimen/text_size_02"
+            android:ellipsize="end"
+            android:maxLines="1"
+            app:layout_constraintHorizontal_weight="1.6"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textViewMarkCE"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewMarkCE"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:text="Marks"
+            android:textColor="@color/gray_900"
+            android:textSize="@dimen/text_size_02"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewSubjectCE"
+            app:layout_constraintEnd_toStartOf="@+id/textViewInternalCe"
+            app:layout_constraintStart_toEndOf="@+id/textViewSubjectCE"
+            app:layout_constraintTop_toTopOf="@+id/textViewSubjectCE" />
+
+        <TextView
+            android:id="@+id/textViewInternalCe"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:text="Internal"
+            android:textColor="@color/gray_900"
+            android:textSize="@dimen/text_size_02"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewMarkCE"
+            app:layout_constraintEnd_toStartOf="@+id/textViewTotalCe"
+            app:layout_constraintStart_toEndOf="@+id/textViewMarkCE"
+            app:layout_constraintTop_toTopOf="@+id/textViewMarkCE" />
+
+        <TextView
+            android:id="@+id/textViewTotalCe"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:text="Total"
+            android:textColor="@color/gray_900"
+            android:textSize="@dimen/text_size_02"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewInternalCe"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textViewInternalCe"
+            app:layout_constraintTop_toTopOf="@+id/textViewInternalCe" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:visibility="gone"
+        android:id="@+id/constraintMspsLp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/textSubjectMspsLp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Subject"
+            android:textColor="@color/gray_900"
+            android:textSize="@dimen/text_size_02"
+            android:ellipsize="end"
+            android:maxLines="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textMarkMspsLpPT"
+            app:layout_constraintHorizontal_weight="1.6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textMarkMspsLpPT"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:text="PT"
+            android:textColor="@color/gray_900"
+            android:textSize="@dimen/text_size_02"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintBottom_toBottomOf="@+id/textSubjectMspsLp"
+            app:layout_constraintEnd_toStartOf="@+id/textMarkMspsLpPf"
+            app:layout_constraintStart_toEndOf="@+id/textSubjectMspsLp"
+            app:layout_constraintTop_toTopOf="@+id/textSubjectMspsLp"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+
+            android:id="@+id/textMarkMspsLpPf"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:text="PF"
+            android:textColor="@color/gray_900"
+            android:textSize="@dimen/text_size_02"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintBottom_toBottomOf="@+id/textMarkMspsLpPT"
+            app:layout_constraintEnd_toStartOf="@+id/textMarkMspsLpSea"
+            app:layout_constraintStart_toEndOf="@+id/textMarkMspsLpPT"
+            app:layout_constraintTop_toTopOf="@+id/textMarkMspsLpPT"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textMarkMspsLpSea"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:text="SEA"
+            android:textColor="@color/gray_900"
+            android:textSize="@dimen/text_size_02"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintBottom_toBottomOf="@+id/textMarkMspsLpPf"
+            app:layout_constraintEnd_toStartOf="@+id/textMarkMspsLp"
+            app:layout_constraintStart_toEndOf="@+id/textMarkMspsLpPf"
+            app:layout_constraintTop_toTopOf="@+id/textMarkMspsLpPf"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textMarkMspsLp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:text="Mark"
+            android:textColor="@color/gray_900"
+            android:textSize="@dimen/text_size_02"
+            app:layout_constraintBottom_toBottomOf="@+id/textMarkMspsLpSea"
+            app:layout_constraintEnd_toStartOf="@+id/textTotalMspsLp"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/textMarkMspsLpSea"
+            app:layout_constraintTop_toTopOf="@+id/textMarkMspsLpSea"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textTotalMspsLp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:text="Total"
+            android:textColor="@color/gray_900"
+            android:textSize="@dimen/text_size_02"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintBottom_toBottomOf="@+id/textMarkMspsLp"
+            app:layout_constraintEnd_toStartOf="@+id/textGradeMspsLp"
+            app:layout_constraintStart_toEndOf="@+id/textMarkMspsLp"
+            app:layout_constraintTop_toTopOf="@+id/textMarkMspsLp" />
+
+        <TextView
+            android:id="@+id/textGradeMspsLp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:text="Grade"
+            android:textColor="@color/gray_900"
+            android:textSize="@dimen/text_size_02"
+            app:layout_constraintBottom_toBottomOf="@+id/textMarkMspsLp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/textTotalMspsLp"
+            app:layout_constraintTop_toTopOf="@+id/textMarkMspsLp" />
+
+      
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:visibility="gone"
+        android:id="@+id/constraintMspsHs"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/textSubjectMspsHs"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Subject"
+            android:textColor="@color/gray_900"
+            android:textSize="@dimen/text_size_02"
+            android:ellipsize="end"
+            android:maxLines="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textMarkMspsHsPT"
+            app:layout_constraintHorizontal_weight="1.6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textMarkMspsHsPT"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:text="PT"
+            android:textColor="@color/gray_900"
+            android:textSize="@dimen/text_size_02"
+            app:layout_constraintBottom_toBottomOf="@+id/textSubjectMspsHs"
+            app:layout_constraintEnd_toStartOf="@+id/textMarkMspsHsMAA"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/textSubjectMspsHs"
+            app:layout_constraintTop_toTopOf="@+id/textSubjectMspsHs"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+        <TextView
+            android:id="@+id/textMarkMspsHsMAA"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:text="MAA"
+            android:textColor="@color/gray_900"
+            android:textSize="@dimen/text_size_02"
+            app:layout_constraintBottom_toBottomOf="@+id/textMarkMspsHsPT"
+            app:layout_constraintEnd_toStartOf="@+id/textMarkMspsHsPf"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/textMarkMspsHsPT"
+            app:layout_constraintTop_toTopOf="@+id/textMarkMspsHsPT"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+
+            android:id="@+id/textMarkMspsHsPf"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:text="PF"
+            android:textColor="@color/gray_900"
+            android:textSize="@dimen/text_size_02"
+            app:layout_constraintBottom_toBottomOf="@+id/textMarkMspsHsPT"
+            app:layout_constraintEnd_toStartOf="@+id/textMarkMspsHsSea"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/textMarkMspsHsMAA"
+            app:layout_constraintTop_toTopOf="@+id/textMarkMspsHsPT"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textMarkMspsHsSea"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:text="SEA"
+            android:textColor="@color/gray_900"
+            android:textSize="@dimen/text_size_02"
+            app:layout_constraintBottom_toBottomOf="@+id/textMarkMspsHsPf"
+            app:layout_constraintEnd_toStartOf="@+id/textMarkMspsHs"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/textMarkMspsHsPf"
+            app:layout_constraintTop_toTopOf="@+id/textMarkMspsHsPf"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textMarkMspsHs"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:text="Mark"
+            android:textColor="@color/gray_900"
+            android:textSize="@dimen/text_size_02"
+            app:layout_constraintBottom_toBottomOf="@+id/textMarkMspsHsSea"
+            app:layout_constraintEnd_toStartOf="@+id/textTotalMspsHs"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/textMarkMspsHsSea"
+            app:layout_constraintTop_toTopOf="@+id/textMarkMspsHsSea"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textTotalMspsHs"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:text="Total"
+            android:textColor="@color/gray_900"
+            android:textSize="@dimen/text_size_02"
+            app:layout_constraintBottom_toBottomOf="@+id/textMarkMspsHs"
+            app:layout_constraintEnd_toStartOf="@+id/textGradeMspsHs"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/textMarkMspsHs"
+            app:layout_constraintTop_toTopOf="@+id/textMarkMspsHs" />
+
+        <TextView
+            android:id="@+id/textGradeMspsHs"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:text="Grade"
+            android:textColor="@color/gray_900"
+            android:textSize="@dimen/text_size_02"
+            app:layout_constraintBottom_toBottomOf="@+id/textTotalMspsHs"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/textTotalMspsHs"
+            app:layout_constraintTop_toTopOf="@+id/textTotalMspsHs" />
+
+     
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

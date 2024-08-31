@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="2dp"
+    android:layout_marginTop="3dp"
+    android:layout_marginStart="2dp"
+    android:layout_marginEnd="2dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_04"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <info.passdaily.camrelconvertapp.lib.result_progress.ColorfulRingProgressView
+            android:id="@+id/colorProgress"
+            android:layout_width="@dimen/bottom_viewpager_height"
+            android:layout_height="@dimen/bottom_viewpager_height"
+            android:layout_marginTop="12dp"
+            app:bgColor="@color/gray_200"
+            app:fgColorEnd="@color/green_400"
+            app:fgColorStart="@color/green_400"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
+            app:percent="4"
+            app:startAngle="0"
+            app:strokeWidth="@dimen/text_size_02" />
+
+        <TextView
+            android:id="@+id/textTotalQuestion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="4dp"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="TextView"
+            android:textColor="@color/dark_gray_800"
+            android:textSize="@dimen/text_size_02"
+            app:drawableStartCompat="@drawable/ic_question_icon"
+            app:layout_constraintEnd_toStartOf="@+id/textStartDate"
+            app:layout_constraintStart_toStartOf="@+id/textViewTitle"
+            app:layout_constraintTop_toBottomOf="@+id/colorProgress" />
+
+        <TextView
+            android:id="@+id/textStartDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="TextView"
+            android:textColor="@color/dark_gray_800"
+            android:textSize="@dimen/text_size_02"
+            app:drawableStartCompat="@drawable/ic_date_icon"
+            app:layout_constraintBottom_toBottomOf="@+id/textTotalQuestion"
+            app:layout_constraintEnd_toEndOf="@+id/textViewTitle"
+            app:layout_constraintStart_toEndOf="@+id/textTotalQuestion"
+            app:layout_constraintTop_toTopOf="@+id/textTotalQuestion" />
+
+        <TextView
+            android:id="@+id/textUnanswered"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="TextView"
+            android:textColor="@color/dark_gray_800"
+            android:textSize="@dimen/text_size_02"
+            app:drawableStartCompat="@drawable/ic_paste_block_icon"
+            app:layout_constraintEnd_toEndOf="@+id/textTotalQuestion"
+            app:layout_constraintStart_toStartOf="@+id/textTotalQuestion"
+            app:layout_constraintTop_toBottomOf="@+id/textTotalQuestion" />
+
+        <TextView
+            android:id="@+id/textEndDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="TextView"
+            android:textColor="@color/dark_gray_800"
+            android:textSize="@dimen/text_size_02"
+            app:drawableStartCompat="@drawable/ic_date_icon"
+            app:layout_constraintBottom_toBottomOf="@+id/textUnanswered"
+            app:layout_constraintEnd_toEndOf="@+id/textStartDate"
+            app:layout_constraintStart_toStartOf="@+id/textStartDate"
+            app:layout_constraintTop_toTopOf="@+id/textUnanswered" />
+
+        <TextView
+            android:id="@+id/textTimeTake"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="TextView"
+            android:textColor="@color/dark_gray_800"
+            android:textSize="@dimen/text_size_02"
+            app:drawableStartCompat="@drawable/ic_time_taken_icon"
+            app:layout_constraintEnd_toEndOf="@+id/textUnanswered"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textUnanswered"
+            app:layout_constraintTop_toBottomOf="@+id/textUnanswered" />
+
+        <TextView
+            android:id="@+id/textTotalPause"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="TextView"
+            android:textColor="@color/dark_gray_800"
+            android:textSize="@dimen/text_size_02"
+            app:drawableStartCompat="@drawable/ic_pause_icon"
+            app:layout_constraintBottom_toBottomOf="@+id/textTimeTake"
+            app:layout_constraintEnd_toEndOf="@+id/textEndDate"
+            app:layout_constraintStart_toStartOf="@+id/textEndDate"
+            app:layout_constraintTop_toTopOf="@+id/textTimeTake" />
+
+
+        <TextView
+            android:id="@+id/textViewMark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="3 / 50"
+            android:textColor="@color/dark_gray_800"
+            android:textSize="@dimen/text_size_02"
+            app:layout_constraintBottom_toBottomOf="@+id/colorProgress"
+            app:layout_constraintEnd_toEndOf="@+id/colorProgress"
+            app:layout_constraintStart_toStartOf="@+id/colorProgress"
+            app:layout_constraintTop_toBottomOf="@+id/textView87"
+            app:layout_constraintVertical_bias="0.117" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonAllowAgain"
+            style="@style/RoundedCornerButtonOrange400"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="12dp"
+            android:text="Allow Again"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/textTimeTake"
+            app:layout_constraintStart_toStartOf="@+id/textTimeTake"
+            app:layout_constraintTop_toBottomOf="@+id/textTimeTake" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonGiveMarks"
+            style="@style/RoundedCornerButtonGreen400"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Preview"
+            app:layout_constraintEnd_toEndOf="@+id/textTotalPause"
+            app:layout_constraintStart_toStartOf="@+id/textTotalPause"
+            app:layout_constraintTop_toBottomOf="@+id/textTimeTake" />
+
+        <TextView
+            android:id="@+id/textView87"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Answer"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_04"
+            app:layout_constraintBottom_toBottomOf="@+id/colorProgress"
+            app:layout_constraintEnd_toEndOf="@+id/colorProgress"
+            app:layout_constraintStart_toStartOf="@+id/colorProgress"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
+            app:layout_constraintVertical_bias="0.398" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

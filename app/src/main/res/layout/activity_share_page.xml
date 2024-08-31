@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".typeofuser.parent.assignment.AssignmentDetailActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:titleTextAppearance="@style/ToolbarTitleTheme"
+            app:popupTheme="@style/Theme.ParentApplication.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".typeofuser.common_staff_admin.share_page.SharePageActivity">
+
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/extended_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="12dp"
+            android:textColor="@color/white"
+            app:icon="@drawable/ic_share"
+            app:iconTint="@color/white"
+            android:text="Share"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView158"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:text="Administrative Assistant."
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_04"
+            android:fontFamily="@font/poppins_bold"
+            app:layout_constraintEnd_toEndOf="@+id/extended_fab"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/extended_fab" />
+
+        <TextView
+            android:id="@+id/textView160"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:fontFamily="@font/poppins_regular"
+            android:lineSpacingExtra="@dimen/text_size_03"
+            android:text="Administrative Assistants are responsible for many clerical tasks to ensure the staff can communicate and work efficiently. Their job involves answering phone calls, greeting visitors, distributing mail, and preparing communications. An Administrator , or Administrative Assistant, performs clerical duties to help an office run smoothly and efficiently. Their duties include answering phone calls and emails, greeting and directing office visitors to designated meeting areas and building spreadsheets or presentations for leadership staff. Excellent time management skills and ability to multi-task and prioritize work. Attention to detail and problem solving skills. Excellent written and verbal communication skills. Strong organizational and planning skills."
+            android:textColor="@color/gray_600"
+            android:textSize="@dimen/text_size_02"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textView158"
+            app:layout_constraintTop_toBottomOf="@+id/textView158" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

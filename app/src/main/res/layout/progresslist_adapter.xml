@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="0.5dp"
+    android:layout_margin="1dp"
+    app:cardBackgroundColor="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/shapeImageView"
+            android:layout_width="@dimen/big_text_heading"
+            android:layout_height="@dimen/big_text_heading"
+            android:layout_marginStart="4dp"
+            android:adjustViewBounds="true"
+            android:padding="1dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_study_biology"
+            app:layout_constraintBottom_toBottomOf="@+id/textMark"
+            app:layout_constraintEnd_toStartOf="@+id/textSubjectName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textSubjectName"
+            app:layout_constraintVertical_bias="0.571"
+            app:shapeAppearanceOverlay="@style/circleImageView"
+            app:strokeColor="@color/color100_bio"
+            app:strokeWidth="3dp" />
+
+        <TextView
+            android:id="@+id/textSubjectName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="2dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Biology"
+            android:textColor="@color/gray_400"
+            android:textSize="@dimen/text_size_04"
+            app:layout_constraintEnd_toStartOf="@+id/textView73"
+            app:layout_constraintHorizontal_weight="2"
+            app:layout_constraintStart_toEndOf="@+id/shapeImageView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textMark"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Mark : 40.0"
+            android:textColor="@color/gray_1k"
+            android:textSize="@dimen/text_size_04"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/textSubjectName"
+            app:layout_constraintStart_toStartOf="@+id/textSubjectName"
+            app:layout_constraintTop_toBottomOf="@+id/textSubjectName" />
+
+        <TextView
+            android:id="@+id/textView73"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="12dp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="end"
+            android:text="Grade"
+            android:textColor="@color/gray_400"
+            android:textSize="@dimen/text_size_04"
+            app:layout_constraintBottom_toBottomOf="@+id/textSubjectName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/textSubjectName"
+            app:layout_constraintTop_toTopOf="@+id/textSubjectName" />
+
+        <TextView
+            android:id="@+id/textViewGrade"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="B+"
+            android:textColor="@color/gray_1k"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="@dimen/text_size_04"
+            app:layout_constraintBottom_toBottomOf="@+id/textMark"
+            app:layout_constraintEnd_toEndOf="@+id/textView73"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView73"
+            app:layout_constraintTop_toTopOf="@+id/textMark" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textViewTitle"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="12dp"-->
+<!--            android:layout_marginTop="12dp"-->
+<!--            android:layout_marginBottom="16dp"-->
+<!--            android:text="TextView"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="@dimen/text_size_02"-->
+<!--            android:fontFamily="@font/roboto_bold"-->
+<!--            app:layout_constraintBottom_toTopOf="@+id/constraintExpended"-->
+<!--            app:layout_constraintEnd_toStartOf="@+id/relativeExpand"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--        <RelativeLayout-->
+<!--            android:id="@+id/relativeExpand"-->
+<!--            android:layout_width="@dimen/icon_size"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_marginStart="8dp"-->
+<!--            android:layout_marginEnd="12dp"-->
+<!--            app:layout_constraintBottom_toBottomOf="@+id/textViewTitle"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/textViewTitle"-->
+<!--            app:layout_constraintTop_toTopOf="@+id/textViewTitle">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/imageArrow"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_centerInParent="true"-->
+<!--                app:srcCompat="@drawable/ic_down_arrow" />-->
+<!--        </RelativeLayout>-->
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:id="@+id/constraintExpended"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginBottom="8dp"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="@+id/relativeExpand"-->
+<!--            app:layout_constraintHorizontal_bias="0.0"-->
+<!--            app:layout_constraintStart_toStartOf="@+id/textViewTitle"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/textViewTitle"-->
+<!--            app:layout_constraintVertical_bias="0.012">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textViewMark"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="TextView"-->
+<!--                android:textColor="@color/gray_1k"-->
+<!--                android:textSize="@dimen/text_size_02"-->
+<!--                android:fontFamily="@font/poppins_medium"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textGrade"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:text="TextView"-->
+<!--                android:textColor="@color/gray_1k"-->
+<!--                android:textSize="@dimen/text_size_02"-->
+<!--                android:fontFamily="@font/poppins_medium"-->
+<!--                app:layout_constraintEnd_toEndOf="@+id/textViewMark"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/textViewMark"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/textViewMark" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textViewRollNo"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:text="TextView"-->
+<!--                android:textColor="@color/gray_1k"-->
+<!--                android:textSize="@dimen/text_size_02"-->
+<!--                android:fontFamily="@font/poppins_medium"-->
+<!--                app:layout_constraintEnd_toEndOf="@+id/textGrade"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/textGrade"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/textGrade" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textDate"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:layout_marginBottom="8dp"-->
+<!--                android:text="TextView"-->
+<!--                android:textColor="@color/gray_1k"-->
+<!--                android:textSize="@dimen/text_size_02"-->
+<!--                android:fontFamily="@font/poppins_medium"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="@+id/textViewRollNo"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/textViewRollNo"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/textViewRollNo" />-->
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--    -->
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="info.passdaily.camrelconvertapp">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <!--    <uses-permission-->
+    <!--        android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"-->
+    <!--        tools:ignore="ProtectedPermissions" />-->
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" tools:node="remove"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera.any" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.camera.flash" />
+    <!--    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />-->
+
+    <!--    <uses-permission android:name="android.permission.READ_PHONE_STATE" />-->
+    <!--    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS" /> &lt;!&ndash; <uses-permission android:name="android.permission.RECEIVE_SMS" /> &ndash;&gt;-->
+    <!-- <uses-permission android:name="android.permission.READ_SMS" /> -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+
+    <!--    <uses-permission android:name="android.permission.READ_MEDIA_*"/>-->
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <!--    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"-->
+    <!--        tools:ignore="ScopedStorage" />-->
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" /> <!-- Always include this permission -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- Include only if your app benefits from precise location access. -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /><!-- Always include this permission -->
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="info.passdaily.saint_thomas_app.permission.MAP_RECEIVE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <!--    <uses-permission android:name="android.permission.READ_SMS" /> &lt;!&ndash; <uses-permission android:name="android.permission.RECEIVE_SMS"/> &ndash;&gt;-->
+    <!--    <uses-permission android:name="android.permission.RECEIVE_SMS" /> &lt;!&ndash; <uses-permission android:name="android.permission.READ_PHONE_NUMBERS"/> &ndash;&gt;-->
+    <!-- <uses-permission android:name="android.permission.READ_PHONE_STATE"/> -->
+    <!-- <uses-permission android:name="android.permission.WRITE_SMS"/> -->
+    <!--
+ Required only when requesting background location access on
+      Android 10 (API level 29) and higher.
+    -->
+    <!--    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />-->
+
+    <queries>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+    </queries>
+    <queries>
+        <package android:name="com.google.android.apps.maps" />
+    </queries>
+
+
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher_carmel"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_traffic"
+        android:requestLegacyExternalStorage="true"
+        android:preserveLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_carmel_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ParentApplication"
+        tools:ignore="GoogleAppIndexingWarning,RtlEnabled,LockedOrientationActivity"
+        tools:replace="android:allowBackup,networkSecurityConfig"
+        tools:targetApi="r">
+        <!--        <meta-data android:name="com.google.android.geo.API_KEY"-->
+        <!--            android:value="@string/google_maps_api_key" />-->
+
+
+        <activity
+            android:name=".lib.ExoPlayerActivity"
+            android:exported="false"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@style/Theme.ParentApplication.NoActionBar" >
+        </activity>
+
+        <!--        <activity-->
+        <!--            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"-->
+        <!--            android:theme="@style/Base.Theme.AppCompat" />-->
+        <!--        <activity-->
+        <!--            android:name="info.passdaily.teach_daily_app.typeofuser.common_staff_admin.staff_punch_attendance.SelfieActivity"-->
+        <!--            android:exported="false"-->
+        <!--            android:screenOrientation="portrait"-->
+        <!--            android:theme="@style/Theme.ParentApplication.NoActionBar" />-->
+        <activity
+            android:name=".typeofuser.common_staff_admin.staff_punch_attendance.StaffAttendanceActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ParentApplication.NoActionBar" />
+
+        <activity
+            android:name=".typeofuser.common_staff_admin.admin_staff_punch_attendance.AdminStaffAttendanceActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ParentApplication.NoActionBar" />
+        <activity
+            android:name=".typeofuser.testing_area.share_page.SharePage2Activity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ParentApplication.NoActionBar" />
+        <activity
+            android:name=".typeofuser.testing_area.share_page.SharePageActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ParentApplication.NoActionBar" />
+        <activity
+            android:name=".typeofuser.parent.objective_video_exam.ObjectiveVideoDetailsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ParentApplication.NoActionBar" />
+        <activity
+            android:name=".typeofuser.parent.objective_video_exam.ObjectiveVideoExamActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ParentApplication.NoActionBar" />
+        <activity
+            android:name=".firebase.ReceiveDataActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ParentApplication.NoActionBar" />
+        <activity
+            android:name=".typeofuser.common_staff_admin.descriptive_exam.DescGiveMarksPreviewActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ParentApplication.NoActionBar" />
+        <activity
+            android:name=".typeofuser.common_staff_admin.quick_voice.send_to_voice.UploadAudioFile"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ParentApplication.NoActionBar" />
+        <!--        <activity-->
+        <!--            android:name=".typeofuser.common_staff_admin.zoom_current_meeting.ZoomPrivateMeetingActivity"-->
+        <!--            android:exported="false"-->
+        <!--            android:screenOrientation="portrait"-->
+        <!--            android:theme="@style/Theme.ParentApplication.NoActionBar" />-->
+        <!--        <activity-->
+        <!--            android:name=".typeofuser.common_staff_admin.zoom_join_live_class.ZoomJoinLiveClassActivity"-->
+        <!--            android:exported="false"-->
+        <!--            android:screenOrientation="portrait"-->
+        <!--            android:theme="@style/Theme.ParentApplication.NoActionBar" />-->
+        <!--        <activity-->
+        <!--            android:name=".typeofuser.common_staff_admin.gallery.GalleryViewActivity"-->
+        <!--            android:exported="false"-->
+        <!--            android:screenOrientation="portrait"-->
+        <!--            android:theme="@style/Theme.ParentApplication.NoActionBar" />-->
+        <activity
+            android:name=".typeofuser.common_staff_admin.online_video.VideoReportActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ParentApplication.NoActionBar" />
+        <activity
+            android:name=".typeofuser.common_staff_admin.home.ConveyorActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ParentApplication.NoActionBar" />
+        <activity
+            android:name=".typeofuser.common_staff_admin.home.StudentActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ParentApplication.NoActionBar" />
+        <activity
+            android:name=".typeofuser.common_staff_admin.home.StaffActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ParentApplication.NoActionBar" />
+        <activity
+            android:name=".typeofuser.common_staff_admin.home.PtaActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ParentApplication.NoActionBar" />
+        <activity
+            android:name=".typeofuser.common_staff_admin.mark_absent.MarkAbsentActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ParentApplication.NoActionBar" />
+        <activity
+            android:name=".typeofuser.common_staff_admin.mark_absent.MarkMultiAbsentActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ParentApplication.NoActionBar" />
+        <activity
+            android:name=".typeofuser.common_staff_admin.zoom_live_class_report.ZoomMeetingAttendedActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ParentApplication.NoActionBar" />
+        <activity
+            android:name=".typeofuser.common_staff_admin.calander.CalenderStaffActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ParentApplication.NoActionBar" />
+        <activity
+            android:name=".typeofuser.common_staff_admin.manage_assignment.AssignmentDetailStaffActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ParentApplication.NoActionBar" />
+        <activity
+            android:name=".typeofuser.common_staff_admin.study_material.StudyMaterialDetailsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ParentApplication.NoActionBar" />
+        <activity
+            android:name=".typeofuser.common_staff_admin.descriptive_exam.DescExamDetailsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ParentApplication.NoActionBar" />
+        <activity
+            android:name=".typeofuser.common_staff_admin.object_exam.ObjExamDetailsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ParentApplication.NoActionBar" />
+        <activity
+            android:name=".typeofuser.common_staff_admin.online_video.OfflineStoreStaffActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ParentApplication.NoActionBar" />
+        <!--        <activity-->
+        <!--            android:name=".typeofuser.common_staff_admin.online_video.OnlineVideoStaffActivity"-->
+        <!--            android:exported="false"-->
+        <!--            android:screenOrientation="portrait"-->
+        <!--            android:theme="@style/Theme.ParentApplication.NoActionBar" />-->
+        <!--        <activity-->
+        <!--            android:name=".typeofuser.common_staff_admin.zoomGoLive.ZoomGoLiveActivity"-->
+        <!--            android:exported="false"-->
+        <!--            android:screenOrientation="portrait"-->
+        <!--            android:theme="@style/Theme.ParentApplication.NoActionBar" />-->
+        <activity
+            android:name=".typeofuser.parent.online_video.OfflineStoreActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ParentApplication.NoActionBar" />
+        <activity
+            android:name=".typeofuser.parent.map.MapActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ParentApplication.NoActionBar" />
+        <activity
+            android:name=".typeofuser.common_staff_admin.track.MapActivityTest"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ParentApplication.NoActionBar" />
+        <activity
+            android:name=".typeofuser.parent.study_material.MaterialViewListActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ParentApplication.NoActionBar" />
+        <activity
+            android:name=".typeofuser.parent.online_video.YouTubePlayerActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:exported="false"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/Theme.ParentApplication.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name=".typeofuser.parent.online_video.YouTubeIframePlayer"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:exported="false"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/Theme.ParentApplication.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".typeofuser.parent.description_exam.DExamPreviewActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ParentApplication.NoActionBar" />
+        <activity
+            android:name=".typeofuser.parent.description_exam.DExamResultActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ParentApplication.NoActionBar" />
+        <activity
+            android:name=".typeofuser.parent.description_exam.DExamAreaActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ParentApplication.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".typeofuser.parent.objective_exam.OExamPreViewActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ParentApplication.NoActionBar" />
+        <activity
+            android:name=".typeofuser.parent.objective_exam.OExamResultActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ParentApplication.NoActionBar" />
+        <activity
+            android:name=".typeofuser.parent.objective_exam.OExamAreaActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ParentApplication.NoActionBar" />
+        <activity
+            android:name=".lib.video.Video_Activity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:exported="false"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.ParentApplication.NoActionBar" />
+        <activity
+            android:name=".typeofuser.parent.gallery.video.VideoActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ParentApplication.NoActionBar" />
+        <activity
+            android:name=".typeofuser.parent.gallery.image.ImageActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ParentApplication.NoActionBar" />
+        <activity
+            android:name=".typeofuser.parent.description_exam.DescriptiveDetailsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ParentApplication.NoActionBar" />
+        <activity
+            android:name=".typeofuser.parent.objective_exam.ObjectiveDetailsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ParentApplication.NoActionBar" />
+        <activity
+            android:name=".typeofuser.parent.assignment.AssignmentDetailActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ParentApplication.NoActionBar" />
+        <!--        <activity-->
+        <!--            android:name=".typeofuser.parent.zoom_layout.ZoomLiveActivity"-->
+        <!--            android:exported="false"-->
+        <!--            android:screenOrientation="portrait"-->
+        <!--            android:theme="@style/Theme.ParentApplication.NoActionBar" />-->
+        <activity
+            android:name=".typeofuser.parent.calendar.CalenderActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ParentApplication.NoActionBar" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <activity
+            android:name=".landingpage.SplashScreen"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashViewTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".typeofuser.parent.MainActivityParent"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ParentApplication.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".typeofuser.staff.MainActivityStaff"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ParentApplication.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".typeofuser.admin.MainActivityAdmin"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ParentApplication.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".landingpage.slide.SlidePage"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ApplicationTheme.NoActionBar" />
+        <activity
+            android:name=".landingpage.firstpage.FirstScreenActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ApplicationTheme.NoActionBar" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider> <!-- <receiver -->
+        <!-- android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" -->
+        <!-- android:exported="false" -->
+        <!-- android:permission="com.google.android.c2dm.permission.SEND" > -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="com.google.android.c2dm.intent.RECEIVE" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+        <!--        <receiver-->
+        <!--            android:name="info.passdaily.teach_daily_app.landingpage.SmsBroadcastReceiver"-->
+        <!--            android:exported="true">-->
+        <!--            <intent-filter>-->
+
+        <!--                &lt;!&ndash; <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED"/> &ndash;&gt;-->
+        <!--                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED" />-->
+        <!--            </intent-filter>-->
+        <!--        </receiver>-->
+        <receiver
+            android:name=".firebase.FirebaseBroadcastReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND"
+            tools:ignore="Instantiatable">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".firebase.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.google.firebase.components.ComponentDiscoveryService"
+            android:exported="false">
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessaging"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
+        <!--
+ Set custom default icon. This is used when no icon is set for incoming notification messages.
+     See README(https://goo.gl/l4GJaQ) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/cam_logo" /> <!-- &lt;!&ndash; Set color used with incoming notification messages. This is used when no color is set for the incoming -->
+        <!-- notification message. See README(https://goo.gl/6BKBk7) for more. &ndash;&gt; -->
+        <!-- &lt;!&ndash;        <meta-data&ndash;&gt; -->
+        <!-- &lt;!&ndash;            android:name="com.google.firebase.messaging.default_notification_color"&ndash;&gt; -->
+        <!-- &lt;!&ndash;            android:resource="@color/purple_700" />&ndash;&gt; -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" /> <!-- <meta-data -->
+        <!-- android:name="com.google.android.geo.API_KEY" -->
+        <!-- android:value="@string/google_maps_api_key" /> -->
+        <!-- <meta-data -->
+        <!-- android:name="com.google.android.maps.v2.API_KEY" -->
+        <!-- android:value="${apikey}" /> -->
+        <!--        <meta-data android:name="com.google.android.maps.v2.API_KEY"-->
+        <!--            android:value="@string/google_maps_api_key" />-->
+
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/google_maps_api_key" />
+
+
+        <uses-library
+            android:name="com.google.android.maps"
+            android:required="true" />
+    </application>
+
+</manifest>

@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="1dp"
+    android:layout_marginTop="3dp"
+    android:layout_marginEnd="1dp"
+    android:layout_marginStart="1dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintStatus"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/shapeImageView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:adjustViewBounds="true"
+            android:padding="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_study_biology"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewStaff"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@+id/textSubjectName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textSubjectName"
+            app:layout_constraintVertical_bias="0.571"
+            app:shapeAppearanceOverlay="@style/circleImageView"
+            app:strokeColor="@color/color100_bio"
+            app:strokeWidth="3dp" />
+
+        <TextView
+            android:id="@+id/textSubjectName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Biology"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_04"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="5"
+            app:layout_constraintStart_toEndOf="@+id/shapeImageView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewStaff"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Staff Name :  Passdaily"
+            android:textColor="@color/gray_600"
+            android:textSize="@dimen/text_size_02"
+            app:layout_constraintEnd_toEndOf="@+id/textSubjectName"
+            app:layout_constraintHorizontal_bias="0.527"
+            app:layout_constraintStart_toStartOf="@+id/textSubjectName"
+            app:layout_constraintTop_toBottomOf="@+id/textSubjectName" />
+
+        <TextView
+            android:id="@+id/textPassMark"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="4dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Pass Mark : 30/100"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_01"
+            app:layout_constraintEnd_toStartOf="@+id/textTotalMarks"
+            app:layout_constraintStart_toStartOf="@+id/shapeImageView"
+            app:layout_constraintTop_toBottomOf="@+id/textViewStaff" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/textTotalAttended"
+            app:layout_constraintStart_toStartOf="@+id/textPassMark"
+            app:layout_constraintTop_toBottomOf="@+id/textExamGrade" />
+
+        <TextView
+            android:id="@+id/textTotalMarks"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="end"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_01"
+            app:layout_constraintBottom_toBottomOf="@+id/textPassMark"
+            app:layout_constraintEnd_toEndOf="@+id/textViewStaff"
+            app:layout_constraintStart_toEndOf="@+id/textPassMark"
+            app:layout_constraintTop_toTopOf="@+id/textPassMark" />
+
+        <TextView
+            android:id="@+id/textTotalAttended"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="end"
+            android:paddingEnd="@dimen/text_size_07"
+            android:text="Total Attended :  43"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_01"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/textTotalMarks"
+            app:layout_constraintStart_toStartOf="@+id/textTotalMarks"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
+
+        <TextView
+            android:id="@+id/textExamGrade"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Exam Grade"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_01"
+            app:layout_constraintEnd_toEndOf="@+id/textTotalMarks"
+            app:layout_constraintStart_toStartOf="@+id/textPassMark"
+            app:layout_constraintTop_toBottomOf="@+id/textPassMark" />
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView103"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:layout_marginEnd="4dp"-->
+<!--            android:fontFamily="@font/roboto_bold"-->
+<!--            android:gravity="center"-->
+<!--            android:text="A1"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="@dimen/text_size_02"-->
+<!--            app:layout_constraintEnd_toStartOf="@+id/textView105"-->
+<!--            app:layout_constraintStart_toStartOf="@+id/textView102"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/textView102" />-->
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView105"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="4dp"-->
+<!--            android:layout_marginEnd="4dp"-->
+<!--            android:fontFamily="@font/roboto_bold"-->
+<!--            android:gravity="center"-->
+<!--            android:text="A2"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="@dimen/text_size_02"-->
+<!--            app:layout_constraintBottom_toBottomOf="@+id/textView103"-->
+<!--            app:layout_constraintEnd_toStartOf="@+id/textView106"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/textView103"-->
+<!--            app:layout_constraintTop_toTopOf="@+id/textView103"-->
+<!--            app:layout_constraintVertical_bias="0.0" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView106"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="4dp"-->
+<!--            android:layout_marginEnd="4dp"-->
+<!--            android:fontFamily="@font/roboto_bold"-->
+<!--            android:gravity="center"-->
+<!--            android:text="B1"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="@dimen/text_size_02"-->
+<!--            app:layout_constraintBottom_toBottomOf="@+id/textView105"-->
+<!--            app:layout_constraintEnd_toStartOf="@+id/textView107"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/textView105"-->
+<!--            app:layout_constraintTop_toTopOf="@+id/textView105"-->
+<!--            app:layout_constraintVertical_bias="0.0" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView107"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="4dp"-->
+<!--            android:layout_marginEnd="4dp"-->
+<!--            android:fontFamily="@font/roboto_bold"-->
+<!--            android:gravity="center"-->
+<!--            android:text="B2"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="@dimen/text_size_02"-->
+<!--            app:layout_constraintBottom_toBottomOf="@+id/textView106"-->
+<!--            app:layout_constraintEnd_toStartOf="@+id/textView108"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/textView106"-->
+<!--            app:layout_constraintTop_toTopOf="@+id/textView106"-->
+<!--            app:layout_constraintVertical_bias="0.0" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView108"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="4dp"-->
+<!--            android:layout_marginEnd="4dp"-->
+<!--            android:fontFamily="@font/roboto_bold"-->
+<!--            android:gravity="center"-->
+<!--            android:text="C1"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="@dimen/text_size_02"-->
+<!--            app:layout_constraintBottom_toBottomOf="@+id/textView107"-->
+<!--            app:layout_constraintEnd_toStartOf="@+id/textView104"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/textView107"-->
+<!--            app:layout_constraintTop_toTopOf="@+id/textView107"-->
+<!--            app:layout_constraintVertical_bias="0.0" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView104"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="4dp"-->
+<!--            android:layout_marginEnd="4dp"-->
+<!--            android:fontFamily="@font/roboto_bold"-->
+<!--            android:gravity="center"-->
+<!--            android:text="C2"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="@dimen/text_size_02"-->
+<!--            app:layout_constraintBottom_toBottomOf="@+id/textView108"-->
+<!--            app:layout_constraintEnd_toStartOf="@+id/textView109"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/textView108"-->
+<!--            app:layout_constraintTop_toTopOf="@+id/textView108" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView109"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="4dp"-->
+<!--            android:layout_marginEnd="4dp"-->
+<!--            android:fontFamily="@font/roboto_bold"-->
+<!--            android:gravity="center"-->
+<!--            android:text="D"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="@dimen/text_size_02"-->
+<!--            app:layout_constraintBottom_toBottomOf="@+id/textView104"-->
+<!--            app:layout_constraintEnd_toStartOf="@+id/textView110"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/textView104"-->
+<!--            app:layout_constraintTop_toTopOf="@+id/textView104"-->
+<!--            app:layout_constraintVertical_bias="0.0" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView110"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="4dp"-->
+<!--            android:fontFamily="@font/roboto_bold"-->
+<!--            android:gravity="center"-->
+<!--            android:text="E"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="@dimen/text_size_02"-->
+<!--            app:layout_constraintBottom_toBottomOf="@+id/textView109"-->
+<!--            app:layout_constraintEnd_toEndOf="@+id/textView102"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/textView109"-->
+<!--            app:layout_constraintTop_toTopOf="@+id/textView109"-->
+<!--            app:layout_constraintVertical_bias="0.0" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textViewA1"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:fontFamily="@font/roboto_bold"-->
+<!--            android:gravity="center"-->
+<!--            android:text="12"-->
+<!--            android:textColor="@color/gray_700"-->
+<!--            android:textSize="@dimen/text_size_02"-->
+<!--            app:layout_constraintEnd_toEndOf="@+id/textView103"-->
+<!--            app:layout_constraintStart_toStartOf="@+id/textView103"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/textView103" />-->
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/textViewA2"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:fontFamily="@font/roboto_bold"-->
+<!--            android:gravity="center"-->
+<!--            android:text="43"-->
+<!--            android:textColor="@color/gray_700"-->
+<!--            android:textSize="@dimen/text_size_02"-->
+<!--            app:layout_constraintEnd_toEndOf="@+id/textView105"-->
+<!--            app:layout_constraintStart_toStartOf="@+id/textView105"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/textView105" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textViewB1"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:fontFamily="@font/roboto_bold"-->
+<!--            android:gravity="center"-->
+<!--            android:text="43"-->
+<!--            android:textColor="@color/gray_700"-->
+<!--            android:textSize="@dimen/text_size_02"-->
+<!--            app:layout_constraintEnd_toEndOf="@+id/textView106"-->
+<!--            app:layout_constraintStart_toStartOf="@+id/textView106"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/textView106" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textViewB2"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:fontFamily="@font/roboto_bold"-->
+<!--            android:gravity="center"-->
+<!--            android:text="43"-->
+<!--            android:textColor="@color/gray_700"-->
+<!--            android:textSize="@dimen/text_size_02"-->
+<!--            app:layout_constraintEnd_toEndOf="@+id/textView107"-->
+<!--            app:layout_constraintStart_toStartOf="@+id/textView107"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/textView107" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textViewC1"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:fontFamily="@font/roboto_bold"-->
+<!--            android:gravity="center"-->
+<!--            android:text="34"-->
+<!--            android:textColor="@color/gray_700"-->
+<!--            android:textSize="@dimen/text_size_02"-->
+<!--            app:layout_constraintEnd_toEndOf="@+id/textView108"-->
+<!--            app:layout_constraintStart_toStartOf="@+id/textView108"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/textView108" />-->
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/textViewC2"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:fontFamily="@font/roboto_bold"-->
+<!--            android:gravity="center"-->
+<!--            android:text="34"-->
+<!--            android:textColor="@color/gray_700"-->
+<!--            android:textSize="@dimen/text_size_02"-->
+<!--            app:layout_constraintEnd_toEndOf="@+id/textView104"-->
+<!--            app:layout_constraintStart_toStartOf="@+id/textView104"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/textView104" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textViewD"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:fontFamily="@font/roboto_bold"-->
+<!--            android:gravity="center"-->
+<!--            android:text="34"-->
+<!--            android:textColor="@color/gray_700"-->
+<!--            android:textSize="@dimen/text_size_02"-->
+<!--            app:layout_constraintEnd_toEndOf="@+id/textView109"-->
+<!--            app:layout_constraintStart_toStartOf="@+id/textView109"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/textView109" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textViewE"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:fontFamily="@font/roboto_bold"-->
+<!--            android:gravity="center"-->
+<!--            android:text="34"-->
+<!--            android:textColor="@color/gray_700"-->
+<!--            android:textSize="@dimen/text_size_02"-->
+<!--            app:layout_constraintEnd_toEndOf="@+id/textView110"-->
+<!--            app:layout_constraintStart_toStartOf="@+id/textView110"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/textView110" />-->
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

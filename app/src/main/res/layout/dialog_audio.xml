@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <!--    <androidx.cardview.widget.CardView-->
+    <!--        android:id="@+id/cardViewAudioQuestion"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="8dp"-->
+    <!--        android:layout_marginTop="8dp"-->
+    <!--        android:layout_marginEnd="8dp"-->
+    <!--        android:layout_marginBottom="8dp"-->
+    <!--        app:cardBackgroundColor="@color/white"-->
+    <!--        app:cardCornerRadius="5dp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/textViewTitle">-->
+
+
+
+
+
+    <!--    </androidx.cardview.widget.CardView>-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textViewTitle"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="12dp"-->
+    <!--        android:layout_marginTop="16dp"-->
+    <!--        android:layout_marginEnd="12dp"-->
+    <!--        android:text="TextView"-->
+    <!--        android:textSize="@dimen/text_size_02"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:fontFamily="@font/roboto_medium"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:fontFamily="@font/poppins_medium"
+        android:lineSpacingExtra="3dp"
+        android:text=" whatever you want whatever you want "
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_05"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewClose"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewClose"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageViewClose"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/textViewDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewClose"
+        app:layout_constraintStart_toStartOf="@+id/textViewTitle"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout4">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/imageViewClose"
+            app:layout_constraintStart_toStartOf="@+id/textViewTitle"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout4">
+
+
+            <SeekBar
+                android:id="@+id/mSeekBar"
+                style="@android:style/Widget.Material.ProgressBar.Horizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="16dp"
+                android:indeterminate="false"
+                app:layout_constraintBottom_toTopOf="@+id/textSongDuration"
+                app:layout_constraintEnd_toStartOf="@+id/imageViewPlay"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="NewApi" />
+
+            <ImageView
+                android:id="@+id/imageViewPlay"
+                android:layout_width="@dimen/text_size_06"
+                android:layout_height="@dimen/text_size_06"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintBottom_toBottomOf="@+id/mSeekBar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/mSeekBar"
+                app:layout_constraintTop_toTopOf="@+id/mSeekBar"
+                app:srcCompat="@drawable/ic_exam_play" />
+
+            <TextView
+                android:id="@+id/textSongDuration"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="end"
+                android:text="00 :00"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/imageViewPlay"
+                app:layout_constraintStart_toStartOf="@+id/mSeekBar"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewPlay" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/textViewDesc"-->
+    <!--            android:layout_width="0dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginTop="16dp"-->
+    <!--            android:fontFamily="@font/roboto_regular"-->
+    <!--            android:autoLink="all"-->
+    <!--            android:lineSpacingExtra="6dp"-->
+    <!--            android:linksClickable="true"-->
+    <!--            android:textColorLink="@color/color_accounts"-->
+    <!--            android:text="-->
+    <!--If anyone needs to know the hex value for this blue it is #7bc9c2.-->
+
+    <!--I used Eye Dropper to figure this out as I couldn't find it documented anywhere, it isn't on the Google Color Palatte anyway:-->
+
+    <!--https://www.google.com/design/spec/style/color.html#color-color-palette"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:textSize="@dimen/text_size_04"-->
+    <!--            app:layout_constraintEnd_toEndOf="@+id/imageViewClose"-->
+    <!--            app:layout_constraintStart_toStartOf="@+id/textViewTitle"-->
+    <!--            app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />-->
+
+    <ImageView
+        android:id="@+id/imageViewClose"
+        android:layout_width="@dimen/spinner_custom_image"
+        android:layout_height="@dimen/spinner_custom_image"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewTitle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_black_close" />
+
+    <TextView
+        android:id="@+id/textViewDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="TextView"
+        android:textColor="@color/gray_700"
+        android:textSize="@dimen/text_size_02"
+        app:layout_constraintEnd_toEndOf="@+id/textViewDesc"
+        app:layout_constraintStart_toStartOf="@+id/textViewDesc"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDesc" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout4"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"
+        app:layout_constraintEnd_toEndOf="@+id/textViewDate"
+        app:layout_constraintStart_toStartOf="@+id/textViewDate"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="top|start"
+            android:hint="@string/voice_title"
+            android:inputType="text"
+            android:scrollbars="vertical"
+            android:scrollHorizontally="false"
+            android:textColor="@color/black" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/upload"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_02"
+        app:backgroundTint="@color/green_400"
+        app:icon="@drawable/ic_menu_upload"
+        app:iconTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/textViewDate"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDate"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

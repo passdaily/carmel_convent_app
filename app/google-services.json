@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "174628275307",
+    "firebase_url": "https://st-antonys-staffapp.firebaseio.com",
+    "project_id": "st-antonys-staffapp",
+    "storage_bucket": "st-antonys-staffapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:174628275307:android:863d164d79e15e07319d2e",
+        "android_client_info": {
+          "package_name": "info.passdaily.camrelconvertapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "174628275307-satgidh2j9bnm7uhugm1o63qugko85tu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAm15vAum73RUOnigoGcap0CmbqwaXkvgE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "174628275307-satgidh2j9bnm7uhugm1o63qugko85tu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:174628275307:android:032550779142ca64319d2e",
+        "android_client_info": {
+          "package_name": "info.regin.stantonysstaffapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "174628275307-satgidh2j9bnm7uhugm1o63qugko85tu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAm15vAum73RUOnigoGcap0CmbqwaXkvgE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "174628275307-satgidh2j9bnm7uhugm1o63qugko85tu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

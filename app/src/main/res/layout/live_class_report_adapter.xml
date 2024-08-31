@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="1dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginEnd="1dp"
+    android:layout_marginStart="1dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/red_light100"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                android:id="@+id/textClassAndTakenBy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="end"
+                android:text="Class : LKG , Taken by Anusree Teacher"
+                android:textColor="@color/color_physics"
+                android:textSize="@dimen/text_size_02" />
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/shapeImageView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:adjustViewBounds="true"
+            android:padding="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_study_biology"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@+id/textViewSubject"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView23"
+            app:shapeAppearanceOverlay="@style/circleImageView"
+            app:strokeColor="@color/color100_bio"
+            app:strokeWidth="3dp" />
+
+        <TextView
+            android:id="@+id/textViewSubject"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Biology"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_05"
+            app:layout_constraintBottom_toBottomOf="@+id/shapeImageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="5.5"
+            app:layout_constraintStart_toEndOf="@+id/shapeImageView"
+            app:layout_constraintTop_toTopOf="@+id/shapeImageView" />
+
+        <TextView
+            android:id="@+id/textStartDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:drawablePadding="5dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/poppins_regular"
+            android:maxLines="1"
+            android:text="Start : 11 may 2022"
+            android:textColor="@color/gray_700"
+            android:textSize="@dimen/text_size_02"
+            app:drawableStartCompat="@drawable/ic_date_icon"
+            app:layout_constraintEnd_toStartOf="@+id/textEndDate"
+            app:layout_constraintStart_toStartOf="@+id/shapeImageView"
+            app:layout_constraintTop_toBottomOf="@+id/shapeImageView" />
+
+        <TextView
+            android:id="@+id/textEndDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:drawablePadding="5dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/poppins_regular"
+            android:maxLines="1"
+            android:text="End : 12 may 2022"
+            android:textColor="@color/gray_700"
+            android:textSize="@dimen/text_size_02"
+            app:drawableStartCompat="@drawable/ic_date_icon"
+            app:layout_constraintBottom_toBottomOf="@+id/textStartDate"
+            app:layout_constraintEnd_toEndOf="@+id/textViewSubject"
+            app:layout_constraintStart_toEndOf="@+id/textStartDate"
+            app:layout_constraintTop_toTopOf="@+id/textStartDate" />
+
+        <TextView
+            android:id="@+id/textTotStudent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:drawablePadding="5dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/poppins_regular"
+            android:maxLines="1"
+            android:text="Total student : 50"
+            android:textColor="@color/gray_700"
+            android:textSize="@dimen/text_size_02"
+            app:drawableStartCompat="@drawable/ic_student_icon"
+            app:layout_constraintEnd_toEndOf="@+id/textStartDate"
+            app:layout_constraintStart_toStartOf="@+id/textStartDate"
+            app:layout_constraintTop_toBottomOf="@+id/textEndDate" />
+
+
+        <TextView
+            android:id="@+id/textAttended"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/poppins_regular"
+            android:maxLines="1"
+            android:text="Attended student : 50"
+            android:textColor="@color/gray_700"
+            android:textSize="@dimen/text_size_02"
+            app:drawableStartCompat="@drawable/ic_student_report_icon"
+            app:layout_constraintBottom_toBottomOf="@+id/textTotStudent"
+            app:layout_constraintEnd_toEndOf="@+id/textEndDate"
+            app:layout_constraintStart_toStartOf="@+id/textEndDate"
+            app:layout_constraintTop_toTopOf="@+id/textTotStudent" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/reportConstraint"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_spinner"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/textTotStudent"
+            app:layout_constraintStart_toStartOf="@+id/textTotStudent"
+            app:layout_constraintTop_toBottomOf="@+id/textTotStudent">
+
+            <TextView
+                android:id="@+id/textView70"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Report"
+                android:textColor="@color/gray_600"
+                android:textSize="@dimen/text_size_04"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:visibility="gone"
+            android:id="@+id/endLiveConstraint"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button_blue"
+            app:layout_constraintBottom_toBottomOf="@+id/reportConstraint"
+            app:layout_constraintEnd_toEndOf="@+id/textAttended"
+            app:layout_constraintStart_toStartOf="@+id/textAttended"
+            app:layout_constraintTop_toTopOf="@+id/reportConstraint">
+
+            <TextView
+                android:id="@+id/textView71"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="End Live"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_04"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

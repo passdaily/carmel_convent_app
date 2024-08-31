@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:seekcircle="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.02" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.02" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintGuide_percent="0.98" />
+
+        <!--        <ProgressBar-->
+        <!--            android:id="@+id/progressBarCircle"-->
+        <!--            style="?android:attr/progressBarStyleHorizontal"-->
+        <!--            android:layout_width="@dimen/des_status_icon_size"-->
+        <!--            android:layout_height="@dimen/des_status_icon_size"-->
+        <!--            android:layout_centerInParent="true"-->
+        <!--            android:layout_marginTop="16dp"-->
+        <!--            android:padding="5dp"-->
+        <!--            android:background="@drawable/drawable_circle_dark_blue"-->
+        <!--            android:indeterminate="false"-->
+        <!--            android:max="100"-->
+        <!--            android:progress="100"-->
+        <!--            android:progressDrawable="@drawable/drawable_circle_yellow"-->
+        <!--            android:rotation="-90"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toTopOf="@+id/guideline1" />-->
+
+
+        <RelativeLayout
+            android:id="@+id/linearLayout8"
+            android:layout_width="0dp"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/bg_spinner"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toStartOf="@+id/relativeLayout3"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toTopOf="@+id/guideline1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="3dp"
+                android:layout_marginBottom="3dp">
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/spinnerAcademic"
+                    style="@style/spinner_style2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/accedemicText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="-3dp"
+                android:background="@color/white"
+                android:fontFamily="@font/poppins_light_italic"
+                android:paddingStart="3dp"
+                android:paddingEnd="3dp"
+                android:text="@string/select_year"
+                android:textColor="@color/dark_gray_700"
+                android:textSize="12sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="4dp"
+            android:background="@drawable/bg_spinner"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayout8"
+
+            app:layout_constraintStart_toEndOf="@+id/linearLayout8"
+            app:layout_constraintTop_toTopOf="@+id/linearLayout8"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="3dp"
+                android:layout_marginBottom="3dp">
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/spinnerClass"
+                    style="@style/spinner_style2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/classText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="-3dp"
+                android:background="@color/white"
+                android:fontFamily="@font/poppins_light_italic"
+                android:paddingStart="3dp"
+                android:paddingEnd="3dp"
+                android:text="@string/select_staff"
+                android:textColor="@color/dark_gray_700"
+                android:textSize="12sp" />
+
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:visibility="gone"
+            android:id="@+id/punchInButtonScr"
+            style="@style/RoundedCornerButtonGreen400"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingStart="@dimen/text_size_06"
+            android:paddingEnd="@dimen/text_size_06"
+            android:text="Punch In"
+            app:layout_constraintVertical_bias="0.368"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/constraintStop" />
+        <!--    seekcircle:layout_constraintBottom_toBottomOf="parent"-->
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:visibility="gone"
+            android:id="@+id/punchOutButtonScr"
+            style="@style/RoundedCornerButtonGreen400"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingStart="@dimen/text_size_06"
+            android:paddingEnd="@dimen/text_size_06"
+
+            android:text="Punch Out"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/constraintStop" />
+        <!--    seekcircle:layout_constraintStart_toStartOf="@+id/constraintStop"-->
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintStop"
+            android:layout_width="@dimen/stop_watch_height"
+            android:layout_height="@dimen/stop_watch_height"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout8">
+
+
+                        <info.passdaily.camrelconvertapp.lib.seek_circle.SeekCircle
+                            android:id="@+id/progressBarDashed"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:endColor="@color/green_400"
+                            app:inactiveColor="@color/blue_200"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintDimensionRatio="1:1"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="1.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintVertical_bias="1.0"
+                            app:startColor="@color/green_400"
+                            app:layout_constraintTop_toTopOf="@+id/progressBarCircle"
+                            seekcircle:maxi="60"
+                            seekcircle:minimum="0"
+                            seekcircle:progress_="0" />
+
+                        <TextView
+                            android:id="@+id/textViewTimer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="00 : 00 : 00"
+                            android:textColor="@color/green_400"
+                            android:textSize="@dimen/text_size_05"
+                            app:layout_constraintBottom_toBottomOf="@+id/progressBarCircle"
+                            app:layout_constraintEnd_toEndOf="@+id/progressBarCircle"
+                            app:layout_constraintStart_toStartOf="@+id/progressBarCircle"
+                            app:layout_constraintTop_toTopOf="@+id/progressBarCircle" />
+
+                        <!--            <info.passdaily.teach_daily_app.lib.dashed_circle_progress.DashedCircularProgress-->
+                        <!--                android:id="@+id/progressBarCircle"-->
+                        <!--                android:layout_width="0dp"-->
+                        <!--                android:layout_height="0dp"-->
+                        <!--                android:layout_centerInParent="true"-->
+                        <!--                android:backgroundTint="@color/white"-->
+                        <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+                        <!--                app:layout_constraintDimensionRatio="1:1"-->
+                        <!--                app:layout_constraintEnd_toEndOf="parent"-->
+                        <!--                app:layout_constraintHorizontal_bias="1.0"-->
+                        <!--                app:layout_constraintStart_toStartOf="parent"-->
+                        <!--                app:layout_constraintTop_toTopOf="parent"-->
+                        <!--                app:layout_constraintVertical_bias="1.0"-->
+                        <!--                custom:base_color="@color/blue_100"-->
+                        <!--                custom:duration="10"-->
+                        <!--                custom:external_color="@color/white"-->
+                        <!--                custom:max="999"-->
+                        <!--                custom:min="0"-->
+                        <!--                custom:progress_color="@color/green_400"-->
+                        <!--                custom:progress_icon="@drawable/tdlogo">-->
+
+                        <!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+                        <!--                android:layout_width="match_parent"-->
+                        <!--                android:layout_height="match_parent"-->
+                        <!--                android:layout_centerInParent="true">-->
+
+                        <info.passdaily.camrelconvertapp.lib.seek_circle.SeekCircle
+                            android:id="@+id/progressBarCircle"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_marginStart="24dp"
+                            android:layout_marginTop="24dp"
+                            android:layout_marginEnd="24dp"
+                            android:layout_marginBottom="24dp"
+                            android:padding="@dimen/text_size_05"
+                            app:endColor="@color/green_400"
+                            app:inactiveColor="@color/blue_200"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:progressWidth="5dp"
+                            app:startColor="@color/green_400"
+                            seekcircle:maxi="240"
+                            seekcircle:minimum="0"
+                            seekcircle:progress_="0" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!--            </info.passdaily.teach_daily_app.lib.dashed_circle_progress.DashedCircularProgress>-->
+
+
+        <TextView
+            android:id="@+id/textViewLatLong"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Text"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_02"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/constraintStop"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintTop_toTopOf="@+id/guideline24" />
+
+        <TextView
+
+            android:id="@+id/textViewData"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Text"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_02"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/textViewLatLong" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.55" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.core.widget.NestedScrollView>

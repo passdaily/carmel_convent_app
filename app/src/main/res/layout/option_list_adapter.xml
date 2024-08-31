@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="1dp"
+    app:cardCornerRadius="2dp"
+    app:cardBackgroundColor="@color/white"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <androidx.constraintlayout.widget.ConstraintLayout
+           android:id="@+id/constraintCheck"
+            android:layout_width="@dimen/icon_size2"
+            android:layout_height="@dimen/icon_size2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" >
+
+            <CheckBox
+
+                android:id="@+id/checkBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:buttonTint="@color/green_400"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/gray_600" />
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/imageViewClose"
+                android:layout_width="@dimen/icon_size2"
+                android:layout_height="0dp"
+                app:srcCompat="@drawable/ic_icon_close"
+                app:tint="@color/gray_600"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+      
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout22"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/constraintCheck"
+            app:layout_constraintEnd_toStartOf="@+id/imageViewEdit"
+            app:layout_constraintStart_toEndOf="@+id/constraintCheck"
+            app:layout_constraintTop_toTopOf="@+id/constraintCheck">
+
+            <EditText
+                android:id="@+id/editTextOption"
+                android:visibility="gone"
+                android:layout_width="0dp"
+                android:hint="Enter Text Here "
+                android:text="Test Text"
+                android:textSize="@dimen/text_size_02"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_medium"
+                android:background="@null"
+                android:textColorHint="@color/gray_200"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+
+                android:id="@+id/textViewOption"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:text="TextView"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_02"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <ImageView
+
+            android:id="@+id/imageViewEdit"
+            android:layout_width="@dimen/text_size_06"
+            android:layout_height="0dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/constraintCheck"
+            app:layout_constraintEnd_toStartOf="@+id/imageViewSubmit"
+            app:layout_constraintTop_toTopOf="@+id/constraintCheck"
+            app:srcCompat="@drawable/ic_edit_black"
+            app:tint="@color/gray_600" />
+
+        <ImageView
+
+            android:id="@+id/imageViewDelete"
+            android:layout_width="@dimen/text_size_06"
+            android:layout_height="0dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/constraintCheck"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/constraintCheck"
+            app:srcCompat="@drawable/ic_icon_delete_gray"
+            app:tint="@color/gray_600" />
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/imageViewSubmit"
+            android:layout_width="@dimen/icon_size2"
+            android:layout_height="@dimen/icon_size2"
+            android:layout_marginEnd="12dp"
+            app:layout_constraintBottom_toBottomOf="@+id/constraintCheck"
+            app:layout_constraintEnd_toStartOf="@+id/imageViewDelete"
+            app:layout_constraintTop_toTopOf="@+id/constraintCheck"
+            app:srcCompat="@drawable/ic_check_circle_black_24dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

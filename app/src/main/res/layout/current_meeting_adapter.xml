@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="4dp"
+    android:layout_margin="2dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/shapeImageView"
+            android:layout_width="@dimen/dashboard_video_height_width"
+            android:layout_height="@dimen/dashboard_video_height_width"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:adjustViewBounds="true"
+            android:padding="3dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_study_biology"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/circleImageView"
+            app:strokeColor="@color/color100_bio"
+            app:strokeWidth="5dp" />
+
+        <LinearLayout
+            android:id="@+id/textLinearLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shapeImageView">
+
+            <TextView
+                android:id="@+id/textViewSubject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Physics Physics Physics"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_02" />
+
+            <TextView
+                android:id="@+id/textViewClass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1.5"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="end"
+                android:text="Class XI -B"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_02" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/textTotalStudents"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Total Students : 30"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_01"
+            app:layout_constraintEnd_toEndOf="@+id/textLinearLayout"
+            app:layout_constraintStart_toStartOf="@+id/textLinearLayout"
+            app:layout_constraintTop_toBottomOf="@+id/textLinearLayout" />
+
+        <TextView
+            android:id="@+id/textTotalAttended"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Total Attended Student = 30"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_01"
+            app:layout_constraintEnd_toEndOf="@+id/textTotalStudents"
+            app:layout_constraintStart_toStartOf="@+id/textTotalStudents"
+            app:layout_constraintTop_toBottomOf="@+id/textTotalStudents" />
+
+        <TextView
+            android:id="@+id/textMeetingStartTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Meeting Started Time : 10 : 00 am"
+            android:textColor="@color/black"
+            android:textSize="@dimen/zm_ui_kit_text_size_13sp"
+            app:layout_constraintEnd_toEndOf="@+id/textTotalAttended"
+            app:layout_constraintStart_toStartOf="@+id/textTotalAttended"
+            app:layout_constraintTop_toBottomOf="@+id/textTotalAttended" />
+
+        <TextView
+            android:id="@+id/textClassBy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Class Taken by Divya Teacher"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_01"
+            app:layout_constraintBottom_toTopOf="@+id/buttonJoinLive"
+            app:layout_constraintEnd_toEndOf="@+id/textMeetingStartTime"
+            app:layout_constraintStart_toStartOf="@+id/textMeetingStartTime"
+            app:layout_constraintTop_toBottomOf="@+id/textMeetingStartTime" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonJoinLive"
+            style="@style/RoundedCornerButtonGreen600"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Join Live Class"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_01"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/textClassBy"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="@+id/textClassBy"
+            app:layout_constraintTop_toBottomOf="@+id/textClassBy" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

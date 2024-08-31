@@ -1,0 +1,26 @@
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=53:04:36:50:40:26:98:AC:FB:61:13:4E:2D:BB:15:9F:84:28:78:52%3Binfo.passdaily.parentapp.landingpage.firstpage
+
+    You can also add your credentials to an existing key, using these values:
+
+    Package name:
+    info.passdaily.parentapp.landingpage.firstpage
+
+    SHA-1 certificate fingerprint:
+    53:04:36:50:40:26:98:AC:FB:61:13:4E:2D:BB:15:9F:84:28:78:52
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+<!--    //AIzaSyB2cg51Lcd80BHtCsSi24AAz93nrFZl-z0-->
+    <string name="google_maps_api_key" templateMergeStrategy="preserve" translatable="false">AIzaSyAm15vAum73RUOnigoGcap0CmbqwaXkvgE</string>
+<!--    <string name="google_maps_api_key" templateMergeStrategy="preserve" translatable="false">AIzaSyAXEV-WEeOlJtuUmrvNiFfvxDkdbVOQNt8</string>-->
+</resources>

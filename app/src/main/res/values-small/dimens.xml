@@ -1,0 +1,253 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+
+
+    <dimen name="twenty_dp">20dp</dimen>
+    <dimen name="twenty_sp">20sp</dimen>
+    <dimen name="twentythree_dp">23dp</dimen>
+    <dimen name="twentythree_sp">23sp</dimen>
+    <dimen name="twentyfive_dp">25dp</dimen>
+    <dimen name="twentyfive_sp">25sp</dimen>
+    <dimen name="icon_height_width">24dp</dimen>
+    <dimen name="thirty_sp">20sp</dimen>
+
+    <dimen name="fourteen_dp">14dp</dimen>
+    <dimen name="fourteen_sp">14sp</dimen>
+    <dimen name="sixteen_dp">16dp</dimen>
+    <dimen name="sixteen_sp">16sp</dimen>
+
+    <dimen name="eighteen_dp">18dp</dimen>
+    <dimen name="eighteen_sp">18sp</dimen>
+
+
+
+    <!--    study material folder size-->
+    <dimen name="folder_width">70dp</dimen>
+    <dimen name="folder_height">60dp</dimen>
+
+    <!--    ////-->
+    <dimen name="collapsing_toolbar">180dp</dimen>
+    <!--    /// dashboard top icon font size-->
+    <dimen name="column_text_01">12sp</dimen>
+    <!--    /// dashboard firstView Pager height-->
+    <dimen name="default_viewpager_height">170dp</dimen>
+    <!--    /// bottom_viewpager_height-->
+    <dimen name="bottom_viewpager_height">140dp</dimen>
+    <!--    // dashboard third view height-->
+    <dimen name="box_size">85dp</dimen>
+    <!--    // dashboard fourth_box_size-->
+    <dimen name="fourth_box_size">120dp</dimen>
+    <!--    /// margin_size_icon-->
+    <dimen name="margin_size_icon">6dp</dimen>
+    <!--//// textView_10    -->
+    <dimen name="text_size_01">10sp</dimen>
+    <!--//// textView_12    -->
+    <dimen name="text_size_02">12sp</dimen>
+    <!--//// text_size_03    -->
+    <dimen name="text_size_03">6sp</dimen>
+    <!--//// text_size_12    -->
+    <dimen name="text_size_04">12sp</dimen>
+
+    <dimen name="box_size_staff">90dp</dimen>
+
+    <dimen name="toolbar_height">200dp</dimen>
+
+    <!--//// text_size  22  -->
+    <dimen name="text_size_05">14sp</dimen>
+
+    <dimen name="text_size_06">16sp</dimen>
+
+    <dimen name="text_size_07">14sp</dimen>
+
+    <dimen name="text_size_08">20sp</dimen>
+
+    <dimen name="navigation_width_max">240dp</dimen>
+
+    <dimen name="navigation_width_min_max">200dp</dimen>
+
+    <dimen name="dashboard_bottom">350dp</dimen>
+
+    <dimen name="big_text_heading">25sp</dimen>
+    <dimen name="big_text_subheading">14sp</dimen>
+
+    <dimen name="dashboard_video_height_width">52dp</dimen>
+    <dimen name="icon_size">18dp</dimen>
+    <dimen name="spinner_custom_image">28dp</dimen>
+
+    <dimen name="icon_size2">24dp</dimen>
+
+    <dimen name="result_duration_icon">32dp</dimen>
+
+    <dimen name="bottom_bar_height">42dp</dimen>
+    <dimen name="period_box_dashboard">100dp</dimen>
+
+    <dimen name="online_video_icon_width">80dp</dimen>
+    <dimen name="online_video_icon_height">60dp</dimen>
+
+    <dimen name="progress_bar_icon">62dp</dimen>
+
+    <dimen name="icon_size_width">12dp</dimen>
+
+    <dimen name="textbox_height">36dp</dimen>
+
+    <dimen name="top_margin_default">10dp</dimen>
+    <dimen name="des_status_icon_size">140dp</dimen>
+
+    <dimen name="des_icon_size">36dp</dimen>
+
+    <dimen name="nav_count_box_width">80dp</dimen>
+    <dimen name="nav_count_box_height">80dp</dimen>
+
+    <dimen name="screen_width">30dp</dimen>
+    <dimen name="screen_width_cbse">20dp</dimen>
+
+    <dimen name="screen_width_msp_lp">130dp</dimen>
+    <dimen name="screen_width_msp_up">120dp</dimen>
+    <dimen name="screen_width_msp_hs">110dp</dimen>
+
+    <dimen name="left_margin_download">10dp</dimen>
+    <dimen name="right_margin_download">10dp</dimen>
+    <dimen name="left_margin">25dp</dimen>
+    <dimen name="right_margin">15dp</dimen>
+    <dimen name="center_width">8dp</dimen>
+
+    <dimen name="left_margin_offline">8dp</dimen>
+    <dimen name="right_margin_offline">8dp</dimen>
+    <dimen name="center_width_offline">4dp</dimen>
+
+    <dimen name="circle_progress_bar_width">4dp</dimen>
+    <dimen name="stop_watch_height">200dp</dimen>
+
+    <bool name="is_tab">false</bool>
+    <dimen name="tab_icon">62dp</dimen>
+    <dimen name="zm_ui_kit_text_size_20sp">20sp</dimen>
+    <dimen name="zm_btn_height_24dp">24dp</dimen>
+    <dimen name="zm_ui_kit_text_size_13sp">13sp</dimen>
+</resources>
+
+<!--<resources>-->
+<!--    &lt;!&ndash; Default screen margins, per the Android Design guidelines. &ndash;&gt;-->
+<!--    <dimen name="activity_horizontal_margin">16dp</dimen>-->
+<!--    <dimen name="activity_vertical_margin">16dp</dimen>-->
+<!--    <dimen name="nav_header_vertical_spacing">8dp</dimen>-->
+<!--    <dimen name="nav_header_height">160dp</dimen>-->
+<!--    <dimen name="fab_margin">16dp</dimen>-->
+
+
+
+<!--    <dimen name="twenty_dp">20dp</dimen>-->
+<!--    <dimen name="twenty_sp">20sp</dimen>-->
+<!--    <dimen name="twentythree_dp">23dp</dimen>-->
+<!--    <dimen name="twentythree_sp">23sp</dimen>-->
+<!--    <dimen name="twentyfive_dp">25dp</dimen>-->
+<!--    <dimen name="twentyfive_sp">25sp</dimen>-->
+<!--    <dimen name="icon_height_width">24dp</dimen>-->
+<!--    <dimen name="thirty_sp">20sp</dimen>-->
+
+<!--    <dimen name="fourteen_dp">14dp</dimen>-->
+<!--    <dimen name="fourteen_sp">14sp</dimen>-->
+<!--    <dimen name="sixteen_dp">16dp</dimen>-->
+<!--    <dimen name="sixteen_sp">16sp</dimen>-->
+
+<!--    <dimen name="eighteen_dp">18dp</dimen>-->
+<!--    <dimen name="eighteen_sp">18sp</dimen>-->
+
+
+
+<!--    &lt;!&ndash;    ////&ndash;&gt;-->
+<!--    <dimen name="collapsing_toolbar">180dp</dimen>-->
+<!--    &lt;!&ndash;    /// dashboard top icon font size&ndash;&gt;-->
+<!--    <dimen name="column_text_01">12sp</dimen>-->
+<!--    &lt;!&ndash;    /// dashboard firstView Pager height&ndash;&gt;-->
+<!--    <dimen name="default_viewpager_height">170dp</dimen>-->
+<!--    &lt;!&ndash;    /// bottom_viewpager_height&ndash;&gt;-->
+<!--    <dimen name="bottom_viewpager_height">160dp</dimen>-->
+<!--    &lt;!&ndash;    // dashboard third view height&ndash;&gt;-->
+<!--    <dimen name="box_size">85dp</dimen>-->
+<!--    &lt;!&ndash;    // dashboard fourth_box_size&ndash;&gt;-->
+<!--    <dimen name="fourth_box_size">120dp</dimen>-->
+<!--    &lt;!&ndash;    /// margin_size_icon&ndash;&gt;-->
+<!--    <dimen name="margin_size_icon">6dp</dimen>-->
+<!--    &lt;!&ndash;//// textView_10    &ndash;&gt;-->
+<!--    <dimen name="text_size_01">10sp</dimen>-->
+<!--    &lt;!&ndash;//// textView_12    &ndash;&gt;-->
+<!--    <dimen name="text_size_02">12sp</dimen>-->
+<!--    &lt;!&ndash;//// text_size_03    &ndash;&gt;-->
+<!--    <dimen name="text_size_03">6sp</dimen>-->
+<!--    &lt;!&ndash;//// text_size_12    &ndash;&gt;-->
+<!--    <dimen name="text_size_04">12sp</dimen>-->
+
+<!--    <dimen name="toolbar_height">200dp</dimen>-->
+
+<!--    &lt;!&ndash;//// text_size  22  &ndash;&gt;-->
+<!--    <dimen name="text_size_05">14sp</dimen>-->
+
+<!--    <dimen name="text_size_06">16sp</dimen>-->
+
+<!--    <dimen name="text_size_07">14sp</dimen>-->
+
+<!--    <dimen name="text_size_08">20sp</dimen>-->
+
+
+<!--    <dimen name="dashboard_bottom">350dp</dimen>-->
+
+<!--    <dimen name="big_text_heading">35sp</dimen>-->
+<!--    <dimen name="big_text_subheading">14sp</dimen>-->
+
+<!--    <dimen name="dashboard_video_height_width">52dp</dimen>-->
+<!--    <dimen name="icon_size">18dp</dimen>-->
+<!--    <dimen name="spinner_custom_image">28dp</dimen>-->
+
+<!--    <dimen name="icon_size2">24dp</dimen>-->
+
+<!--    <dimen name="result_duration_icon">32dp</dimen>-->
+
+<!--    <dimen name="bottom_bar_height">42dp</dimen>-->
+<!--    <dimen name="period_box_dashboard">100dp</dimen>-->
+
+<!--    <dimen name="online_video_icon_width">80dp</dimen>-->
+<!--    <dimen name="online_video_icon_height">60dp</dimen>-->
+
+<!--    <dimen name="progress_bar_icon">62dp</dimen>-->
+
+<!--    <dimen name="icon_size_width">12dp</dimen>-->
+
+<!--    <dimen name="textbox_height">36dp</dimen>-->
+
+<!--    <dimen name="top_margin_default">10dp</dimen>-->
+<!--    <dimen name="des_status_icon_size">140dp</dimen>-->
+
+<!--    <dimen name="stop_watch_height">200dp</dimen>-->
+
+<!--    <dimen name="des_icon_size">40dp</dimen>-->
+
+<!--    <dimen name="nav_count_box_width">80dp</dimen>-->
+<!--    <dimen name="nav_count_box_height">80dp</dimen>-->
+
+<!--    <dimen name="screen_width">30dp</dimen>-->
+<!--    <dimen name="screen_width_cbse">20dp</dimen>-->
+
+<!--    <dimen name="screen_width_msp_lp">130dp</dimen>-->
+<!--    <dimen name="screen_width_msp_hs">110dp</dimen>-->
+
+<!--    <dimen name="left_margin_download">10dp</dimen>-->
+<!--    <dimen name="right_margin_download">10dp</dimen>-->
+<!--    <dimen name="left_margin">25dp</dimen>-->
+<!--    <dimen name="right_margin">15dp</dimen>-->
+<!--    <dimen name="center_width">8dp</dimen>-->
+
+<!--    <dimen name="left_margin_offline">8dp</dimen>-->
+<!--    <dimen name="right_margin_offline">8dp</dimen>-->
+<!--    <dimen name="center_width_offline">4dp</dimen>-->
+
+<!--    <dimen name="circle_progress_bar_width">4dp</dimen>-->
+
+<!--    <bool name="is_tab">false</bool>-->
+<!--    <dimen name="tab_icon">62dp</dimen>-->
+<!--</resources>-->

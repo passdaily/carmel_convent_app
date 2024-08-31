@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="2dp"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:cardBackgroundColor="@color/color_book"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/cardViewStatus"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.2">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="1dp">
+
+                <ImageView
+                    android:id="@+id/imageViewBook"
+                    android:layout_width="@dimen/online_video_icon_height"
+                    android:layout_height="@dimen/online_video_icon_width"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/book_sample" />
+            </androidx.cardview.widget.CardView>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/textViewBookName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Harry Potter"
+            android:textColor="@color/black"
+            android:textSize="@dimen/big_text_subheading"
+            app:layout_constraintBottom_toTopOf="@+id/textViewAuthor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/cardViewBook"
+            app:layout_constraintTop_toTopOf="@+id/cardViewBook" />
+
+        <TextView
+            android:id="@+id/textViewAuthor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Author Name : Author Name : Author Name :  Author Name : Author Name : Author Name :Author Name : Author Name : Author Name : Author Name : Author Name : Author Name :  "
+            android:textColor="@color/gray_600"
+            android:textSize="@dimen/text_size_02"
+            app:layout_constraintBottom_toTopOf="@+id/textViewIssuedDate"
+            app:layout_constraintEnd_toEndOf="@+id/textViewBookName"
+            app:layout_constraintStart_toStartOf="@+id/textViewBookName"
+            app:layout_constraintTop_toBottomOf="@+id/textViewBookName" />
+
+        <TextView
+            android:id="@+id/textViewIssuedDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Issued On : 12 / 02 / 2021"
+            android:textColor="@color/gray_600"
+            android:textSize="@dimen/text_size_02"
+            app:layout_constraintBottom_toTopOf="@+id/textViewReturnDate"
+            app:layout_constraintEnd_toEndOf="@+id/textViewAuthor"
+            app:layout_constraintStart_toStartOf="@+id/textViewAuthor"
+            app:layout_constraintTop_toBottomOf="@+id/textViewAuthor" />
+
+        <TextView
+            android:id="@+id/textViewReturnDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Returned Date : 20 / 02 / 2021"
+            android:textColor="@color/gray_600"
+            android:textSize="@dimen/text_size_02"
+            app:layout_constraintBottom_toTopOf="@+id/textViewBookId"
+            app:layout_constraintEnd_toEndOf="@+id/textViewIssuedDate"
+            app:layout_constraintStart_toStartOf="@+id/textViewIssuedDate"
+            app:layout_constraintTop_toBottomOf="@+id/textViewIssuedDate" />
+
+        <TextView
+            android:id="@+id/textViewBookId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Book ID : 021"
+            android:textColor="@color/gray_600"
+            android:textSize="@dimen/text_size_02"
+            app:layout_constraintEnd_toEndOf="@+id/textViewReturnDate"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textViewReturnDate"
+            app:layout_constraintTop_toBottomOf="@+id/textViewReturnDate" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewStatus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:text="TextView"
+            app:cardBackgroundColor="@color/green_100"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/cardViewBook"
+            app:layout_constraintStart_toStartOf="@+id/cardViewBook"
+            app:layout_constraintTop_toBottomOf="@+id/textViewBookId">
+
+            <TextView
+                android:id="@+id/textViewStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="6dp"
+                android:text="Returned"
+                android:textColor="@color/green_400"
+                android:textSize="@dimen/text_size_01" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/textViewRate"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="2dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="₹ 2000"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="@dimen/big_text_subheading"
+            app:layout_constraintBottom_toBottomOf="@+id/cardViewStatus"
+            app:layout_constraintEnd_toStartOf="@+id/textViewFine"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toStartOf="@+id/textViewBookId"
+            app:layout_constraintTop_toTopOf="@+id/cardViewStatus"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textViewFine"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="2dp"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="end|center_vertical"
+            android:text="Fine : ₹ 200"
+            android:textColor="@color/color_physics"
+            android:textSize="@dimen/text_size_02"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewRate"
+            app:layout_constraintEnd_toEndOf="@+id/textViewBookId"
+            app:layout_constraintHorizontal_weight="1.5"
+            app:layout_constraintStart_toEndOf="@+id/textViewRate"
+            app:layout_constraintTop_toTopOf="@+id/textViewRate"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

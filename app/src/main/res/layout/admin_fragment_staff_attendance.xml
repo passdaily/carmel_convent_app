@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:seekcircle="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.02" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.02" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintGuide_percent="0.98" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintStop"
+            android:layout_width="@dimen/stop_watch_height"
+            android:layout_height="@dimen/stop_watch_height"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toTopOf="@+id/guideline1"
+            seekcircle:layout_constraintEnd_toStartOf="@+id/guideline3">
+
+
+            <info.passdaily.camrelconvertapp.lib.seek_circle.SeekCircle
+                android:id="@+id/progressBarDashed"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:endColor="@color/green_400"
+                app:inactiveColor="@color/blue_200"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0"
+                app:startColor="@color/green_400"
+                seekcircle:maxi="60"
+                seekcircle:minimum="0"
+                seekcircle:progress_="0" />
+
+            <TextView
+                android:id="@+id/textViewTimer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/poppins_bold"
+                android:text="00 : 00 : 00"
+                android:textColor="@color/green_400"
+                android:textSize="@dimen/text_size_05"
+                app:layout_constraintBottom_toBottomOf="@+id/progressBarCircle"
+                app:layout_constraintEnd_toEndOf="@+id/progressBarCircle"
+                app:layout_constraintStart_toStartOf="@+id/progressBarCircle"
+                app:layout_constraintTop_toTopOf="@+id/progressBarCircle" />
+
+            <info.passdaily.camrelconvertapp.lib.seek_circle.SeekCircle
+                android:id="@+id/progressBarCircle"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="24dp"
+                android:padding="@dimen/text_size_05"
+                app:endColor="@color/green_400"
+                app:inactiveColor="@color/blue_200"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:progressWidth="5dp"
+                app:startColor="@color/green_400"
+                seekcircle:maxi="240"
+                seekcircle:minimum="0"
+                seekcircle:progress_="0" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!--            </info.passdaily.teach_daily_app.lib.dashed_circle_progress.DashedCircularProgress>-->
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout39"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            seekcircle:layout_constraintEnd_toStartOf="@+id/guideline3"
+            seekcircle:layout_constraintStart_toStartOf="@+id/guideline2"
+            seekcircle:layout_constraintTop_toBottomOf="@+id/constraintStop">
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/punchInButtonScr"
+                style="@style/RoundedCornerButtonGreen400"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingStart="@dimen/text_size_06"
+                android:paddingEnd="@dimen/text_size_06"
+                android:text="Punch In"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.487" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/punchOutButtonScr"
+                style="@style/RoundedCornerButtonGreen400"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingStart="@dimen/text_size_06"
+                android:paddingEnd="@dimen/text_size_06"
+                android:text="Punch Out"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <!--    seekcircle:layout_constraintStart_toStartOf="@+id/constraintStop"-->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="?attr/actionBarSize"
+            android:fillViewport="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout39"
+            app:layout_constraintVertical_bias="1.0">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textViewData"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_02"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/textViewLatLong"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textViewLatLong"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_02"
+                    app:layout_anchorGravity="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewData"
+                    app:layout_constraintVertical_bias="0.0" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <include
+        android:id="@+id/bottom_sheet"
+        layout="@layout/bottom_admin_staff_punch_report" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<androidx.coordinatorlayout.widget.CoordinatorLayout-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="match_parent"-->
+    <!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    xmlns:seekcircle="http://schemas.android.com/apk/res-auto"-->
+    <!--    xmlns:tools="http://schemas.android.com/tools"-->
+    <!--    xmlns:app="http://schemas.android.com/apk/res-auto">-->
+    <!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--        android:id="@+id/constraintLayoutContent"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent">-->
+
+    <!--        <androidx.constraintlayout.widget.Guideline-->
+    <!--            android:id="@+id/guideline1"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:orientation="horizontal"-->
+    <!--            app:layout_constraintGuide_percent="0.02" />-->
+
+    <!--        <androidx.constraintlayout.widget.Guideline-->
+    <!--            android:id="@+id/guideline2"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:orientation="vertical"-->
+    <!--            app:layout_constraintGuide_percent="0.02" />-->
+
+    <!--        <androidx.constraintlayout.widget.Guideline-->
+    <!--            android:id="@+id/guideline3"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:orientation="vertical"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintGuide_percent="0.98" />-->
+
+    <!--        &lt;!&ndash;        <ProgressBar&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:id="@+id/progressBarCircle"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            style="?android:attr/progressBarStyleHorizontal"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_width="@dimen/des_status_icon_size"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_height="@dimen/des_status_icon_size"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_centerInParent="true"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_marginTop="16dp"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:padding="5dp"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:background="@drawable/drawable_circle_dark_blue"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:indeterminate="false"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:max="100"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:progress="100"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:progressDrawable="@drawable/drawable_circle_yellow"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:rotation="-90"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            app:layout_constraintEnd_toEndOf="parent"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            app:layout_constraintStart_toStartOf="parent"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            app:layout_constraintTop_toTopOf="@+id/guideline1" />&ndash;&gt;-->
+
+
+    <!--        <androidx.appcompat.widget.AppCompatButton-->
+    <!--            android:visibility="gone"-->
+    <!--            android:id="@+id/punchInButtonScr"-->
+    <!--            style="@style/RoundedCornerButtonGreen400"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginTop="16dp"-->
+    <!--            android:fontFamily="@font/poppins_medium"-->
+    <!--            android:paddingStart="@dimen/text_size_06"-->
+    <!--            android:paddingEnd="@dimen/text_size_06"-->
+    <!--            android:text="Punch In"-->
+    <!--            app:layout_constraintVertical_bias="0.368"-->
+    <!--            seekcircle:layout_constraintBottom_toTopOf="@+id/textViewLatLong"-->
+    <!--            seekcircle:layout_constraintEnd_toStartOf="@+id/guideline3"-->
+    <!--            seekcircle:layout_constraintStart_toStartOf="@+id/guideline2"-->
+    <!--            seekcircle:layout_constraintTop_toBottomOf="@+id/constraintStop" />-->
+    <!--        &lt;!&ndash;    seekcircle:layout_constraintBottom_toBottomOf="parent"&ndash;&gt;-->
+
+    <!--        &lt;!&ndash;    seekcircle:layout_constraintStart_toStartOf="@+id/constraintStop"&ndash;&gt;-->
+
+    <!--        <androidx.appcompat.widget.AppCompatButton-->
+    <!--            android:visibility="gone"-->
+    <!--            android:id="@+id/punchOutButtonScr"-->
+    <!--            style="@style/RoundedCornerButtonGreen400"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginTop="16dp"-->
+    <!--            android:fontFamily="@font/poppins_medium"-->
+    <!--            android:paddingStart="@dimen/text_size_06"-->
+    <!--            android:paddingEnd="@dimen/text_size_06"-->
+    <!--            android:text="Punch Out"-->
+    <!--            seekcircle:layout_constraintBottom_toTopOf="@+id/textViewLatLong"-->
+    <!--            seekcircle:layout_constraintEnd_toStartOf="@+id/guideline3"-->
+    <!--            seekcircle:layout_constraintStart_toStartOf="@+id/guideline2"-->
+    <!--            seekcircle:layout_constraintTop_toBottomOf="@+id/constraintStop"-->
+    <!--            seekcircle:layout_constraintVertical_bias="0.25" />-->
+
+    <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--            android:id="@+id/constraintStop"-->
+    <!--            android:layout_width="@dimen/stop_watch_height"-->
+    <!--            android:layout_height="@dimen/stop_watch_height"-->
+    <!--            android:layout_marginStart="8dp"-->
+    <!--            android:layout_marginTop="24dp"-->
+    <!--            android:layout_marginEnd="8dp"-->
+    <!--            app:layout_constraintStart_toStartOf="@+id/guideline2"-->
+    <!--            app:layout_constraintTop_toTopOf="@+id/guideline1"-->
+    <!--            seekcircle:layout_constraintEnd_toStartOf="@+id/guideline3">-->
+
+
+    <!--            <info.passdaily.camrelconvertapp.lib.seek_circle.SeekCircle-->
+    <!--                android:id="@+id/progressBarDashed"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                app:endColor="@color/green_400"-->
+    <!--                app:inactiveColor="@color/blue_200"-->
+    <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--                app:layout_constraintDimensionRatio="1:1"-->
+    <!--                app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                app:layout_constraintHorizontal_bias="1.0"-->
+    <!--                app:layout_constraintStart_toStartOf="parent"-->
+    <!--                app:layout_constraintTop_toTopOf="parent"-->
+    <!--                app:layout_constraintVertical_bias="1.0"-->
+    <!--                app:startColor="@color/green_400"-->
+    <!--                seekcircle:maxi="60"-->
+    <!--                seekcircle:minimum="0"-->
+    <!--                seekcircle:progress_="0" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/textViewTimer"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_centerInParent="true"-->
+    <!--                android:fontFamily="@font/poppins_bold"-->
+    <!--                android:text="00 : 00 : 00"-->
+    <!--                android:textColor="@color/green_400"-->
+    <!--                android:textSize="@dimen/text_size_05"-->
+    <!--                app:layout_constraintBottom_toBottomOf="@+id/progressBarCircle"-->
+    <!--                app:layout_constraintEnd_toEndOf="@+id/progressBarCircle"-->
+    <!--                app:layout_constraintStart_toStartOf="@+id/progressBarCircle"-->
+    <!--                app:layout_constraintTop_toTopOf="@+id/progressBarCircle" />-->
+
+    <!--            &lt;!&ndash;            <info.passdaily.teach_daily_app.lib.dashed_circle_progress.DashedCircularProgress&ndash;&gt;-->
+    <!--            &lt;!&ndash;                android:id="@+id/progressBarCircle"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                android:layout_width="0dp"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                android:layout_height="0dp"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                android:layout_centerInParent="true"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                android:backgroundTint="@color/white"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                app:layout_constraintBottom_toBottomOf="parent"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                app:layout_constraintDimensionRatio="1:1"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                app:layout_constraintEnd_toEndOf="parent"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                app:layout_constraintHorizontal_bias="1.0"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                app:layout_constraintStart_toStartOf="parent"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                app:layout_constraintTop_toTopOf="parent"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                app:layout_constraintVertical_bias="1.0"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                custom:base_color="@color/blue_100"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                custom:duration="10"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                custom:external_color="@color/white"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                custom:max="999"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                custom:min="0"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                custom:progress_color="@color/green_400"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                custom:progress_icon="@drawable/tdlogo">&ndash;&gt;-->
+
+    <!--            &lt;!&ndash;            <androidx.constraintlayout.widget.ConstraintLayout&ndash;&gt;-->
+    <!--            &lt;!&ndash;                android:layout_width="match_parent"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                android:layout_height="match_parent"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                android:layout_centerInParent="true">&ndash;&gt;-->
+
+    <!--            <info.passdaily.camrelconvertapp.lib.seek_circle.SeekCircle-->
+    <!--                android:id="@+id/progressBarCircle"-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="0dp"-->
+    <!--                android:layout_marginStart="24dp"-->
+    <!--                android:layout_marginTop="24dp"-->
+    <!--                android:layout_marginEnd="24dp"-->
+    <!--                android:layout_marginBottom="24dp"-->
+    <!--                android:padding="@dimen/text_size_05"-->
+    <!--                app:endColor="@color/green_400"-->
+    <!--                app:inactiveColor="@color/blue_200"-->
+    <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--                app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                app:layout_constraintStart_toStartOf="parent"-->
+    <!--                app:layout_constraintTop_toTopOf="parent"-->
+    <!--                app:progressWidth="5dp"-->
+    <!--                app:startColor="@color/green_400"-->
+    <!--                seekcircle:maxi="240"-->
+    <!--                seekcircle:minimum="0"-->
+    <!--                seekcircle:progress_="0" />-->
+
+
+    <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+    <!--        &lt;!&ndash;            </info.passdaily.teach_daily_app.lib.dashed_circle_progress.DashedCircularProgress>&ndash;&gt;-->
+
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/textViewLatLong"-->
+    <!--            android:layout_width="0dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginStart="8dp"-->
+    <!--            android:layout_marginEnd="8dp"-->
+    <!--            android:fontFamily="@font/poppins_regular"-->
+    <!--            android:text="Text"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:textSize="@dimen/text_size_02"-->
+    <!--            app:layout_constraintEnd_toStartOf="@+id/guideline3"-->
+    <!--            app:layout_constraintStart_toStartOf="@+id/guideline2"-->
+    <!--            app:layout_constraintTop_toBottomOf="@+id/constraintStop"-->
+    <!--            seekcircle:layout_constraintHorizontal_bias="1.0"-->
+    <!--            seekcircle:layout_constraintTop_toTopOf="@+id/guideline24" />-->
+
+    <!--        <TextView-->
+
+    <!--            android:id="@+id/textViewData"-->
+    <!--            android:layout_width="0dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginStart="8dp"-->
+    <!--            android:layout_marginTop="8dp"-->
+    <!--            android:layout_marginEnd="8dp"-->
+    <!--            android:fontFamily="@font/poppins_regular"-->
+    <!--            android:text="Text"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:textSize="@dimen/text_size_02"-->
+    <!--            app:layout_constraintEnd_toStartOf="@+id/guideline3"-->
+    <!--            app:layout_constraintStart_toStartOf="@+id/guideline2"-->
+    <!--            app:layout_constraintTop_toBottomOf="@+id/textViewLatLong" />-->
+
+    <!--        <androidx.constraintlayout.widget.Guideline-->
+    <!--            android:id="@+id/guideline24"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:orientation="horizontal"-->
+    <!--            app:layout_constraintGuide_percent="0.5"-->
+    <!--            seekcircle:layout_constraintGuide_percent="0.45" />-->
+
+
+    <!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+    <!--    <include android:id="@+id/bottom_sheet"-->
+    <!--        layout="@layout/bottom_admin_staff_punch_report" />-->
+    <!--</androidx.coordinatorlayout.widget.CoordinatorLayout>-->

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".typeofuser.parent.map.TrackBottomFragment">
+
+
+    <ImageView
+        android:id="@+id/imageViewPower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/ic_power_settings_green_24dp"
+        app:layout_constraintEnd_toStartOf="@+id/textViewTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewTitle" />
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_04"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageViewPower"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewSignal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/ic_signal_cellular_4_bar_black_24dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewPower"
+        app:layout_constraintStart_toStartOf="@+id/imageViewPower"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewPower" />
+
+    <TextView
+        android:id="@+id/textViewTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:text="TextView"
+        android:gravity="center"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="@dimen/text_size_04"
+        android:textColor="@color/gray_500"
+        app:layout_constraintEnd_toStartOf="@+id/textViewSpeed"
+        app:layout_constraintStart_toStartOf="@+id/textViewTitle"
+        app:layout_constraintTop_toTopOf="@+id/imageViewSignal" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:background="@color/gray_200"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewSpeed"
+        app:layout_constraintEnd_toStartOf="@+id/textViewSpeed"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textViewTime"
+        app:layout_constraintTop_toTopOf="@+id/textViewTime"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textViewSpeed"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:text="TextView"
+        android:gravity="center"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="@dimen/text_size_04"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewTime"
+        app:layout_constraintEnd_toStartOf="@+id/textViewIdle"
+        app:layout_constraintStart_toEndOf="@+id/textViewTime"
+        app:layout_constraintTop_toTopOf="@+id/textViewTime" />
+
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:background="@color/gray_200"
+        app:layout_constraintBottom_toBottomOf="@+id/textView80"
+        app:layout_constraintEnd_toStartOf="@+id/textViewIdle"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textViewSpeed"
+        app:layout_constraintTop_toTopOf="@+id/textViewSpeed"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textViewIdle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:text="TextView"
+        android:gravity="center"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="@dimen/text_size_04"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewSpeed"
+        app:layout_constraintEnd_toEndOf="@+id/textViewTitle"
+        app:layout_constraintStart_toEndOf="@+id/textViewSpeed"
+        app:layout_constraintTop_toTopOf="@+id/textViewSpeed" />
+
+    <ImageView
+        android:id="@+id/imageViewBattery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/ic_battery_charging_full_black_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewSignal"
+        app:layout_constraintStart_toStartOf="@+id/imageViewSignal"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewSignal" />
+
+    <TextView
+        android:id="@+id/textViewDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:gravity="center"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="@dimen/text_size_04"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/textViewTime"
+        app:layout_constraintStart_toStartOf="@+id/textViewTime"
+        app:layout_constraintTop_toTopOf="@+id/imageViewBattery" />
+
+    <TextView
+        android:id="@+id/textView72"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Speed"
+        android:gravity="center"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="@dimen/text_size_04"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewDate"
+        app:layout_constraintEnd_toEndOf="@+id/textViewSpeed"
+        app:layout_constraintStart_toStartOf="@+id/textViewSpeed"
+        app:layout_constraintTop_toTopOf="@+id/textViewDate" />
+
+    <TextView
+        android:id="@+id/textView80"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Idle"
+        android:gravity="center"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="@dimen/text_size_04"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/textView72"
+        app:layout_constraintEnd_toEndOf="@+id/textViewIdle"
+        app:layout_constraintStart_toStartOf="@+id/textViewIdle"
+        app:layout_constraintTop_toTopOf="@+id/textView72" />
+</androidx.constraintlayout.widget.ConstraintLayout>

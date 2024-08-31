@@ -1,0 +1,408 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="MyEditTextTheme" parent="TextAppearance.AppCompat">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:textSize">18sp</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorAccent">@color/green_300</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlActivated">@color/green_300</item>
+    </style>
+
+    <style name="RoundedCornerButtonGreen600rad">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_02</item>
+        <item name="android:background">@drawable/round_green600rad</item>
+        <item name="android:elevation">5dp</item>
+    </style>
+
+    <style name="RoundedCornerButtonGray300rad">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_02</item>
+        <item name="android:background">@drawable/round_gray500rad</item>
+        <item name="android:elevation">5dp</item>
+    </style>
+
+    <style name="RoundedCornerButtonGreen600">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_02</item>
+        <item name="android:background">@drawable/round_green600</item>
+        <item name="android:elevation">5dp</item>
+    </style>
+
+    <style name="RoundedCornerButtonLightGreen600">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_02</item>
+        <item name="android:background">@drawable/round_light_green600</item>
+        <item name="android:elevation">5dp</item>
+    </style>
+
+    <style name="RoundedCornerButtonGreenFresh">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_02</item>
+        <item name="android:background">@drawable/round_fresh</item>
+        <item name="android:elevation">5dp</item>
+    </style>
+
+    <style name="RoundedCornerButtonGreen400">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_02</item>
+        <item name="android:background">@drawable/round_green400</item>
+        <item name="android:elevation">5dp</item>
+    </style>
+
+    <style name="RoundedCornerButtonRed300">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_02</item>
+        <item name="android:background">@drawable/round_red300</item>
+        <item name="android:elevation">5dp</item>
+    </style>
+
+    <style name="RoundedCornerButtonOrange400">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_02</item>
+        <item name="android:background">@drawable/round_orage400</item>
+        <item name="android:elevation">5dp</item>
+    </style>
+
+    <style name="RoundedCornerButtonGray300">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_02</item>
+        <item name="android:background">@drawable/round_gray500</item>
+        <item name="android:elevation">5dp</item>
+    </style>
+
+    <style name="RoundedCornerButtonGray500">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_size_02</item>
+        <item name="android:background">@drawable/round_gray500</item>
+        <item name="android:elevation">5dp</item>
+    </style>
+
+
+    <style name="RoundedCornerBorderGray500">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_size_02</item>
+        <item name="android:background">@drawable/bg_spinner</item>
+        <item name="android:elevation">5dp</item>
+    </style>
+
+    <style name="RoundedCornerButtonPink300">
+        <item name="android:textColor">@color/pink_300</item>
+        <item name="android:textSize">@dimen/text_size_02</item>
+        <item name="android:background">@drawable/round_pink300</item>
+        <item name="android:elevation">5dp</item>
+    </style>
+
+    <style name="RoundedCornerButtonBlue500">
+        <item name="android:textColor">@color/blue_500</item>
+        <item name="android:textSize">@dimen/text_size_02</item>
+        <item name="android:background">@drawable/round_blue500</item>
+        <item name="android:elevation">5dp</item>
+    </style>
+
+    <style name="RoundedCornerButtonYellow200">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_02</item>
+        <item name="android:background">@drawable/round_yellow200</item>
+        <item name="android:elevation">5dp</item>
+    </style>
+
+
+    <style name="RoundedBorderButtonGreen300">
+        <item name="android:textColor">@color/green_300</item>
+        <item name="android:textSize">@dimen/text_size_01</item>
+        <item name="android:background">@drawable/round_border_button</item>
+    </style>
+
+
+    <style name="TextLabel2" parent="TextAppearance.AppCompat">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">@color/black</item>
+        <item name="android:textSize">17sp</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorAccent">@color/black</item>
+        <item name="colorControlNormal">@color/gray_500</item>
+        <item name="colorControlActivated">@color/green_400</item>
+    </style>
+
+    <style name="ThemeOverlay.AppTheme.TextInputEditText.Outlined" parent="">
+        <item name="colorPrimary">@color/green_400</item>
+    </style>
+
+    <style name="ThemeOverlay.AppTheme.TextInputEditText.OutlinedAdapter" parent="">
+        <item name="colorPrimary">@color/gray_400</item>
+    </style>
+
+    <style name="ThemeOverlay.AppTheme.TextInputEditText.Outlined2" parent="">
+        <item name="colorPrimary">@color/dark_gray_700</item>
+    </style>
+
+
+    <style name="EditTextTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorControlNormal">@color/gray_400</item>
+        <item name="colorControlActivated">@color/green_400</item>
+        <item name="colorControlHighlight">@color/green_400</item>
+    </style>
+
+    <style name="spinner_style" >
+        <item name="android:background">@drawable/spinner_bg</item>
+        <item name="android:layout_marginStart">20dp</item>
+
+    </style>
+
+    <style name="spinner_style2" >
+        <item name="android:background">@drawable/spinner_bg</item>
+        <item name="android:layout_marginEnd">10dp</item>
+
+    </style>
+
+    <style name="TextLabel" parent="TextAppearance.AppCompat">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">@color/dark_gray_700</item>
+        <item name="android:textSize">18sp</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorAccent">@color/green_400</item>
+        <item name="colorControlNormal">@color/dark_gray_700</item>
+        <item name="colorControlActivated">@color/dark_gray_700</item>
+    </style>
+
+
+    <style name="MyCustomTabLayoutDescriptive">
+        <item name="android:background">@color/gray_100</item>
+        <item name="tabIndicatorColor">@color/white</item>
+        <item name="tabSelectedTextColor">@color/green_400</item>
+        <item name="tabTextAppearance">@style/MyCustomTabDesc</item>
+    </style>
+
+    <style name="MyCustomTabLayoutResult">
+        <item name="android:background">@color/white</item>
+        <item name="tabIndicatorColor">@null</item>
+        <item name="tabSelectedTextColor">@color/green_600</item>
+        <item name="tabTextAppearance">@style/MyCustomTabDesc</item>
+    </style>
+    <style name="MyCustomTabDesc">
+        <item name="android:textSize">@dimen/text_size_04</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+
+
+    <style name="MyCustomTabLayoutWhite">
+        <item name="android:background">@color/white</item>
+        <item name="tabIndicatorColor">@null</item>
+        <item name="tabSelectedTextColor">@color/black</item>
+        <item name="tabTextAppearance">@style/MyCustomTabDesc</item>
+    </style>
+
+
+    <style name="ToolbarTitleTheme" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">@dimen/text_size_04</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textAllCaps">true</item>
+        <!-- include other attributes you want to change: textColor, textStyle, etc -->
+    </style>
+
+
+    <style name="sftext_medium" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">@dimen/text_size_02</item>
+
+    </style>
+
+    <style name="NavigationView" >
+        <item name="android:textColorSecondary">@color/gray_500</item>
+        <item name="android:listDivider">@color/gray_200</item>
+    </style>
+
+    <style name="CustomTextAppearanceTab" parent="TextAppearance.Design.Tab">
+    <item name="textAllCaps">false</item>
+    <item name="android:textSize">@dimen/text_size_05</item>
+    <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="CustomTextAppearanceTabGreen" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:textColor">@color/green_600</item>
+        <item name="android:textSize">@dimen/text_size_05</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+
+
+    <style name="AlertDialogTheme">
+        <item name="buttonBarPositiveButtonStyle">@style/Alert.Button.Neutral</item>
+        <item name="buttonBarNeutralButtonStyle">@style/Alert.Button.Positive</item>
+        <item name="materialAlertDialogTitleTextStyle">@style/MyTitle_MaterialAlertDialog.MaterialComponents.Title.Text</item>
+        <item name="materialAlertDialogBodyTextStyle">@style/BodyMaterialAlertDialog.MaterialComponents.Body.Text</item>
+    </style>
+
+
+
+    <style name="MyTitle_MaterialAlertDialog.MaterialComponents.Title.Text" parent="@style/MaterialAlertDialog.MaterialComponents.Title.Text">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="BodyMaterialAlertDialog.MaterialComponents.Body.Text" parent="MaterialAlertDialog.MaterialComponents.Body.Text">
+        <item name="android:textColor">@color/gray_800</item>
+        <item name="android:textSize">16sp</item>
+        <item name="fontFamily">@font/poppins_light</item>
+    </style>
+
+    <style name="Alert.Button.Neutral" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="backgroundTint">@android:color/transparent</item>
+        <item name="rippleColor">@color/gray_200</item>
+        <item name="android:textColor">@color/green_400</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Alert.Button.Positive" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="backgroundTint">@color/white</item>
+        <item name="rippleColor">@color/gray_200</item>
+        <item name="android:textColor">@color/green_400</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+
+    <style name="FullScreenDialogStyle" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowLightStatusBar" tools:ignore="NewApi">false</item>
+        <item name="colorPrimaryDark">@color/green_400</item>
+        <item name="colorPrimary">@color/green_400</item>
+        <item name="colorAccent">@color/green_400</item>
+
+        <!-- Set this to true if you want Full Screen without status bar -->
+        <item name="android:windowFullscreen">false</item>
+
+        <item name="android:windowIsFloating">false</item>
+
+        <!-- This is important! Don't forget to set window background -->
+        <item name="android:windowBackground">@color/white</item>
+
+        <!-- Additionally if you want animations when dialog opening -->
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+    </style>
+
+
+    <style name="FullScreenDialogStyleUpdate" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowLightStatusBar" tools:ignore="NewApi">false</item>
+        <item name="colorPrimaryDark">@color/color_chemistry</item>
+        <item name="colorPrimary">@color/color_chemistry</item>
+        <item name="colorAccent">@color/color_chemistry</item>
+
+        <!-- Set this to true if you want Full Screen without status bar -->
+        <item name="android:windowFullscreen">false</item>
+
+        <item name="android:windowIsFloating">false</item>
+
+        <!-- This is important! Don't forget to set window background -->
+        <item name="android:windowBackground">@color/white</item>
+
+        <!-- Additionally if you want animations when dialog opening -->
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+    </style>
+
+
+    <style name="FullScreenDialogStyleWhite" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorAccent">@color/white</item>
+
+        <!-- Set this to true if you want Full Screen without status bar -->
+        <item name="android:windowFullscreen">false</item>
+
+        <item name="android:windowIsFloating">false</item>
+
+        <!-- This is important! Don't forget to set window background -->
+        <item name="android:windowBackground">@color/white</item>
+
+        <!-- Additionally if you want animations when dialog opening -->
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+    </style>
+
+
+    <style name="DatePickerButtonStyle" parent="Base.Widget.AppCompat.Button.Borderless">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:backgroundTint">@color/white</item>
+    </style>
+
+    <style name="BottomSheetDialogStyle" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/bottomSheetBackground</item>
+    </style>
+
+    <style name="bottomSheetBackground" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/rounded_top_corners</item>
+    </style>
+
+
+    <style name="FullScreenDialogStyle_AboutUs" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimaryDark">@color/trans</item>
+        <item name="colorPrimary">@color/trans</item>
+
+        <!-- Set this to true if you want Full Screen without status bar -->
+        <item name="android:windowFullscreen">false</item>
+
+        <item name="android:windowIsFloating">false</item>
+
+        <!-- This is important! Don't forget to set window background -->
+        <item name="android:windowBackground">@color/trans</item>
+
+        <!-- Additionally if you want animations when dialog opening -->
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+    </style>
+
+    <style name="circleImageView" parent="">
+
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">@dimen/text_size_05</item>
+        <item name="fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="ShapeAppearance.ImageView" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="MyRadioButton" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/black</item>
+        <item name="colorControlActivated">@color/green_600</item>
+    </style>
+
+    <style name="chipTextAppearance" parent="TextAppearance.MaterialComponents.Chip">
+        <item name="android:textColor">@color/green_400</item>
+        <item name="android:textSize">@dimen/text_size_01</item>
+        <item name="fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="DialogTheme" parent="@android:style/Theme.Material.Light.Dialog">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_size_02</item>
+        <item name="android:textColorPrimary">@color/green_400</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:colorAccent" tools:targetApi="lollipop">@color/green_400</item>
+    </style>
+
+    <style name="RoundedCornerButtonRedFresh">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_02</item>
+        <item name="android:background">@drawable/round_red_fresh</item>
+        <item name="android:elevation">5dp</item>
+    </style>
+
+
+</resources>
